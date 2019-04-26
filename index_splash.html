@@ -33,32 +33,6 @@
 		font-style: italic;
 		color: #002878;
 	}
-	<!-- #ui-container{ -->
-		<!-- border: 3px solid black; -->
-		<!-- padding: 10px 20px 10px 20px; -->
-		<!-- font-size: 18px; -->
-		<!-- display: block; -->
-	<!-- } -->
-	<!-- #workTypeDiv{ -->
-		<!-- display: block; -->
-	<!-- } -->
-	<!-- #geographyDiv{ -->
-		<!-- display: none; -->
-	<!-- } -->
-	<!-- #timeFrameDiv{ -->
-		<!-- display: none; -->
-	<!-- } -->
-	<!-- div.tooltip { -->
-		<!-- color: #222; -->
-		<!-- background: #fff; -->
-		<!-- padding: .5em; -->
-		<!-- text-shadow: #f5f5f5 0 1px 0; -->
-		<!-- border-radius: 7px;  -->
-		<!-- box-shadow: 0px 0px 2px 0px #a6a6a6;  -->
-		<!-- opacity: 0.9;  -->
-		<!-- position: absolute; -->
-		<!-- visibility: hidden; -->
-	<!-- } -->
 	#qryAgg-container{
 		position: relative;
 		display: block;
@@ -74,6 +48,7 @@
 		background-color: #fffff;
 		display: block;
 	}
+
 	#qryAgg_txt{
 		text-align: center;
 		font-size: 22px;
@@ -162,19 +137,9 @@
 		padding-top: 35px;
 		<!-- padding-left: 100px; -->
 	}
-	<!-- .radio{ -->
-		<!-- padding-bottom: 7px; -->
-		<!-- padding-top: 7px; -->
-	<!-- } -->
-	<!-- hr {  -->
-	  <!-- display: block; -->
-	  <!-- margin-top: 0.5em; -->
-	  <!-- margin-bottom: 0.5em; -->
-	  <!-- margin-left: auto; -->
-	  <!-- margin-right: auto; -->
-	  <!-- border-style: inset; -->
-	  <!-- border-width: 1px; -->
-	<!-- }  -->
+	#appNameTxtBox{
+		width: 270px;
+	}
 	#mapBtn{
 		padding: 5px 5px 5px 5px;
 		background: #46A6DD;
@@ -189,20 +154,6 @@
 		color: #a9a9a9;
 		background: #D8D8D8;
 	}
-	<!-- #backToQryBtn{ -->
-		<!-- padding: 5px 5px 5px 5px; -->
-		<!-- background: #46A6DD; -->
-		<!-- color: white; -->
-		<!-- font-size: 14px; -->
-		<!-- font-weight: bold; -->
-	<!-- } -->
-	<!-- #backToQryBtn:hover{ -->
-		<!-- background: #002878; -->
-	<!-- } -->
-	<!-- #backToQryBtn:disabled{ -->
-		<!-- color: #a9a9a9; -->
-		<!-- background: #D8D8D8; -->
-	<!-- } -->
 	#button-container{
 		padding: 5px 5px 5px 14px;	
 	}
@@ -217,13 +168,6 @@
 		background-color: #002878;
 		font-weight: bold;
 	}
-	<!-- #geoHeading{ -->
-		<!-- font-size: 18px; -->
-		<!-- font-weight: bold; -->
-	<!-- } -->
-	<!-- #geo-radio{ -->
-		<!-- font-size: 15px; -->
-	<!-- } -->
 	.hr-sect {
 		display: flex;
 		flex-basis: 100%;
@@ -242,73 +186,15 @@
 		line-height: 0px;
 		margin: 0px 8px;
 	}
-	<!-- option{ -->
-		<!-- font-size: 14px; -->
-	<!-- } -->
-	<!-- .datepicker{ -->
-		<!-- padding-left: 20px; -->
-	<!-- } -->
-	
-	<!-- .point{ -->
-		<!-- fill: #E64C00; -->
-		<!-- fill-opacity: .7; -->
-		<!-- pointer-events: all; -->
-	<!-- }	 -->
-	<!-- .polyline{ -->
-		<!-- pointer-events: none; -->
-	<!-- } -->
-	<!-- #filingsTable{ -->
-		<!-- font-size: 12px; -->
-		<!-- display: none; -->
-	<!-- } -->
-	<!-- #statsDiv{ -->
-		<!-- display: none; -->
-		<!-- overflow-y: auto; -->
-	<!-- } -->
-	<!-- td.details-control { -->
-		<!-- background: url('https://datatables.net/examples/resources/details_open.png') no-repeat center center; -->
-		<!-- display: block; -->
-		<!-- cursor: pointer; -->
-	<!-- } -->
-	<!-- tr.shown td.details-control { -->
-		<!-- background: url('https://datatables.net/examples/resources/details_close.png') no-repeat center center; -->
-	<!-- } -->
-	<!-- #table-desc-text{ -->
-		<!-- display: none; -->
-	<!-- } -->
-	<!-- #stat-desc-text{ -->
-		<!-- display: none; -->
-	<!-- } -->
-	<!-- table.dataTable tbody tr:hover { -->
-	   <!-- background-color:#dee1e5 !important; -->
-	<!-- } -->
-	<!-- .nvd3 text { -->
-		<!-- font: normal 8px sans-serif !important; -->
-	<!-- } -->
-	<!-- #chart_FilingStatus{ -->
-		<!-- margin: 0px; -->
-		<!-- padding: 0px; -->
-		<!-- height: 100%; -->
-		<!-- width: 100%; -->
-	<!-- } -->
-	<!-- #chart_BoroCount{ -->
-		<!-- margin: 0px; -->
-		<!-- padding: 0px; -->
-		<!-- height: 100%; -->
-		<!-- width: 100%; -->
-	<!-- } -->
-	<!-- #chart_cdCount{ -->
-		<!-- margin: 0px; -->
-		<!-- padding: 0px; -->
-		<!-- height: 100%; -->
-		<!-- width: 100%; -->
-	<!-- } -->
-	<!-- #chart_FilingDate{ -->
-		<!-- margin: 0px; -->
-		<!-- padding: 0px; -->
-		<!-- height: 100%; -->
-		<!-- width: 100%; -->
-	<!-- } -->
+	.ui-autocomplete{
+            max-height: 200px;
+            overflow-y: auto;
+            /* prevent horizontal scrollbar */
+            overflow-x: hidden;
+            /* add padding to account for vertical scrollbar */
+            padding-right: 20px;	
+	}
+
 </style>
 
 <body>
@@ -331,13 +217,15 @@
     <div class="row">  		
 		<div class="col-md-12 col-md-offset-6">		
 			<div class="row" id="qryAgg-container">
-				<div id="qry-banner">&nbsp;AGGREGATE FILINGS</div>
+				<div id="qry-banner">&nbsp;MULTIPLE FILINGS</div>
+				<br/><br/>
 				<div id="qryAgg">
-					<div id="qryAgg_txt"><br/><b>Search by Work Type, Geography, and Time Frame</b></div>
+					<div id="qryAgg_txt"><b>Search by Work Type, Geography, and Time Frame</b></div>
 					<div id="qryAgg_txt"><i>View map, table, and summary statistics</i></div>
-					<br/><br/>
+					<br/>
 					<button onclick="location.href='https://nycdob.github.io/DOB_NOW_Milestone_App2/'" type="button" id="btnAggFilings">GO</button>
 				</div>
+			<!-- <br/><br/><br/><br/><br/><br/><br/><br/><div class="hr-sect">OR</div> -->
 			</div>
 			<div class="row" id="qryInd-container">
 				<div id="qry-banner">&nbsp;INDIVIDUAL FILINGS</div>
@@ -381,27 +269,21 @@
 					</div>
 				</div>
 
-				</br></br></br></br></br></br><div class="hr-sect">OR</div>
+				<br/><br/><br/><br/><br/><br/><div class="hr-sect">OR</div>
 					
 				<div id="qryInd">
 					<div id="qryIndAppName">
 						<!-- </br></br><div class="hr-sect">OR</div> -->
 							<div id="qryIndAppName-container">
 								<div id="qryInd_txt">
-									<label>First Name:</label>
-									<input id="firstNameTxtBox" type="text" value="John"/>
-								</div>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								<div id="qryInd_txt">
-									<label>Last Name:</label>
-									<input id="lastNameTxtBox" type="text" value="Doe"/>
+									<label>Applicant Name:</label>
+									<input id="appNameTxtBox" type="text"/>
 								</div>
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								<div id="qryInd_txt">									
 									<button type="button" id="btnIndFilingsName">SEARCH</button>									
 								</div>
 							</div>
-
 					</div>					
 				</div>			
 			</div>
@@ -425,22 +307,41 @@
 <script src="build/nv.d3.js"></script>
 
 
-
   
 <script>
 
 $(document).ready(function(){
 	
 	var filingsSearch = document.getElementById('btnIndFilings');
-		
+	var appNameSearch = document.getElementById('btnIndFilingsName');
+	var appName;
+	var appNameUnique;
 	filingsSearch.onclick = function(){		
 		var	jobNumTxt = document.getElementById("jobNumTxtBox").value,
 			workTypeSelect = $('#dropdownWT').val(),
 			jobNumWT = jobNumTxt+'_'+workTypeSelect,
 			url = "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#" + jobNumWT;
-		location.href = url;
+		location.href = url;			
+	}
+
+
+	appNameSearch.onclick = function(){
+	
 	}
 	
+	d3.csv("https://raw.githubusercontent.com/NYCDOB/MA/gh-pages/milestone.csv", function(data){
+		data.forEach(function(d){
+			d.name = d["Applicant Name"];	
+		})
+		appName = data.map(function(d){return d.name});
+
+		$("#appNameTxtBox").autocomplete({
+			source: _.uniq(appName),
+			minLength:2
+		});
+	});
+	
+
 });
 
 </script>
