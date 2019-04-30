@@ -277,7 +277,7 @@
 							<div id="qryIndAppName-container">
 								<div id="qryInd_txt">
 									<label>Applicant Name:</label>
-									<input id="appNameTxtBox" type="text"/>
+									<input id="appNameTxtBox" name="appNameText" type="text"/>
 								</div>
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								<div id="qryInd_txt">									
@@ -312,10 +312,11 @@
 
 $(document).ready(function(){
 	
-	var filingsSearch = document.getElementById('btnIndFilings');
-	var appNameSearch = document.getElementById('btnIndFilingsName');
-	var appName;
-	var appNameUnique;
+	var filingsSearch = document.getElementById('btnIndFilings'),
+		appNameSearch = document.getElementById('btnIndFilingsName'),
+		key_ID,
+		appName;
+		
 	filingsSearch.onclick = function(){		
 		var	jobNumTxt = document.getElementById("jobNumTxtBox").value,
 			workTypeSelect = $('#dropdownWT').val(),
@@ -323,15 +324,11 @@ $(document).ready(function(){
 			url = "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#" + jobNumWT;
 		location.href = url;			
 	}
-
-
-	appNameSearch.onclick = function(){
-	
-	}
 	
 	d3.csv("https://raw.githubusercontent.com/NYCDOB/MA/gh-pages/milestone.csv", function(data){
 		data.forEach(function(d){
-			d.name = d["Applicant Name"];	
+			d.name = d["Applicant Name"];
+			d.keyID = [d.key_id];
 		})
 		appName = data.map(function(d){return d.name});
 
@@ -339,6 +336,30 @@ $(document).ready(function(){
 			source: _.uniq(appName),
 			minLength:2
 		});
+				
+		appNameSearch.onclick = function(){
+			var appNameTxt = $('input[name=appNameText]').val();
+			<!-- var appNameFilter = appName.filter(function(d){ -->
+				<!-- return d == appNameTxt;	 -->
+			<!-- }); -->
+			var filteredData = data.filter(function(d){
+				if(d.name == appNameTxt){
+					return d.keyID
+				}
+			});
+			key_ID = filteredData.map(function(d){return d.keyID});
+			
+			if (key_ID.length == 1){
+				var url = "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#" + key_ID;
+				location.href = url;
+			} else {
+				console.log(appNameTxt);
+				console.log(key_ID);
+				var multiFilingURL = "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_multiFilingReturn#" + appNameTxt;
+				location.href = multiFilingURL;
+			}
+		}		
+		
 	});
 	
 
