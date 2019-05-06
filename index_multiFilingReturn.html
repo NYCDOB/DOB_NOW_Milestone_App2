@@ -304,6 +304,7 @@ $(document).ready(function(){
 	var multiFilingNameSpc = decodeURI(multiFilingName);
 	var filteredData;
 	var format = d3.time.format("%-m/%-d/%Y").parse;
+	var multiFilingMap = document.getElementById('mapBtn');
 	function loadTable(){
 		$(function(){
 				var table = $('#filingsTable').DataTable({
@@ -369,6 +370,11 @@ $(document).ready(function(){
 		})
 
 		loadTable();
+		
+		multiFilingMap.onclick = function(){
+				var multiFilingURL = "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_multiFilingMap#" + appNameTxt;
+				location.href = multiFilingURL;
+			}
 	});
 });
 
