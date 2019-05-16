@@ -218,6 +218,10 @@
 		height: 100%;
 		width: 100%;
 	}
+	#loadpage{
+		margin: auto;
+		padding-top: 350px;
+	}
 </style>
 
 <body>
@@ -256,6 +260,18 @@
 	  <div class="col-md-5">
 			<div id="ui-container" class="ui" style="height:786px">
 				<div class="qry" id="tableDiv">
+					
+				<div id="loadpage" style="position:absolute; 
+					left:38px; top:4px; 
+					background-color:white; 
+					layer-background-color:white; 
+					height:80%; width:88%;"> 
+					  <p align="center" style="font-size: large;">       
+						<B>Loading...Please wait!</B><br/><br/>
+						<img src="data/spinner.gif">
+					  </p>
+				</div>
+					
 				<table id="filingsTable" class="display" style="width:100%">
 					<thead>
 						<tr>
@@ -749,6 +765,9 @@ var width = $("#map").width(),
 			map.invalidateSize();
 		});	
 	}
+	$(window).load(function() {
+	$('#loadpage').hide();
+	});
 
 });
 
