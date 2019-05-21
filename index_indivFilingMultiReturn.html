@@ -232,7 +232,7 @@
 	}
 	#loadpage{
 		margin: auto;
-		padding-top: 150px;
+		padding-top: 100px;
 		padding-left: 15px;
 	}
 
@@ -268,7 +268,7 @@
 					height:80%; width:550px;"> 
 					  <p align="center" style="font-size: large;">       
 						<B>Loading...Please wait!</B><br/><br/>
-						<img src="data/spinner.gif">
+						<!-- <img id="loader" src="data/spinner.gif"> -->
 					  </p>
 				</div>
 				
@@ -392,10 +392,6 @@ $(document).ready(function(){
 				var multiFilingURL = "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_indivFilingMultiMap#" + multiFilingName;
 				location.href = multiFilingURL;
 			}
-	});
-	
-	$(window).load(function() {
-	$('#loadpage').hide();
 	});
 	
 });
