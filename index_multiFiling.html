@@ -465,7 +465,7 @@
 	}
 	#loadpage{
 		margin: auto;
-		padding-top: 125px;
+		padding-top: 150px;
 	}
 
 </style>
@@ -701,7 +701,7 @@
 						height:80%; width:88%;"> 
 						  <p align="center" style="font-size: large;">       
 							<B>Loading...Please wait!</B><br/><br/>
-							<!-- <img id="loader" src="data/spinner.gif"> -->
+							<img id="loader" src="data/spinner.gif">
 						  </p>
 					</div>
 				
@@ -1088,6 +1088,7 @@ var width = $("#map").width(),
 						'paging': false,
 						'order': [[1, "asc"]]
 				});
+				$('#loadpage').hide();
 				
 		$('#filingsTable tbody').on( 'click', 'tr', function () {
 			if ( $(this).hasClass('selected') ) {
@@ -1463,9 +1464,6 @@ var width = $("#map").width(),
 			$('#to').datepicker('setDate', null);
 		}
 	}
-	$(window).load(function() {
-		$('#loadpage').hide();
-	});
 });
 
 </script>
