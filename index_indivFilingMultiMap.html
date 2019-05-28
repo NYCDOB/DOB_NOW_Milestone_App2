@@ -666,6 +666,22 @@ var width = $("#map").width(),
 					.color(['#E64C00']);
 					
 				chart.yAxis.tickFormat(d3.format('.0f'));
+				chart.xAxis.tickFormat(function(d){
+				    if (typeof this != 'undefined') {
+					 var el = d3.select(this);
+					 var p = d3.select(this.parentNode);
+					 p.append("foreignObject")
+						.attr('x', -25)
+						.attr("width", 50)
+						.attr("height", 200)
+						.append("xhtml:p")
+						.attr('style','word-wrap: break-word; text-align:center; font: normal 8px sans-serif;')
+						.html(d);    
+
+					    el.remove();
+					    return d;
+				    }
+				});
 
 				d3.select('#chart_workType')
 						.datum(exampleData)
