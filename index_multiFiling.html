@@ -1132,7 +1132,8 @@ var width = $("#map").width(),
 		else
 		{
 			polyline = L.polyline(latLngs,{opacity:0}).addTo(map);
-			map.fitBounds(polyline.getBounds());				
+			map.fitBounds(polyline.getBounds());
+			map.removeLayer(polyline);
 		}
 	};
 	
