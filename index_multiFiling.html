@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>DOB NOW Job Filings</title>   
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <ZZZlink rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">  
   <link href="css/styles.css" rel="stylesheet"> 
@@ -414,28 +414,40 @@
 	#filingsTable{
 		font-size: 12px;
 		display: none;
+		/* overflow-y:auto;  */ /*  CONTROL THE VERTICAL SIZE OF THE TABLE DATA  */
 	}
+	
 	#statsDiv{
 		display: none;
 		overflow-y: auto;
 	}
+	
 	td.details-control {
 		background: url('https://datatables.net/examples/resources/details_open.png') no-repeat center center;
 		display: block;
-		cursor: pointer;
+
 	}
+	
 	tr.shown td.details-control {
 		background: url('https://datatables.net/examples/resources/details_close.png') no-repeat center center;
 	}
+	
+	
+	
 	#table-desc-text{
 		display: none;
 	}
 	#stat-desc-text{
 		display: none;
 	}
-	table.dataTable tbody tr:hover {
+	
+	
+	 /* table.dataTable tbody tr:hover {  */
+	table.dataTable tbody tr:not(.selected):hover {  
 	   background-color:#dee1e5 !important;
 	}
+	
+	
 	.nvd3 text {
 		font: normal 8px sans-serif !important;
 	}
@@ -463,9 +475,71 @@
 		height: 100%;
 		width: 100%;
 	}
+	
+	
 	#loadpage{
 		margin: auto;
 		padding-top: 150px;
+	}
+	
+	
+	
+	.datatableHeading {
+		font-size: 14px;
+	}	
+	
+	.datatableHeading > dt-buttons{
+		color: green;
+	}
+
+	#filingsTable_filter input {
+		margin-left: 0.5em;
+		width: 140px;
+	}
+	
+
+
+	#searchCriteria {
+		font-size: 14px;
+		color: red;
+		display: hide;
+		font-weight: 700;
+		margin-left: 10px;
+	
+	}
+
+	td.control::before {
+		 content: attr(data-before);
+	
+	}
+
+
+	#filterDisplayMapData{
+		display: none;
+	}
+
+
+	#templateFilterQry {
+		display:none;
+	}
+
+
+
+	/* override Bootstrap's override of search styling; gives us the X to clear the search text */
+	input[type="search"]::-webkit-search-decoration,  
+	input[type="search"]::-webkit-search-cancel-button {   
+		-webkit-appearance: searchfield-cancel-button;
+	}
+
+
+	
+	td:not(.control) {
+		cursor: pointer;
+	}
+	
+	
+	td.control::before, td.control::after, td.control{
+		cursor: default;
 	}
 
 </style>
@@ -501,6 +575,11 @@
 		<div class="row" id="tablestats">
 			<div class="desc-text-table-stats" id="table-desc-text">
 				Click on a table row to filter and zoom map...
+							<!-- CATHY SIMON show current map and data criteria
+								<button id="buttonSearchCriteria">Show Map Criteria</button>
+								<span id="searchCriteria"><span>  
+							-->
+							
 			</div>
 			<div class="desc-text-table-stats" id="stat-desc-text">
 				Summary statistics for the Job Filing selection...
@@ -524,7 +603,7 @@
 			<div class="qry" id="qryDivWT">
 				<div id="qryDropdown">
 					<div class="dropdown">
-						<select id="dropdownWT" style="height: 25px; overflow-x: hidden;">
+						<select id="dropdownWT" style="height: 25px; overflow-x: hidden;" autofocus>  <!-- added autofocus CATHY SIMON-->
 							<option value="0" selected="selected">Please select...</option>
 							<option value="Antenna">Antenna</option>
 							<option value="Boiler" disabled>Boiler</option>
@@ -537,7 +616,7 @@
 							<option value="MechSys" disabled>Mechanical Systems</option>
 							<option value="Plumbing">Plumbing</option>
 							<option value="Scaffold">Scaffold</option>
-							<option value="Side Walk Shed">Sidewalk Shed</option>
+							<option value="Side Walk Shed" >Sidewalk Shed</option>
 							<option value="Sign">Sign</option>
 							<option value="Sprinkler">Sprinkler</option>
 							<option value="Standpipe">Standpipe</option>
@@ -559,7 +638,7 @@
 							<div class="col-sm-6" id="boroCol2">
 							  <label><input type="radio" name="borough" value="QUEENS" class="check" id="queens">Queens</label><br/>
 							  <label><input type="radio" name="borough" value="STATEN ISLAND" class="check" id="statenIsland">Staten Island</label><br/>
-							  <label><input type="radio" name="borough" value="Citywide" class="check" id="citywide">Citywide</label>
+							  <label><input type="radio" name="borough" value="Citywide" class="check" id="citywide" autofocus>Citywide</label>  <!-- added autofocus CATHY SIMON-->
 							</div>
 							</div>							
 						</form>
@@ -668,9 +747,13 @@
 			<div class="query" id="qryDivTime">
 					<div class="datepicker">
 						<label style="font-size:18px;" for="from">From</label><br/>
-						<input type="text" id="from" name="from"><br/></br><br/></br><br/></br><br/></br><br/></br><br/><br/>
+						<input type="text" id="from" name="from" autofocus>  <!-- added autofocus CATHY SIMON-->
+						
+						<br/></br><br/></br><br/></br><br/></br><br/></br><br/><br/>
+						
 						<label style="font-size:18px;" for="to">To</label><br/>
 						<input type="text" id="to" name="to">
+						
 					</div>			
 			</div>
 			<div class="row" id="button-container">
@@ -692,8 +775,33 @@
 
 		<div class="col-md-5">
 			<div id="ui-container" class="ui" style="height:786px">				
+									<h4>Work Type: <b><span id="workTypeValue_txt"></span></b></h4>
+									<h4>Geography: <b><span id="geo_txt"></span></b></h4>
+									<h4>Time Frame: <b><span id="fromDate_txt"></span></b> - <b><span id="toDate_txt"></span></b></h4>
+									<h4>Total Job Filings: <b><span id="filteredData_txt"></span></b></h4>
+									<hr>
+
+
+
+
+
+
+
 				<div class="qry" id="tableDiv">
+
+					<div id="filterDisplayMapData">
+						<!--
+									<h4>Work Type: <b><span id="workTypeValue_txt"></span></b></h4>
+									<h4>Geography: <b><span id="geo_txt"></span></b></h4>
+									<h4>Time Frame: <b><span id="fromDate_txt"></span></b> - <b><span id="toDate_txt"></span></b></h4>
+									<h4>Total Job Filings: <b><span id="filteredData_txt"></span></b></h4>
+									<hr>
+						-->
+					</div>
+					
 				
+
+
 					<div id="loadpage" style="position:absolute; 
 						left:38px; top:4px; 
 						background-color:white; 
@@ -704,31 +812,38 @@
 							<img id="loader" src="data/spinner.gif">
 						  </p>
 					</div>
+					
 				
 					<table id="filingsTable" class="display" style="width:100%">
 						<thead>
 							<tr>
 								<th></th>
-								<th>Job Number</th>
-								<th>BIN</th>
+								<th class="">Address</th>  <!--   CATHY SIMON, col #9 -->
+								<th class="">Borough:</th>
+								<th class="none">Job Number</th>
+								<th class="none">BIN</th>
 								<th class="none">Work Type:</th>
-								<th class="none">Filing Date:</th>
-								<th class="none">House Number:</th>
-								<th class="none">Street:</th>
-								<th class="none">Borough:</th>
-								<th class="none">Community District:</th>							
+								<th class="none">Filing Date:</th>								
+								<!--    house number and street are now combined into "address" and shown in the parent row
+									<th class="none">House Number:</th>
+									<th class="none">Street:</th>
+								-->
+								<th class="none">Community District:</th>
 							</tr>						
 						</thead>
 					</table>
 				</div>
 				
 				<div class="qry" id="statsDiv">
-					<h4>Work Type: <b><span id="workTypeValue_txt"></span></b></h4>
-					<h4>Geography: <b><span id="geo_txt"></span></b></h4>
-					<h4>Time Frame: <b><span id="fromDate_txt"></span></b> - <b><span id="toDate_txt"></span></b></h4>
-					<h4>Total Job Filings: <b><span id="filteredData_txt"></span></b></h4>
-					<hr>
-					
+					<div id="statsDivFilter">
+							<!-- 
+									<h4>Work Type: <b><span id="workTypeValue_txt"></span></b></h4>
+									<h4>Geography: <b><span id="geo_txt"></span></b></h4>
+									<h4>Time Frame: <b><span id="fromDate_txt"></span></b> - <b><span id="toDate_txt"></span></b></h4>
+									<h4>Total Job Filings: <b><span id="filteredData_txt"></span></b></h4>
+									<hr>
+							-->
+					</div>
 					<h4>Filings per Status (Top 5)</h4>
 					<svg id="chart_FilingStatus"></svg>
 					<br/>
@@ -746,29 +861,127 @@
 			</div>
 		</div>		
     </div>
+	
+	
+<div class="modal" id="helpModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content">
+      <div class=" bg-dark">
+        <h3 class="text"><img src="https://www1.nyc.gov/assets/buildings/images/content/header/logo.png" style="height:65px;width:65px;margin: 0px 20px;">DOB Milestones</h3>
+      </div>
+      <div class="">
+	    <ul class="helpList">
+			<li>Filtering</li>
+				<ol>
+					<li>Select any point on Map to filter the list</li>
+					<li>Click the X in the search box to clear all filters</li>
+				</ol>
+			<li>Getting Details</li>
+				<ol>
+					<li>Select any point on Map to select table row</li>
+					<li>Click the <img src="https://datatables.net/examples/resources/details_open.png"></img>icon in the table to show more details.</li>
+					<li>Click the <img src="https://datatables.net/examples/resources/details_close.png"></img>icon in the table to close details.</li>
+				</ol>
+		</ul>
+      </div>
+    </div>
+  </div>
 </div>
+	
+	
+	
+	
+</div>
+
+
+
+
+<div id="templateFilterQry" >  <!-- this div template is copied to multiple locations of the page. NOTE: it is not displayed itself -->
+	<h4>Work Type: <b><span class="workTypeValue_txt"></span></b></h4>
+	<h4>Geography: <b><span class="geo_txt"></span></b></h4>
+	<h4>Time Frame: <b><span class="fromDate_txt"></span></b> - <b><span class="toDate_txt"></span></b></h4>
+	<h4>Total Job Filings: <b><span class="filteredData_txt"></span></b></h4>
+	<hr>
+</div>	
+
+
+
+
+
+<div class="modal" id="helpModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content">
+      <div class=" bg-dark">
+        <h3 class="text"><img src="https://www1.nyc.gov/assets/buildings/images/content/header/logo.png" style="height:65px;width:65px;margin: 0px 20px;">DOB Mobile Boilers Help</h3>
+      </div>
+      <div class="">
+	    <ul class="helpList">
+			<li>Filtering</li>
+				<ol>
+					<li>Select any point on Map to filter the list</li>
+					<li>Click the X in the search box to clear all filters</li>
+				</ol>
+			<li>Getting Details</li>
+				<ol>
+					<li>Select any point on Map to display Boiler information</li>
+					<li>Click the <img src="https://datatables.net/examples/resources/details_open.png"></img>icon in the table to display detail information</li>
+					<li>Click the <img src="https://datatables.net/examples/resources/details_close.png"></img>icon in the table to close detail information</li>
+				</ol>
+		</ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.9/d3.min.js"></script>
 <script src="Leaflet.D3SvgOverlay-master/L.D3SvgOverlay.min.js"></script>
-<script src='https://code.jquery.com/jquery-3.3.1.js'></script>
+
+
+
+
+
+<script src='https://code.jquery.com/jquery-3.3.1.js'></script>  <!-- IS INTERFERRING WITH BUTTONS -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.4/chroma.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="js/topics.js"></script>
-<script src="js/jscript.js"></script>
+<ZZZscript src="js/jscript.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://d3js.org/d3-time-format.v2.min.js"></script>
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/v/dt/dt-1.10.12/r-2.1.0/se-1.2.0/datatables.min.js"></script>
+<script src="https://cdn.datatables.net/v/dt/dt-1.10.12/r-2.1.0/se-1.2.0/datatables.min.js"  type="text/javascript" charset="utf8" ></script>
 <script src="build/nv.d3.js"></script>
+
+
+
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script> <!-- required for button CATHY SIMON -->
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script> <!-- required specifically for Export button CATHY SIMON-->
+
 
 
   
 <script>
 
 $(document).ready(function(){
+
+$.fn.dataTable.Buttons.defaults.dom.button.className = ''; //'btn btn-primary'	
+
+$( "#buttonSearchCriteria" ).on( "click", function() {
+	$("#searchCriteria").toggle();
+
+});
+
 var map = L.map('map').setView([40.713312, -73.977407], 11);
+//L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png', {attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+
 var grayscale = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png', {attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}),
 	streets = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png', {attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'});
 
@@ -780,6 +993,8 @@ var baseMaps = {
 };
 
 L.control.layers(baseMaps).addTo(map);
+
+
 var tooltip = d3.select('body').append('div')
 	.on('mouseover', function(d, i){
 		tooltip.transition().duration(0);
@@ -943,21 +1158,25 @@ var width = $("#map").width(),
 	$("#dropdownWT").change(function() {
 		workTypeValue = $("#dropdownWT").val();
 		$('#workTypeValue_txt').text(workTypeValue);
+		$('.workTypeValue_txt').text(workTypeValue);  //using a class (vs an 'id') allows us to display the same div at multiple locations of the page CATHY SIMON
 		console.log(workTypeValue);
 	});
 	$("input[name='borough']").click(function(){
 		boroValue = $("input[name='borough']:checked").val();
 		$('#geo_txt').text(boroValue);
+		$('.geo_txt').text(boroValue);  //using a class (vs an 'id') allows us to display the same div at multiple locations of the page CATHY SIMON
 		console.log(boroValue);
 	});
 	$('#dropdownCD').change(function() {
 		cdValue = $('#dropdownCD').val();
 		$('#geo_txt').text('Community District '+cdValue);
+		$('.geo_txt').text('Community District '+cdValue);  //using a class (vs an 'id') allows us to display the same div at multiple locations of the page CATHY SIMON
 		console.log(cdValue);
 	});
 	$('#from').change(function() {
 		fromDate = $('#from').datepicker({ dateFormat: 'm-d-yy' }).val();
 		$('#fromDate_txt').text(fromDate);
+		$('.fromDate_txt').text(fromDate);  //using a class (vs an 'id') allows us to display the same div at multiple locations of the page CATHY SIMON
 		console.log(fromDate);
 		fromFormatDate = format(fromDate);	
 		console.log(fromFormatDate);
@@ -965,6 +1184,7 @@ var width = $("#map").width(),
 	$('#to').change(function() {
 		toDate = $('#to').datepicker({ dateFormat: 'm-d-yy' }).val();
 		$('#toDate_txt').text(toDate);
+		$('.toDate_txt').text(toDate); //using a class (vs an 'id') allows us to display the same div at multiple locations of the page CATHY SIMON
 		console.log(toDate);
 		toFormatDate = format(toDate);
 		console.log(toFormatDate);
@@ -1058,24 +1278,41 @@ var width = $("#map").width(),
 
 	function loadTable(){
 	$(function(){
+	
+	
 			var table = $('#filingsTable').DataTable({
+			
 					data: filteredData,
-					  'responsive': {
+					
+					'responsive': {
 						'details': {
-						   'type': 'column',
+						   'type': 'inline',
 						   'target': 0
 						}
-					  },
-					columnDefs: [{
-					   'data': null,
-					   'defaultContent': '',
-					   'className': 'control',
-					   'orderable': false,
-						'targets': 0
+					},
+					
+					columnDefs: [
+								{
+								   'data': null,
+								   'defaultContent': '',
+								   'className': 'control',
+								   'orderable': false,
+								   'targets': 0
 
-					}],
+								},
+								{
+									"targets": 1,
+									"data": null,   //   "address",
+									"render": function ( data, type, row ) {
+											return row.HouseNum+" "+row.Street;
+								  }
+								}
+					],
 					  'columns': [ 
-						 { 'data': null }, 
+						 { 'data': null },  
+						 { 'data': "address", "className":"parentRow"  },	 // this will become address						 
+						 { 'data': "Borough", "className":"parentRow" },  //Borough.0??
+						 
 						 { 'data': "key_id",
 						   'render': function(data,type,row,meta){ 
 								return '<a href= "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#' + data +'" target="_blank">' + data + '</a>';
@@ -1083,47 +1320,117 @@ var width = $("#map").width(),
 						 { 'data': "Bin" },
 						 { 'data': "Work Type Name" },
 						 { 'data': "Filing Date" },
-						 { 'data': "House Number" },
-						 { 'data': "Street Name" },
-						 { 'data': "Borough.0" },
-						 { 'data': "Community Board" }					 
+						 { 'data': "Community Board" }
 					  ],
-					  'select': {
-						 'style': 'single',
+					  
+					  
+	  					"dom": 'r<"datatableHeading"Bf>tip',
+						"buttons": [
+						
+							// BASIC EXPORT (minified)
+							/*{extend: 'csvHtml5',text: 'Export Data',customize: function(csv){return csv;}},*/
+							
+							
+							{ // EXPORT ALL DATA, DISREGARD ANY SEARCH THAT IS APPLIED
+							
+							
+								extend: 'csv',
+								titleAttr: 'Download all data to CSV',
+								filename: "MilestoneData",
+								className: "csvExportClassname",
+								text: 'Export',
+								exportOptions: {
+									modifier: {
+										search: 'none'
+									},
+								columns: 'th:not(:first-child)'  //we don't need the first column (ie 0)
+								}
+							},
+							
+							
+							{ //DEFINE ACTIONS WHEN SELECT 'RESET' BUTTON
+								text: 'Reset',
+								titleAttr: 'Reset Map, Reset All Data',
+								action: function(e, dt, node, config) {
+									
+									zoom(latLngs);
+									d3.selectAll('.point').style("fill-opacity", function(d){
+												return "0.7";
+									});
+									
+									 $("#filingsTable .child ").hide();  
+									 
+									table.rows().every( function ( rowIdx, tableLoop, rowLoop ) {
+												this.nodes().to$().removeClass( 'selected' );
+												this.nodes().to$().removeClass( 'parent' );
+												this.nodes().to$().removeClass( 'child' );
+												this.child.hide();
+												this.nodes().to$().removeClass("shown");
+									} );
+									
+									$(".select-info").empty();                                                                                                                                       																		
+									table.search("").draw();  //remove all search/filter data
+								}
+							},
+							
+							{
+								text: 'Help',
+								titleAttr: 'Show Information',
+								action: function(e, dt, node, config) {
+											$('#helpModal').modal('show');
+										}
+							}
 
-					  },
+						],						
+
 						'lengthChange': false,
-						'scrollY': '625px',
+						'scrollY': '460px',
 						'scrollCollapse': true,
 						'paging': false,
 						'order': [[1, "asc"]]
 				});
 				$('#loadpage').hide();
 				
-		$('#filingsTable tbody').on( 'click', 'tr', function () {
-			if ( $(this).hasClass('selected') ) {
-			for (var i=0; i < table.rows('.selected').data().length; i++){
-				selectedRecord = table.rows('.selected').data()[i].Bin;
-				var lat = table.rows('.selected').data()[i].Latitude;
-				var lon = table.rows('.selected').data()[i].Longitude;
-				latlong = [lat,lon];
-				console.log(selectedRecord);
-			}
-			highlightPoint(selectedRecord);
-			zoomToSelected(latlong);
+		//  THIS SHOULD JUST HILIGHT AND ZOOM ON THE MAP
+		$('#filingsTable tbody ').on( 'click', "td.parentRow" ,function () {
+			tdParentRow=$(this).parent();
+			// console.log(tdParentRow )
+			$(tdParentRow).toggleClass("selected");
+			
+			$(tdParentRow).siblings().removeClass('selected');
+
+			if ( $(tdParentRow).hasClass('selected') ) {
+					for (var i=0; i < table.rows('.selected').data().length; i++){
+						selectedRecord = table.rows('.selected').data()[i].Bin;
+						var lat = table.rows('.selected').data()[i].Latitude;
+						var lon = table.rows('.selected').data()[i].Longitude;
+						latlong = [lat,lon];
+						//console.log(selectedRecord);
+					}
+					highlightPoint(selectedRecord);
+					zoomToSelected(latlong); 
 			} else {
-				d3.selectAll('.point')
-					.style("fill-opacity", function(d){
-						return "0.7";
-					});
-				zoom(latLngs);
+					d3.selectAll('.point')
+						.style("fill-opacity", function(d){
+							return "0.7";
+						});
+					zoom(latLngs);
 			}
 		});
+	
+		
+		// add event listener for clicking circle, and searching the datatable on the right (Cathy Simon 6/4/2019)
+		$('#filingsTable').on( 'click', function (e,LocationBin) {
+				if (LocationBin) {
+					table.search( LocationBin).draw();
+				}
+		})
+		
 
 	});
 	};
 	
-	function highlightPoint(layerID){
+	function highlightPoint(layerID){   //this filters the data on the map , so that only one point is shown
 		console.log(layerID);
 		d3.selectAll(".point")
 			.style("fill-opacity", function(d){
@@ -1142,7 +1449,7 @@ var width = $("#map").width(),
 		else
 		{
 			polyline = L.polyline(latLngs,{opacity:0}).addTo(map);
-			map.fitBounds(polyline.getBounds());
+			map.fitBounds(polyline.getBounds());				
 			map.removeLayer(polyline);
 		}
 	};
@@ -1174,6 +1481,13 @@ var width = $("#map").width(),
 		$("#qry-col").hide();
 		$("#ui-container").show();
 		$("#div_homePageBtn_map").show();
+		
+		
+		$('#searchCriteria').hide();
+		$('#searchCriteria').text("Worktype: " +  workTypeValue + ", Boro: " + boroValue + ", Date Range: "+ fromDate + " - " + toDate );   //cathy simon
+		
+		
+		
 	}
 	
 	$('input:radio[name="options"]').change(function() {
@@ -1182,13 +1496,27 @@ var width = $("#map").width(),
 			$("#stat-desc-text").show();
 			$("#tableDiv").hide();
 			$("#statsDiv").show();
+			$("#filterDisplayMapData").hide();  //CATHY SIMON
 		} else if ($(this).val() === 'table') {
 			$("#stat-desc-text").hide();
 			$("#table-desc-text").show();
 			$("#tableDiv").show();
 			$("#statsDiv").hide();
+			$("#filterDisplayMapData").show();   //CATHY SIMON
 		} 
 	  });
+	  
+	  
+	  
+	  
+	  
+	  
+		//CATHY SIMON  Use div id="templateFilterQry" as a template to display map filter criteria at multiple locations on the page
+	  
+		//var templateHTMLFilter = $("#templateFilterQry").html();
+		//$("#filterDisplayMapData").html(templateHTMLFilter);
+		//$("#statsDivFilter").html(templateHTMLFilter);
+		
 	  
 	function mapData(){
 		var pointsOverlay = L.d3SvgOverlay(function(sel,proj){
@@ -1203,6 +1531,8 @@ var width = $("#map").width(),
 			})
 
 			.on('click', function(d){
+				$('#filingsTable').trigger( "click",d.bin   ); //user clicks point on map, triggers click handler for table added Cathy Simon
+			
 				tooltip.style("visibility", "visible");
 				tooltip.html(
 					'JOB NUMBER: ' + '<a href= "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#' + d.key_id +'" target="_blank">' + d.jobNum + "</a>" + '</br>' +
@@ -1242,7 +1572,8 @@ var width = $("#map").width(),
 	});
 
 		d3.csv("https://raw.githubusercontent.com/NYCDOB/MA/gh-pages/milestone.csv", function(data){
-			data.forEach(function(d){
+			
+			data.forEach(function(d){  //column names used for assignment, e.g. "Bin" is col name in csv file
 						d.latLng = [+d.Latitude,+d.Longitude];
 						d.bin = [d.Bin];				
 						d.HouseNum = d["House Number"];
@@ -1254,9 +1585,8 @@ var width = $("#map").width(),
 						d.key_id = [d.key_id];
 						d.filingDate = format(d["Filing Date"]);
 						d.filingStatus = d["Filing Status"];
-							
 			})
-			filteredData = data.filter(function(d){						
+			filteredData = data.filter(function(d){
 						if(boroValue == "Citywide"){
 							return d["Work Type Name"] == selectionWT && (d.filingDate >= fromFormatDate && d.filingDate <= toFormatDate);
 						} else if ($("input[name='borough']:checked").length > 0){
@@ -1272,7 +1602,8 @@ var width = $("#map").width(),
 				return d.latLng;
 			});
 			$('#filteredData_txt').text(filteredData.length);
-			console.log(filteredData);
+			$('.filteredData_txt').text(filteredData.length);  //using a class (vs an 'id') allows us to display the same div at multiple locations of the page
+			//console.log(filteredData);
 			loadTable();
 
 						
@@ -1281,6 +1612,9 @@ var width = $("#map").width(),
 
 			clearFilters();
 			$('#filingsTable').show();
+			$('#filterDisplayMapData').show();  //show the filterDisplayMapData div
+			
+			
 			
 			//NESTING FOR SUMMARY STATS
 			var filingStatusNest = d3.nest()
@@ -1320,7 +1654,7 @@ var width = $("#map").width(),
 				})			
 				.entries(filteredData)	
 			console.log(filingDateNest);
-		});
+		});   //end of d3.csv reading and processing data
 
 		function filingStatusChart(data){
 			var exampleData = [
@@ -1454,7 +1788,7 @@ var width = $("#map").width(),
 			data.forEach(function (d){
 				d.values = +d.values
 				exampleData[0].values.push(d)
-			})       
+			})
 
 			nv.addGraph(function() {				
 				var chart = nv.models.discreteBarChart()
@@ -1480,6 +1814,7 @@ var width = $("#map").width(),
 		map.on('resize', function(){
 			map.invalidateSize();
 		});	
+
 		function clearFilters(){
 			$('#mapBtn').attr('disabled', 'disabled');
 			$("#dropdownWT").val('0');
@@ -1490,7 +1825,15 @@ var width = $("#map").width(),
 			$('#from').datepicker('setDate', null);
 			$('#to').datepicker('setDate', null);
 		}
+		
+		
+		//var openingMap = { tableState: $.extend({}, table.api.state()) }
+		
+		
 	}
+
+
+
 });
 
 </script>
