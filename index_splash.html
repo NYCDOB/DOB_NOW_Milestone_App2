@@ -69,7 +69,7 @@
 		position: relative;
 		display: block;
 		border: 3px solid black;
-		height: 350px;
+		height: 500px;
 		width: 600px;
 		margin-top: 20px;
 	}
@@ -107,6 +107,18 @@
 	#btnIndFilings:hover{
 		background: #002878;
 	}
+	#btnIndFilingsAddress{
+		padding: 8px 18px 8px 18px;
+		background: #46A6DD;
+		color: white;
+		font-size: 16px;
+		font-weight: bold;
+		display: block; 
+		margin: 0 auto;		
+	}
+	#btnIndFilingsAddress:hover{
+		background: #002878;
+	}
 	#btnIndFilingsName{
 		padding: 8px 18px 8px 18px;
 		background: #46A6DD;
@@ -133,11 +145,18 @@
 		padding-top: 40px;
 		padding-left: 200px;
 	}
+	#qryIndAppAddress-container{
+		padding-top: 10px;
+		<!-- padding-left: 100px; -->
+	}
 	#qryIndAppName-container{
-		padding-top: 35px;
+		padding-top: 20px;
 		<!-- padding-left: 100px; -->
 	}
 	#appNameTxtBox{
+		width: 270px;
+	}
+	#appAddressTxtBox{
 		width: 270px;
 	}
 	#mapBtn{
@@ -187,7 +206,7 @@
 		margin: 0px 8px;
 	}
 	.ui-autocomplete{
-            max-height: 200px;
+            max-height: 150px;
             overflow-y: auto;
             /* prevent horizontal scrollbar */
             overflow-x: hidden;
@@ -271,6 +290,7 @@
 
 				<br/><br/><br/><br/><br/><br/><div class="hr-sect">OR</div>
 					
+	
 				<div id="qryInd">
 					<div id="qryIndAppName">
 						<!-- </br></br><div class="hr-sect">OR</div> -->
@@ -285,7 +305,25 @@
 								</div>
 							</div>
 					</div>					
-				</div>			
+				</div>	
+
+				<br/><br/><br/><br/><br/><br/><div class="hr-sect">OR</div>
+				
+				<div id="qryInd">
+					<div id="qryIndAppAddress">
+						<!-- </br></br><div class="hr-sect">OR</div> -->
+							<div id="qryIndAppAddress-container">
+								<div id="qryInd_txt">
+									<label>Address:</label>
+									<input id="appAddressTxtBox" name="appAddressText" type="text"/>
+								</div>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<div id="qryInd_txt">									
+									<button type="button" id="btnIndFilingsAddress">SEARCH</button>									
+								</div>
+							</div>
+					</div>					
+				</div>
 			</div>
 		</div>
     </div>
@@ -314,14 +352,17 @@ $(document).ready(function(){
 	
 	var filingsSearch = document.getElementById('btnIndFilings'),
 		appNameSearch = document.getElementById('btnIndFilingsName'),
+		appAddressSearch = document.getElementById('btnIndFilingsAddress'),
 		key_ID,
-		appName;
+		appName,
+		appAddress;
 		
 	filingsSearch.onclick = function(){		
 		var	jobNumTxt = document.getElementById("jobNumTxtBox").value,
 			workTypeSelect = $('#dropdownWT').val(),
 			jobNumWT = jobNumTxt+'_'+workTypeSelect,
-			url = "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#" + jobNumWT;
+			//url = "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#" + jobNumWT;
+			url = "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#B00000043-I1_Sprinklers";
 		location.href = url;			
 	}
 	
@@ -329,9 +370,11 @@ $(document).ready(function(){
 		data.forEach(function(d){
 			d.name = d["Applicant Name"];
 			d.keyID = [d.key_id];
+			d.address = [d.Address];
 		})
+		
 		appName = data.map(function(d){return d.name});
-
+		console.log(appName);
 		$("#appNameTxtBox").autocomplete({
 			source: _.uniq(appName),
 			minLength:2
@@ -355,10 +398,41 @@ $(document).ready(function(){
 			} else {
 				console.log(appNameTxt);
 				console.log(key_ID);
-				var multiFilingURL = "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_indivFilingMultiReturn#" + appNameTxt;
-				location.href = multiFilingURL;
+
+				//var multiFilingURL = "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_indivFilingMultiReturn#" + appNameTxt;
+				//location.href = multiFilingURL;
 			}
-		}		
+		}
+		
+		appAddress = data.map(function(d){return d.Address});
+		//console.log(appAddress);
+		
+		$("#appAddressTxtBox").autocomplete({
+			source: _.uniq(appAddress),
+			minLength:2
+		});
+		
+		appAddressSearch.onclick = function(){
+			var appAddressTxt = $('input[name=appAddressText]').val().toUpperCase();
+
+			var filteredAddress = data.filter(function(d){
+				if(d.address == appAddressTxt){
+					return d.keyID
+				}
+			});
+			key_ID = filteredAddress.map(function(d){return d.keyID});
+			
+			if (key_ID.length == 1){
+				var url = "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#" + key_ID;
+				location.href = url;
+			} else {
+				console.log(appAddressTxt);
+				console.log(key_ID);
+
+				//var multiFilingAddressURL = "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_indivFilingMultiReturnAddress#" + appAddressTxt;
+				//location.href = multiFilingAddressURL;
+			}
+		}
 		
 	});
 	
