@@ -579,7 +579,8 @@ var width = $("#map").width(),
 
 
 	});
-
+		console.log("here");
+		console.log(pointsOverlay);
 		d3.csv("https://raw.githubusercontent.com/NYCDOB/MA/gh-pages/milestone.csv", function(data){
 			data.forEach(function(d){
 						d.latLng = [+d.Latitude,+d.Longitude];
