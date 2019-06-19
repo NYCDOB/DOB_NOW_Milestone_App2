@@ -374,7 +374,6 @@ $(document).ready(function(){
 		})
 		
 		appName = data.map(function(d){return d.name});
-		console.log(appName);
 		$("#appNameTxtBox").autocomplete({
 			source: _.uniq(appName),
 			minLength:2
