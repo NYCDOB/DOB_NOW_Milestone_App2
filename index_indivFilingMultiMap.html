@@ -240,21 +240,46 @@
 		margin: auto;
 		padding-top: 150px;
 	}
+	
+	/* override Bootstrap's override of search styling; gives us the X to clear the search text */
+	input[type="search"]::-webkit-search-decoration,  
+	input[type="search"]::-webkit-search-cancel-button {   
+		-webkit-appearance: searchfield-cancel-button;
+	}
+
+	td.parentRow {
+		cursor: pointer;
+	}
+	
+	table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child  { 
+		cursor: default;
+	}	
+	
+	
+
+	.datatableHeading {   /*  make DataTable heading smaller to allow for additional buttons. Class datatableHeading is used in  "dom" definition of table  */
+		font-size: 14px;
+	}	
+
+	#filingsTable_filter input {   /* 	make the search field smaller, since we added additional buttons to the table heading  */
+		margin-left: 0.5em;
+		width: 140px;
+	}
 </style>
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
-	<a class="navbar-brand2" href="https://www1.nyc.gov/site/buildings/industry/dob-now-build.page" target="_blank"> </a>
-    <div class="navbar-header">
-      <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button" ><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank">⁣</a> 
-	  <div class="navbar-title">
-        DOB NOW Job Filings
-      </div>
-	<div class="row" id="div_homePageBtn">
-		<a class="button" href="https://nycdob.github.io/DOB_NOW_Milestone_App2/index_splash.html" id="homePageBtn">Back to Homepage</a>
+<nav class="navbar navbar-default navbar-fixed-top">  	<!--  added About link to nav  CATHY SIMON    -->
+	<a class="navbar-brand" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank" title="NYC Buildings Home"></a>	
+	<a class="navbar-brand2" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank" title="DOB NOW Build"></a>	
+	<div class="navbar-title">
+		DOB NOW Job Filings
 	</div>
-    </div>
-  </nav>
+	<div style="margin-left: 60px">
+		<a href="https://nycdob.github.io/DOB_NOW_Milestone_App2/index_splash.html"                        id="homePageBtn" class="btn btn-dark navbar-btn " style="float:right" role="button">Back to Homepage</a>
+
+		<a href="https://github.com/NYCDOB/DOB_NOW_Milestone_App/blob/gh-pages/README.md"  target=”_blank” id="homePageBtn2" class="btn btn-dark navbar-btn " style="float:right" role="button">About</a>
+	</div>
+</nav>
 <div class="container main">
 	<div class="row">
 		<div class="desc-text" id="table-desc-text">
@@ -280,6 +305,11 @@
     <div class="row">  
 	  <div class="col-md-5">
 			<div id="ui-container" class="ui" style="height:786px">
+				<!--  allows display of summary info on table and chart tabs   CATHY SIMON -->
+				<h4>Applicant Name: <b><span id="appNameValue_txt"></span></b></h4>
+				<h4>Total Job Filings: <b><span id="filteredData_txt"></span></b></h4>
+				<hr>				
+				
 				<div class="qry" id="tableDiv">
 					
 				<div id="loadpage" style="position:absolute; 
@@ -297,14 +327,19 @@
 					<thead>
 						<tr>
 							<th></th>
-							<th>Job Number</th>
-							<th>Applicant Name</th>
+							<th>Address</th>  <!--  CATHY SIMON  -->
+							<th>Borough</th>  <!--  CATHY SIMON  -->
+							
+							<th class="none">Job Number</th>   <!-- class="none" forces data into child (detail) rows -->
+							<th class="none">Applicant Name</th>
 							<th class="none">BIN:</th>
 							<th class="none">Work Type:</th>
 							<th class="none">Filing Date:</th>
+<!--   moved to parent rows above
 							<th class="none">House Number:</th>
 							<th class="none">Street:</th>
 							<th class="none">Borough:</th>
+-->							
 							<th class="none">Community District:</th>							
 						</tr>						
 					</thead>
@@ -312,9 +347,7 @@
 				</div>
 				
 				<div class="qry" id="statsDiv">
-					<h4>Applicant Name: <b><span id="appNameValue_txt"></span></b></h4>
-					<h4>Total Job Filings: <b><span id="filteredData_txt"></span></b></h4>
-					<hr><br/>
+					<br/>
 					<h4>Work Types (Top 5)</h4>
 					<svg id="chart_workType"></svg>
 					<br/>
@@ -334,22 +367,55 @@
 		</div>
     </div>
 </div>
+
+<div class="modal" id="helpModal" tabindex="-1" role="dialog" data-keyboard="false">  <!--  help modal   CATHY SIMON  -->
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+	
+        <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+				<div class="row">
+				  <div class="col-md-3"><img src="https://www1.nyc.gov/assets/buildings/images/content/header/logo.png" style="margin: 0px 20px;"></div>
+				  <div class="col-md-9"><h3>DOB NOW Job Filings</h3></div>
+				</div>
+        </div>	
+      <div class="modal-body modal-md">
+	    <ul class="helpList">
+			<li>Filtering</li>
+				<ol>
+					<li>Select any point on Map to filter the list</li>
+					<li>Click the X in the search box to clear all filters</li>
+				</ol>
+			<li>Getting Details</li>
+				<ol>
+					<li>Select any point on Map to display Boiler information</li>
+					<li>Click the <img src="https://datatables.net/examples/resources/details_open.png"></img> icon in the table to display detail information</li>
+					<li>Click the <img src="https://datatables.net/examples/resources/details_close.png"></img> icon in the table to close detail information</li>
+				</ol>
+		</ul>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.9/d3.min.js"></script>
 <script src="Leaflet.D3SvgOverlay-master/L.D3SvgOverlay.min.js"></script>
 <script src='https://code.jquery.com/jquery-3.3.1.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.4/chroma.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+<ZZZscript src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="js/topics.js"></script>
-<script src="js/jscript.js"></script>
+<ZZZscript src="js/topics.js"></script>
+<ZZZscript src="js/jscript.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://d3js.org/d3-time-format.v2.min.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/v/dt/dt-1.10.12/r-2.1.0/se-1.2.0/datatables.min.js"></script>
 <script src="build/nv.d3.js"></script>
-
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script> <!-- required for button CATHY SIMON -->
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script> <!-- required specifically for Export button CATHY SIMON-->
 
 
   
@@ -419,20 +485,31 @@ var width = $("#map").width(),
 						data: filteredData,
 						  'responsive': {
 							'details': {
-							   'type': 'column',
+							   //  'type': 'column',   CATHY SIMON
 							   'target': 0
 							}
 						  },
-						columnDefs: [{
-						   'data': null,
-						   'defaultContent': '',
-						   'className': 'control',
-						   'orderable': false,
-							'targets': 0
+						columnDefs: [   //added address info to columnDefs   CATHY SIMON
+								{
+								   'data': null,
+								   'defaultContent': '',
+								   'className': 'control',
+								   'orderable': false,
+									'targets': 0
 
-						}],
+								},						
+								{
+									"targets": 1,
+									"data": null,   //   "address",
+									"render": function ( data, type, row ) {
+											return row.HouseNum+" "+row.Street;
+								  }
+								}
+						],
 						  'columns': [ 
-							 { 'data': null }, 
+								{ 'data': null }, 
+								{ 'data': "address", "className":"parentRow"  },	 // this will become address						 
+								{ 'data': "Borough", "className":"parentRow" },  //Borough.0??							 
 							 { 'data': "key_id",
 							   'render': function(data,type,row,meta){ 
 									return '<a href= "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#' + data +'" target="_blank">' + data + '</a>';
@@ -441,47 +518,125 @@ var width = $("#map").width(),
 							 { 'data': "Bin" },
 							 { 'data': "Work Type Name" },
 							 { 'data': "Filing Date" },
-							 { 'data': "House Number" },
-							 { 'data': "Street Name" },
-							 { 'data': "Borough.0" },
+							 //{ 'data': "House Number" },  CATHY SIMON  data is now in parent row
+							 //{ 'data': "Street Name" },	CATHY SIMON
+							 //{ 'data': "Borough.0" },		CATHY SIMON
 							 { 'data': "Community Board" }					 
 						  ],
-						  'select': {
-							 'style': 'single',
+						  
+						  
+						//"dom" and "buttons" provide search, reset and help buttons    CATHY SIMON
+	  					"dom": 'r<"datatableHeading"Bf>tip',
+						"buttons": [
+									// BASIC EXPORT (minified)
+									/*{extend: 'csvHtml5',text: 'Export Data',customize: function(csv){return csv;}},*/
+									
+									{ // EXPORT ALL DATA, DISREGARD ANY SEARCH THAT IS APPLIED
+										extend: 'csv',
+										titleAttr: 'Download all data to CSV',
+										filename: "MilestoneData",
+										className: "csvExportClassname",
+										text: 'Export',
+										exportOptions: {
+											modifier: {
+												search: 'none'
+											},
+										columns: 'th:not(:first-child)'  //we don't need the first column (ie 0)
+										}
+									},
+									{ //DEFINE ACTIONS WHEN SELECT 'RESET' BUTTON
+										text: 'Reset',
+										titleAttr: 'Reset Map, Reset All Data',
+										action: function(e, dt, node, config) {
+											zoom(latLngs);
+											d3.selectAll('.point').style("fill-opacity", function(d){
+														return "0.7";
+											});
+											 $("#filingsTable .child ").hide();  
+											 $(".selected").removeClass("selected");
+											 $(".parent").removeClass("parent");
 
-						  },
+
+											 
+											table.rows().every( function ( rowIdx, tableLoop, rowLoop ) {
+														//this.nodes().to$().removeClass( 'selected' );
+														//this.to$().removeClass( 'selected' );
+														this.nodes().to$().removeClass( 'parent' );
+														this.nodes().to$().removeClass( 'child' );
+														this.child.hide();
+														this.nodes().to$().removeClass("shown");
+											} );
+											
+											$(".select-info").empty();                                                                                                                                       																		
+											table.search("").draw();  //remove all search/filter data
+										}
+									},
+									
+									{
+										text: 'Help',
+										titleAttr: 'Show Information',
+										action: function(e, dt, node, config) {
+													$('#helpModal').modal('show');
+												}
+									}
+							],	
+
+							
+						  
+						  //'select': {   // selection is being controlled by handler
+						  //	 'style': 'single',
+						  //	},
 							'lengthChange': false,
-							'scrollY': '600px',
+							'scrollY': '560px',
 							'scrollCollapse': true,
 							'paging': false,
 							'order': [[1, "asc"]]
 				});
 				$('#loadpage').hide();
 
-				
-		$('#filingsTable tbody').on( 'click', 'tr', function () {
-			if ( $(this).hasClass('selected') ) {
-			for (var i=0; i < table.rows('.selected').data().length; i++){
-				selectedRecord = table.rows('.selected').data()[i].Bin;
-				var lat = table.rows('.selected').data()[i].Latitude;
-				var lon = table.rows('.selected').data()[i].Longitude;
-				latlong = [lat,lon];
-				console.log(selectedRecord);
-			}
-				
-			highlightPoint(selectedRecord);
-			zoomToSelected(latlong);
+		// enhanced zoom and hilight map, replaces "$('#filingsTable tbody').on( 'click', 'tr', function () {"   CATHY SIMON
+		$('#filingsTable tbody ').on( 'click', "td.parentRow" ,function () {
+			tdParentRow=$(this).parent();
+			$(tdParentRow).toggleClass("selected");
+			tdSiblings=$(tdParentRow).siblings();
+			$(tdSiblings).removeClass("selected");
+			if ( $(tdParentRow).hasClass('selected') ) {
+					for (var i=0; i < table.rows('.selected').data().length; i++){
+						selectedRecord = table.rows('.selected').data()[i].Bin;
+						var lat = table.rows('.selected').data()[i].Latitude;
+						var lon = table.rows('.selected').data()[i].Longitude;
+						latlong = [lat,lon];
+					}
+					highlightPoint(selectedRecord);
+					zoomToSelected(latlong); 
 			} else {
-				d3.selectAll('.point')
-					.style("fill-opacity", function(d){
-						return "0.7";
-					});
-				zoom(latLngs);
+					d3.selectAll('.point')
+						.style("fill-opacity", function(d){
+							return "0.7";
+						});
+					zoom(latLngs);
 			}
 		});
+		
 
-	});
-	};
+		$('#filingsTable').on( 'search.dt', function () {
+			//  $(this).children().removeClass("selected");
+			$(".selected").removeClass("selected");
+			zoom(latLngs);
+			d3.selectAll('.point').style("fill-opacity", function(d){
+						return "0.7";
+			});
+		});			
+		
+		// event listener for clicking circle, and searching the datatable on the right CATHY SIMON
+		$('#filingsTable').on( 'click', function (e,LocationBin) {
+				if (LocationBin) {
+					table.search( LocationBin).draw();
+				}
+		})
+		
+	});  //end of anonymous function definition inside loadTable()
+	};  //function loadTable()
 	
 	function highlightPoint(layerID){
 		console.log(layerID);
@@ -542,6 +697,7 @@ var width = $("#map").width(),
 			})
 
 			.on('click', function(d){
+				$('#filingsTable').trigger( "click",d.bin   ); //user clicks point on map, triggers click handler for table added CATHY SIMON
 				tooltip.style("visibility", "visible");
 				tooltip.html(
 					'JOB NUMBER: ' + '<a href= "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#' + d.key_id +'" target="_blank">' + d.jobNum + "</a>" + '</br>' +
