@@ -1011,12 +1011,14 @@ var width = $("#map").width(),
 		commDistSelected,
 		selectionCD,
 		addrBoroSelected,
+	        zipSelected,
 		selectionText,
 		selectionBoro,
 		selectionWT,
 		workTypeValue,
 		boroValue,
 		cdValue,
+	        zipValue,
 		fromDate,
 		toDate,
 		format = d3.time.format("%-m/%-d/%Y").parse,
@@ -1042,7 +1044,7 @@ var width = $("#map").width(),
         if($(this).is(':checked'))
         {
 			boroughSelected = 1;
-			addrBoroSelected = 0;
+			zipSelected = 0;
 			
         }
         else
@@ -1203,7 +1205,7 @@ var width = $("#map").width(),
 	}
 
 	function navBtnsGeo(){
-		if (boroughSelected || commDistSelected || addrBoroSelected > 0)
+		if (boroughSelected || commDistSelected || zipSelected > 0)
 		{
 			$('#nextBtnGeo').attr('disabled', false);
 		}
@@ -1457,7 +1459,7 @@ var width = $("#map").width(),
 	
 	
 	function mapDataBtn(){
-		if (workTypeSelected && timeFrameSelected && (boroughSelected || commDistSelected || addrBoroSelected) > 0)
+		if (workTypeSelected && timeFrameSelected && (boroughSelected || commDistSelected || zipSelected) > 0)
 		{
 			$('#mapBtn').prop('disabled', false);
 		}
