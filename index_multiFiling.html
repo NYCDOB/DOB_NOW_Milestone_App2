@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>DOB NOW Job Filings</title>   
-  <ZZZlink rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">  
   <link href="css/styles.css" rel="stylesheet"> 
@@ -545,18 +544,18 @@
 </style>
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
-	<a class="navbar-brand2" href="https://www1.nyc.gov/site/buildings/industry/dob-now-build.page" target="_blank"> </a>
-    <div class="navbar-header">
-      <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button" ><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank">⁣</a> 
-	  <div class="navbar-title">
-        DOB NOW Job Filings		
-      </div>
-		<div class="row" id="div_homePageBtn">
-			<a class="button" href="https://nycdob.github.io/DOB_NOW_Milestone_App2/index_splash.html" id="homePageBtn">Back to Homepage</a>
-		</div>
-    </div>
-  </nav>
+<nav class="navbar navbar-default navbar-fixed-top">  <!-- 	 CATHY SIMON  ZZZ  -->
+	<a class="navbar-brand" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank" title="NYC Buildings Home"></a>	
+	<a class="navbar-brand2" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank" title="DOB NOW Build"></a>	
+	<div class="navbar-title">
+		DOB NOW Job Filings
+	</div>
+	<div style="margin-left: 60px">
+		<a href="https://nycdob.github.io/DOB_NOW_Milestone_App2/index_splash.html" id="homePageBtn" class="btn btn-dark navbar-btn " style="float:right" role="button">Back to Homepage</a>
+
+		<a href="https://github.com/NYCDOB/DOB_NOW_Milestone_App/blob/gh-pages/README.md"  target=”_blank” id="homePageBtn2" class="btn btn-dark navbar-btn " style="float:right" role="button">About</a>
+	</div>
+</nav>
 <div class="container main">
 	<div class="row">
 		<div class="col-md-12 col-md-offset-6">	
@@ -728,19 +727,9 @@
 						</select>
 					</div><br/><br/><br/><br/><br/>		
 					<div class="hr-sect">OR</div><br/><br/>					
-					<div id="geoHeading">Address</div><br/>	
-					<div class="input-group mb-3">
-					  <div class="input-group-prepend">
-					  <input type="text" id="addy" class="form-control" aria-label="Text input with dropdown button">
-						<select id="dropdownBoro">
-							<option value="0">Borough...</option>
-							<option value="Bronx">Bronx</option>
-							<option value="Brooklyn">Brooklyn</option>
-							<option value="Manhattan">Manhattan</option>
-							<option value="Queens">Queens</option>
-							<option value="Staten Island">Staten Island</option>
-						</select>
-					  </div>					  
+					<div id="geoHeading">Zip Code</div><br/>
+					<div id="zip">
+						<input id="zipTxtBox" name="zipText" type="text" maxlength="5"/>
 					</div>										
 				</div>
 			</div>
@@ -1062,7 +1051,7 @@ var width = $("#map").width(),
         }		
 		$('#dropdownCD').val(0);
 		$('#dropdownBoro').val(0);
-		$('#addy').val('');
+		$('#zipTxtBox').val('');
 		navBtnsGeo();
     });
 	//COMMUNITY DISTRICT
@@ -1073,7 +1062,8 @@ var width = $("#map").width(),
         {
 			commDistSelected = 1;
 			boroughSelected = 0;
-			addrBoroSelected = 0;			
+			//addrBoroSelected = 0;	
+			zipSelected = 0;
         }
         else
         {
@@ -1081,25 +1071,30 @@ var width = $("#map").width(),
         }
 		$('input:radio[name=borough]').prop('checked',false);
 		$('#dropdownBoro').val(0);
-		$('#addy').val('');
+		//$('#addy').val('');
+		$('#zipTxtBox').val('');
 		navBtnsGeo();
 	});	
-	//ADDRESS
-	$('.input-group-prepend').change(function() {
-		selectionText = $('#addy').val();
-		selectionBoro = $('#dropdownBoro').val();
-		if(selectionText != '' && selectionBoro != 0)
+
+	//ZIP CODE
+	$('#zipTxtBox').keyup (function() {
+		selectionText = $('#zipTxtBox').val();
+		if(selectionText != '')
 		{
-			addrBoroSelected = 1;
+			zipSelected = 1;
+			boroughSelected = 0;
+			commDistSelected = 0;
 		}
 		else
 		{
-			addrBoroSelected = 0;
-		}		
+			zipSelected = 0;
+		}	
+		console.log(selectionText);
 		$('#dropdownCD').val(0);
 		$('input:radio[name=borough]').prop('checked',false);
 		navBtnsGeo();
 	});
+	
 	//TIME FRAME
 	$('.datepicker').change(function() {
 			fromDate = $('#from').val();
@@ -1173,6 +1168,12 @@ var width = $("#map").width(),
 		$('.geo_txt').text('Community District '+cdValue);  //using a class (vs an 'id') allows us to display the same div at multiple locations of the page CATHY SIMON
 		console.log(cdValue);
 	});
+	$('#zipTxtBox').keyup(function() {
+		zipValue = $('#zipTxtBox').val();
+		$('#geo_txt').text(zipValue);
+		$('.geo_txt').text(zipValue);
+		console.log(zipValue);
+	});
 	$('#from').change(function() {
 		fromDate = $('#from').datepicker({ dateFormat: 'm-d-yy' }).val();
 		$('#fromDate_txt').text(fromDate);
@@ -1225,7 +1226,7 @@ var width = $("#map").width(),
 		$('input:radio[name=borough]').prop('checked',false);
 		$('#dropdownCD').val(0);
 		$('#dropdownBoro').val(0);
-		$('#addy').val('');
+		$('#zipTxtBox').val('');
 	}
 	
 	var prevBtnGeoClick = document.getElementById('prevBtnGeo');
@@ -1268,7 +1269,7 @@ var width = $("#map").width(),
 		$('input:radio[name=borough]').prop('checked',false);
 		$('#dropdownCD').val(0);
 		$('#dropdownBoro').val(0);
-		$('#addy').val('');
+		$('#zipTxtBox').val('');
 	}
 
 	function tableStatsAppear(){
@@ -1585,12 +1586,15 @@ var width = $("#map").width(),
 						d.key_id = [d.key_id];
 						d.filingDate = format(d["Filing Date"]);
 						d.filingStatus = d["Filing Status"];
+						d.Zip = [d.zip];
 			})
 			filteredData = data.filter(function(d){
 						if(boroValue == "Citywide"){
 							return d["Work Type Name"] == selectionWT && (d.filingDate >= fromFormatDate && d.filingDate <= toFormatDate);
 						} else if ($("input[name='borough']:checked").length > 0){
 							return d["Work Type Name"] == selectionWT && (d.filingDate >= fromFormatDate && d.filingDate <= toFormatDate) && [d.Borough] == boroValue;
+						} else if ($("#zipTxtBox").val() !=""){
+							return d["Work Type Name"] == selectionWT && (d.filingDate >= fromFormatDate && d.filingDate <= toFormatDate) && [d.zip] == zipValue;
 						} else{
 							return d["Work Type Name"] == selectionWT && (d.filingDate >= fromFormatDate && d.filingDate <= toFormatDate) && d["Community Board"] == Number(cdValue);
 						}
@@ -1820,7 +1824,7 @@ var width = $("#map").width(),
 			$("#dropdownWT").val('0');
 			$("input[name='borough']").attr('checked', false);
 			$('#dropdownCD').val(0);
-			$('#addy').val('');
+			$('#zipTxtBox').val('');
 			$('#dropdownBoro').val(0);
 			$('#from').datepicker('setDate', null);
 			$('#to').datepicker('setDate', null);
