@@ -513,17 +513,6 @@
 	}
 
 
-	#filterDisplayMapData{
-		display: none;
-	}
-
-
-	#templateFilterQry {
-		display:none;
-	}
-
-
-
 	/* override Bootstrap's override of search styling; gives us the X to clear the search text */
 	input[type="search"]::-webkit-search-decoration,  
 	input[type="search"]::-webkit-search-cancel-button {   
@@ -574,10 +563,6 @@
 		<div class="row" id="tablestats">
 			<div class="desc-text-table-stats" id="table-desc-text">
 				Click on a table row to filter and zoom map...
-							<!-- CATHY SIMON show current map and data criteria
-								<button id="buttonSearchCriteria">Show Map Criteria</button>
-								<span id="searchCriteria"><span>  
-							-->
 							
 			</div>
 			<div class="desc-text-table-stats" id="stat-desc-text">
@@ -778,18 +763,6 @@
 
 				<div class="qry" id="tableDiv">
 
-					<div id="filterDisplayMapData">
-						<!--
-									<h4>Work Type: <b><span id="workTypeValue_txt"></span></b></h4>
-									<h4>Geography: <b><span id="geo_txt"></span></b></h4>
-									<h4>Time Frame: <b><span id="fromDate_txt"></span></b> - <b><span id="toDate_txt"></span></b></h4>
-									<h4>Total Job Filings: <b><span id="filteredData_txt"></span></b></h4>
-									<hr>
-						-->
-					</div>
-					
-				
-
 
 					<div id="loadpage" style="position:absolute; 
 						left:38px; top:4px; 
@@ -825,7 +798,7 @@
 				
 				<div class="qry" id="statsDiv">
 					<div id="statsDivFilter">
-							<!-- 
+							<!-- this block was moved higher in page to allow display on both table and graph tabs.
 									<h4>Work Type: <b><span id="workTypeValue_txt"></span></b></h4>
 									<h4>Geography: <b><span id="geo_txt"></span></b></h4>
 									<h4>Time Frame: <b><span id="fromDate_txt"></span></b> - <b><span id="toDate_txt"></span></b></h4>
@@ -881,19 +854,6 @@
 	
 	
 </div>
-
-
-
-
-<div id="templateFilterQry" >  <!-- this div template is copied to multiple locations of the page. NOTE: it is not displayed itself -->
-	<h4>Work Type: <b><span class="workTypeValue_txt"></span></b></h4>
-	<h4>Geography: <b><span class="geo_txt"></span></b></h4>
-	<h4>Time Frame: <b><span class="fromDate_txt"></span></b> - <b><span class="toDate_txt"></span></b></h4>
-	<h4>Total Job Filings: <b><span class="filteredData_txt"></span></b></h4>
-	<hr>
-</div>	
-
-
 
 
 
@@ -1499,27 +1459,15 @@ var width = $("#map").width(),
 			$("#stat-desc-text").show();
 			$("#tableDiv").hide();
 			$("#statsDiv").show();
-			$("#filterDisplayMapData").hide();  //CATHY SIMON
 		} else if ($(this).val() === 'table') {
 			$("#stat-desc-text").hide();
 			$("#table-desc-text").show();
 			$("#tableDiv").show();
 			$("#statsDiv").hide();
-			$("#filterDisplayMapData").show();   //CATHY SIMON
 		} 
 	  });
 	  
-	  
-	  
-	  
-	  
-	  
-		//CATHY SIMON  Use div id="templateFilterQry" as a template to display map filter criteria at multiple locations on the page
-	  
-		//var templateHTMLFilter = $("#templateFilterQry").html();
-		//$("#filterDisplayMapData").html(templateHTMLFilter);
-		//$("#statsDivFilter").html(templateHTMLFilter);
-		
+
 	  
 	function mapData(){
 		var pointsOverlay = L.d3SvgOverlay(function(sel,proj){
@@ -1618,7 +1566,6 @@ var width = $("#map").width(),
 
 			clearFilters();
 			$('#filingsTable').show();
-			$('#filterDisplayMapData').show();  //show the filterDisplayMapData div
 			
 			
 			
