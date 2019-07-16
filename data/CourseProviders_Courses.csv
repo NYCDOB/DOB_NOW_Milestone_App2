@@ -1,0 +1,1794 @@
+CourseProviderID,CourseTopic,Course,SST,CurriculumType,CourseID
+1BL11,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1BL11,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+1BL11,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+1BL11,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+1BM10,Concrete Courses,30-Hour Concrete Safety Manager,N,Self-Certified,C01
+1BM10,Concrete Courses,8-Hour Concrete Safety Manager Refresher,N,Self-Certified,C02
+1BM10,Cranes & Derrick Courses,4-Hour Mast Climber User & Operator,N,Self-Certified,C09
+1BM10,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+1BM10,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+1BM10,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+1BM10,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+1BM10,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+1BM10,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1BM10,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+1BM10,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+1BM10,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+1BM10,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+1BM10,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+1BM10,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+1BM10,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+1BM10,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+1BM10,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+1BM10,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+1BM10,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+1BM10,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1BM10,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+1BM10,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+1BM10,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+1BM10,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+1BM10,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+1BM10,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+1BM10,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+1BM10,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+1BM10,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+1BM10,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+1BM10,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+1BM10,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+1BM10,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+1BM10,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+1BM10,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+1BM10,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+1BM10,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+1BM10,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+1BM10,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+1BM10,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+1BM10,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+1BM10,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+1BM10,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+1BM10,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+1BM10,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+1BM10,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+1BM10,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+1BM10,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+1BM10,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+1BQ45,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+1BQ45,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+1BQ45,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+1BQ45,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1BQ45,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+1BQ45,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+1BQ45,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+1BQ45,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+1BQ45,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+1BQ45,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+1BQ45,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+1BQ45,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+1BU70,Electrical Courses,8-Hour Master & Special Electrician Renewal,N,Self-Certified,C15
+1BU70,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+1BU70,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+1BU70,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+1BU70,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1BU70,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+1BU70,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+1BU70,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+1BU70,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+1BU70,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+1BU70,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+1BU70,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+1BU70,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+1BU70,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+1BU71,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+1BU71,Prescribed Courses,8-Hour Fall Prevention,Y,Self-Certified,C35
+1BU71,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+1BU71,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+1BU71,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+1BU71,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+1BU71,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+1BU71,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+1BU71,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+1BU71,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+1BW36,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1BW36,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+1BW36,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Self-Certified,C30
+1BW36,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+1BW36,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+1BW36,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+1BW36,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1BW36,Prescribed Courses,8-Hour Fall Prevention,Y,Self-Certified,C35
+1BW36,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+1BW36,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+1BW36,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+1BW36,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+1BW36,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+1L26,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1L26,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+1L26,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+1L26,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Self-Certified,C30
+1L26,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+1L26,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1L26,Prescribed Courses,8-Hour Fall Prevention,Y,Self-Certified,C35
+1L26,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+1L26,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+1L26,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+1L26,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+1L26,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+1L26,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+1L26,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+1L26,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+1L26,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+1L40,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1L40,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+1L40,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Self-Certified,C30
+1L40,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+1L40,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+1L40,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+1L40,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1L40,Prescribed Courses,8-Hour Fall Prevention,Y,Self-Certified,C35
+1L40,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+1L40,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+1L40,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+1L40,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+1L40,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+1L40,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+1L40,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+1L40,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+1L40,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+1L40,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+1L40,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+1L40,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+1L40,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+1L40,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+1L40,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+1L40,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+1L40,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+1L72,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1L72,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Self-Certified,C30
+1L72,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+1L72,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1L72,Prescribed Courses,8-Hour Fall Prevention,Y,Self-Certified,C35
+1M39,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+1M39,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+1M39,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+1M46,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+1M46,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+1M46,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+1M46,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+1M46,Cranes & Derrick Courses,30-Hour Special Rigger,N,Self-Certified,C07
+1M46,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+1M46,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+1M46,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1M46,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+1M46,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+1M46,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+1M46,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+1M46,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+1M46,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+1M46,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+1M46,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1M46,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+1M46,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+1M46,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+1M46,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+1M46,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+1M46,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+1M46,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+1M46,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+1M46,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+1M46,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+1M46,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+1M46,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+1M46,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+1M46,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+1M46,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+1M46,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+1M46,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+1M46,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+1M46,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+1M46,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+1M46,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+1M46,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+1M46,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+1M46,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+1M46,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+1M46,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+1M46,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+1M46,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+1M46,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+1M49,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+1M49,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+1M49,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+1M49,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+1M49,Cranes & Derrick Courses,30-Hour Special Rigger,N,Self-Certified,C07
+1M49,Cranes & Derrick Courses,8-Hour Special Rigger Renewal,N,Self-Certified,C14
+1M49,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1M49,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+1M49,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+1M49,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+1M49,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+1M49,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+1M49,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+1M49,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+1M49,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Self-Certified,C30
+1M49,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+1M49,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+1M49,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+1M49,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1M49,Prescribed Courses,8-Hour Fall Prevention,Y,Self-Certified,C35
+1M49,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+1M49,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+1M49,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+1M49,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+1M49,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+1M49,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+1M49,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+1M49,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+1M49,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+1M49,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+1M49,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+1M49,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+1M49,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+1M49,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+1M49,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+1M49,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+1Q12,Concrete Courses,30-Hour Concrete Safety Manager,N,Self-Certified,C01
+1Q12,Concrete Courses,8-Hour Concrete Safety Manager Refresher,N,Self-Certified,C02
+1Q12,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+1Q12,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+1Q12,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+1Q12,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+1Q12,Cranes & Derrick Courses,30-Hour Climber/Tower Crane Rigger,N,Self-Certified,C05
+1Q12,Cranes & Derrick Courses,8-Hour Climber/Tower Crane Rigger Renewal,N,Self-Certified,C10
+1Q12,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1Q12,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+1Q12,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+1Q12,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+1Q12,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+1Q12,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Curriculum Approved,C30
+1Q12,Prescribed Courses,4-Hour Fall Prevention,Y,Curriculum Approved,C33
+1Q12,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1Q12,Prescribed Courses,8-Hour Fall Prevention,Y,Curriculum Approved,C35
+1Q12,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Curriculum Approved,C36
+1Q25,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+1Q25,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+1Q25,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1Q25,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+1Q25,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+1Q25,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+1Q25,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+1Q25,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+1Q25,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+1Q25,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+1Q25,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+1Q25,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+1Q25,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+1Q25,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+1Q25,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1Q25,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+1Q25,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+1Q25,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+1Q25,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+1Q25,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+1Q25,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+1Q25,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+1Q25,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+1Q25,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+1Q25,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+1Q25,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+1Q25,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+1Q25,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+1Q25,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+1Q25,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+1Q25,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+1Q25,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+1Q25,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+1Q25,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+1Q25,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+1Q25,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+1Q28,Cranes & Derrick Courses,4-Hour Mast Climber User & Operator,N,Self-Certified,C09
+1Q28,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+1Q28,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+1Q28,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+1Q28,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+1Q28,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+1Q28,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+1Q28,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+1Q28,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1Q28,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+1Q28,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+1Q28,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+1Q28,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+1Q28,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+1Q28,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+1Q28,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+1Q28,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Self-Certified,C30
+1Q28,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+1Q28,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+1Q28,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+1Q28,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1Q28,Prescribed Courses,8-Hour Fall Prevention,Y,Self-Certified,C35
+1Q28,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+1Q28,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+1Q28,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+1Q28,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+1Q28,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+1Q28,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+1Q28,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+1Q28,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+1Q28,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+1Q28,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+1Q28,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+1Q28,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+1Q28,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+1Q28,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+1Q28,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+1Q28,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+1Q28,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+1Q28,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+1Q28,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+1Q28,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+1Q29,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+1Q29,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+1Q29,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+1Q29,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+1Q29,Cranes & Derrick Courses,30-Hour Climber/Tower Crane Rigger,N,Self-Certified,C05
+1Q29,Cranes & Derrick Courses,8-Hour Climber/Tower Crane Rigger Renewal,N,Self-Certified,C10
+1Q29,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1Q29,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+1Q29,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+1Q30,Cranes & Derrick Courses,4-Hour Mast Climber User & Operator,N,Self-Certified,C09
+1Q30,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+1Q30,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+1Q30,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+1Q30,Cranes & Derrick Courses,30-Hour Climber/Tower Crane Rigger,N,Self-Certified,C05
+1Q30,Cranes & Derrick Courses,8-Hour Climber/Tower Crane Rigger Renewal,N,Self-Certified,C10
+1Q30,Cranes & Derrick Courses,30-Hour Special Rigger,N,Self-Certified,C07
+1Q30,Cranes & Derrick Courses,8-Hour Special Rigger Renewal,N,Self-Certified,C14
+1Q30,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1Q30,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+1Q30,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+1Q30,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+1Q30,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+1Q30,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+1Q30,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+1Q30,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+1Q30,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+1Q30,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+1Q30,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+1Q30,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+1Q30,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1Q30,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+1Q30,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+1Q30,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+1Q30,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+1Q30,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+1Q30,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+1Q30,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+1Q30,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+1Q30,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+1Q30,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+1Q30,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+1Q30,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+1Q30,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+1Q30,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+1Q30,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+1Q30,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+1Q30,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+1Q30,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+1Q30,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+1Q30,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+1Q30,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+1Q30,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+1Q30,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+1Q30,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+1Q30,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+1Q30,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+1Q30,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+1Q30,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+1Q30,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+1Q31,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+1Q31,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+1Q31,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+1Q31,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+1Q31,Cranes & Derrick Courses,30-Hour Climber/Tower Crane Rigger,N,Self-Certified,C05
+1Q31,Cranes & Derrick Courses,8-Hour Climber/Tower Crane Rigger Renewal,N,Self-Certified,C10
+1Q31,Cranes & Derrick Courses,8-Hour Hoisting Machine Operator Class B Rating,N,Self-Certified,C11
+1Q31,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1Q31,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+1Q31,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+1Q32,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+1Q32,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+1Q32,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+1Q32,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+1Q32,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+1Q32,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1Q32,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+1Q32,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+1Q32,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+1Q32,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+1Q32,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+1Q32,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+1Q32,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+1Q32,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+1Q32,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+1Q32,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+1Q32,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+1Q32,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+1Q32,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+1Q32,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+1Q32,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+1Q32,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+1Q32,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+1Q32,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+1Q37,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+1Q37,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+1Q37,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+1Q37,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+1Q37,Cranes & Derrick Courses,30-Hour Climber/Tower Crane Rigger,N,Self-Certified,C05
+1Q37,Cranes & Derrick Courses,8-Hour Climber/Tower Crane Rigger Renewal,N,Self-Certified,C10
+1Q37,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1Q37,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+1Q37,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+1Q37,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Curriculum Approved,C30
+1Q37,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+1Q37,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+1Q37,Prescribed Courses,4-Hour Fall Prevention,Y,Curriculum Approved,C33
+1Q37,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1Q37,Prescribed Courses,8-Hour Fall Prevention,Y,Curriculum Approved,C35
+1Q37,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Curriculum Approved,C36
+1Q37,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+1Q37,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+1Q37,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+1Q37,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+1Q37,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+1Q37,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+1Q37,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+1Q37,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+1Q38,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1Q38,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+1Q38,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+1Q38,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+1Q38,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+1Q38,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1Q38,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+1Q38,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+1Q38,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+1Q38,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+1Q38,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+1Q38,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+1Q38,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+1Q41,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+1Q41,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+1Q41,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1Q41,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+1Q41,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+1Q41,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Curriculum Approved,C30
+1Q41,Prescribed Courses,4-Hour Fall Prevention,Y,Curriculum Approved,C33
+1Q41,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1Q41,Prescribed Courses,8-Hour Fall Prevention,Y,Curriculum Approved,C35
+1Q41,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Curriculum Approved,C36
+1Q42,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+1Q42,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+1Q42,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+1Q42,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+1Q42,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1Q42,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+1Q42,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+1Q42,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+1Q42,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+1Q42,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+1Q42,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+1Q42,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+1Q42,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1Q42,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+1Q42,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+1Q42,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+1Q42,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+1Q42,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+1Q42,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+1Q42,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+1Q42,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+1Q42,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+1Q42,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+1Q42,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+1Q42,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+1Q42,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+1Q42,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+1Q42,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+1Q42,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+1Q42,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+1Q42,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+1Q42,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+1Q42,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+1Q43,Cranes & Derrick Courses,4-Hour Mast Climber User & Operator,N,Self-Certified,C09
+1Q43,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+1Q43,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+1Q43,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+1Q43,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+1Q43,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1Q43,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+1Q43,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+1Q43,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+1Q43,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+1Q43,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+1Q43,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+1Q43,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+1Q43,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Curriculum Approved,C30
+1Q43,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+1Q43,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+1Q43,Prescribed Courses,4-Hour Fall Prevention,Y,Curriculum Approved,C33
+1Q43,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1Q43,Prescribed Courses,8-Hour Fall Prevention,Y,Curriculum Approved,C35
+1Q43,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Curriculum Approved,C36
+1Q43,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+1Q43,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+1Q43,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+1Q43,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+1Q43,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+1Q43,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+1Q43,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+1Q43,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+1Q44,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+1Q44,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+1Q44,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+1Q44,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+1Q44,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1Q44,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+1Q44,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+1Q44,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+1Q44,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Self-Certified,C30
+1Q44,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+1Q44,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+1Q44,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+1Q44,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1Q44,Prescribed Courses,8-Hour Fall Prevention,Y,Self-Certified,C35
+1Q44,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+1Q44,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+1Q44,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+1Q44,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+1Q44,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+1Q44,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+1Q44,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+1Q44,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+1Q44,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+1Q44,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+1Q44,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+1Q44,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+1Q44,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+1Q44,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+1Q44,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+1Q44,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+1Q44,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+1Q44,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+1Q44,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+1Q44,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+1Q44,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+1Q44,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+1Q44,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+1Q44,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+1Q44,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+1Q44,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+1Q44,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+1Q44,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+1Q50,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+1Q50,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+1Q50,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+1Q50,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+1Q50,Plumbing Courses,16-Hour Limited Gas Work Qualification,N,Self-Certified,C26
+1Q50,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1Q50,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+1Q50,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+1Q50,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+1Q50,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+1Q50,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+1Q50,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1Q50,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+1Q50,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+1Q50,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+1Q50,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+1Q50,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+1Q50,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+1Q58,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+1Q58,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+1Q58,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+1Q58,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+1Q58,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1Q58,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+1Q58,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+1Q58,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+1Q58,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+1Q58,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Self-Certified,C30
+1Q58,Prescribed Courses,8-Hour Fall Prevention,Y,Self-Certified,C35
+1Q59,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1Q59,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+1Q59,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+1Q59,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+1Q62,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+1Q62,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+1Q62,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+1Q62,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+1Q69,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1Q69,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+1Q69,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+1Q76,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+1Q76,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+1Q76,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+1Q76,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+1Q76,Cranes & Derrick Courses,30-Hour Climber/Tower Crane Rigger,N,Self-Certified,C05
+1Q76,Cranes & Derrick Courses,8-Hour Climber/Tower Crane Rigger Renewal,N,Self-Certified,C10
+1Q76,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+1Q76,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+1Q76,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+1Q76,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+1Q76,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+1Q76,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+1Q76,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+1Q76,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+1Q76,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+1Q76,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+1Q76,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Self-Certified,C30
+1Q76,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+1Q76,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+1Q76,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+1Q76,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1Q76,Prescribed Courses,8-Hour Fall Prevention,Y,Self-Certified,C35
+1Q76,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+1Q76,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+1Q76,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+1Q76,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+1Q76,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+1Q76,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+1Q76,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+1Q76,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+1Q76,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+1Q76,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+1Q76,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+1Q76,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+1Q76,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+1Q76,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+1Q76,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+1Q76,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+1Q76,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+1Q76,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+1Q76,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+1Q76,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+1Q76,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+1Q76,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+1Q76,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+1Q76,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+1Q76,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+1W77,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Self-Certified,C30
+1W77,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+1W77,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+1W77,Prescribed Courses,8-Hour Fall Prevention,Y,Self-Certified,C35
+2B57,Electrical Courses,8-Hour Master & Special Electrician Renewal,N,Self-Certified,C15
+2B57,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+2B57,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+2B57,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+2B57,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+2B57,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+2B57,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+2B57,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+2B57,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+2B57,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+2B57,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+2B57,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+2B57,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+2B57,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+2B57,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+2B57,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+2B57,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+2B57,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+2B57,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+2B57,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+2B57,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+2B57,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+2B57,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+2L22,Electrical Courses,8-Hour Master & Special Electrician Renewal,N,Self-Certified,C15
+2L22,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+2L22,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+2L22,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+2L22,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+2L22,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+2L22,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+2L22,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+2L22,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+2L22,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+2L22,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+2L22,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+2L22,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+2L22,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+2L22,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+2L22,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+2L22,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+2L22,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+2L22,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+2L22,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+2L22,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+2L22,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+2L22,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+2L22,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+2L22,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+2L22,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+2L22,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+2L22,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+2L22,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+2L22,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+2L22,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+2L22,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+2L22,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+2L22,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+2L22,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+2L22,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+2L66,Concrete Courses,30-Hour Concrete Safety Manager,N,Self-Certified,C01
+2L66,Concrete Courses,8-Hour Concrete Safety Manager Refresher,N,Self-Certified,C02
+2L66,Cranes & Derrick Courses,4-Hour Mast Climber User & Operator,N,Self-Certified,C09
+2L66,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+2L66,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+2L66,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+2L66,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+2L66,Cranes & Derrick Courses,30-Hour Master Rigger,N,Self-Certified,C06
+2L66,Cranes & Derrick Courses,8-Hour Master Rigger Renewal,N,Self-Certified,C12
+2L66,Cranes & Derrick Courses,30-Hour Climber/Tower Crane Rigger,N,Self-Certified,C05
+2L66,Cranes & Derrick Courses,30-Hour Special Rigger,N,Self-Certified,C07
+2L66,Cranes & Derrick Courses,8-Hour Special Rigger Renewal,N,Self-Certified,C14
+2L66,Cranes & Derrick Courses,8-Hour Hoisting Machine Operator Class B Rating,N,Self-Certified,C11
+2L66,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+2L66,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+2L66,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+2L66,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+2L66,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+2L66,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+2L66,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+2L66,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+2L66,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+2L66,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+2L66,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+2L66,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+2L66,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+2L66,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+2L66,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+2L66,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+2L66,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+2L66,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+2L66,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+2L66,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+2L66,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+2L66,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+2L66,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+2L66,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+2L66,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+2L66,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+2L66,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+2L66,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+2L66,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+2L66,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+2L66,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+2L66,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+2L66,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+2L66,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+2L66,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+2L66,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+2L66,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+2L66,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+2L66,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+2L66,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+2L66,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+2L66,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+2L66,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+2L66,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+2L66,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+2M23,Electrical Courses,8-Hour Master & Special Electrician Renewal,N,Self-Certified,C15
+2M23,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+2M23,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+2M23,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+2M23,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+2M23,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+2M23,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+2M23,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+2M23,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+2M23,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+2M23,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+2M23,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+2M23,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+2M23,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+2M23,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+2M23,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+2M23,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+2M23,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+2M23,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+2M23,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+2M23,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+2M23,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+2M23,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+2M23,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+2M23,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+2M23,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+2M23,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+2M23,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+2M23,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+2M23,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+2M23,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+2M23,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+2M23,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+2M23,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+2M23,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+2M23,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+2Q05,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+2Q05,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+2Q05,Prescribed Courses,8-Hour Fall Prevention,Y,Self-Certified,C35
+2Q05,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+2Q05,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+2Q17,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+2Q17,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+2Q17,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+2Q17,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+2Q17,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+2Q17,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Self-Certified,C30
+2Q17,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+2Q17,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+2Q17,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+2Q17,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+2Q17,Prescribed Courses,8-Hour Fall Prevention,Y,Self-Certified,C35
+2Q17,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+2Q17,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+2Q17,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+2Q17,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+2Q17,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+2Q17,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+2Q17,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+2Q17,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+2Q17,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+2Q17,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+2Q17,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+2Q17,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+2Q17,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+2Q17,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+2Q17,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+2Q17,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+2Q17,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+2Q17,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+2Q17,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+2Q17,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+2Q17,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+2Q17,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+2Q17,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+2Q17,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+2Q17,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+2Q17,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+2Q17,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+2Q17,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+3B34,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+3B34,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+3B34,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+3B34,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+3B34,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+3B34,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+3B34,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+3B34,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+3B34,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+3B34,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+3B34,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+3B34,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+3B34,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+3B34,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+3B34,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+3B34,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+3B34,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+3B34,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+3B34,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+3B34,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+3B34,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+3B34,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+3B34,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+3B34,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+3B34,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+3B34,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+3B34,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+3B34,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+3B34,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+3B34,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+3B34,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+3B34,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+3B34,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+3B34,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+3B34,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+3B34,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+3B48,Cranes & Derrick Courses,30-Hour Special Rigger,N,Self-Certified,C07
+3B48,Cranes & Derrick Courses,8-Hour Special Rigger Renewal,N,Self-Certified,C14
+3B48,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+3B48,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+3B48,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+3B48,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+3B48,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+3B48,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+3B48,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+3B48,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+3B48,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+3B48,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+3BX09,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+3BX09,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+3BX19,Specialized Elective Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C65
+3BX19,Specialized Elective Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C66
+3BX27,Cranes & Derrick Courses,4-Hour Mast Climber User & Operator,N,Self-Certified,C09
+3BX27,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+3BX27,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+3BX27,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+3BX27,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+3BX27,Cranes & Derrick Courses,30-Hour Master Rigger,N,Self-Certified,C06
+3BX27,Cranes & Derrick Courses,8-Hour Master Rigger Renewal,N,Self-Certified,C12
+3BX27,Cranes & Derrick Courses,30-Hour Climber/Tower Crane Rigger,N,Self-Certified,C05
+3BX27,Cranes & Derrick Courses,8-Hour Climber/Tower Crane Rigger Renewal,N,Self-Certified,C10
+3BX27,Cranes & Derrick Courses,30-Hour Special Rigger,N,Self-Certified,C07
+3BX27,Cranes & Derrick Courses,8-Hour Special Rigger Renewal,N,Self-Certified,C14
+3BX27,Cranes & Derrick Courses,8-Hour Hoisting Machine Operator Class B Rating,N,Self-Certified,C11
+3BX27,Electrical Courses,8-Hour Master & Special Electrician Renewal,N,Self-Certified,C15
+3BX27,Plumbing Courses,7-Hour Master Plumber & Master Suppression Piping Contractor Renewal,N,Self-Certified,C27
+3BX27,Plumbing Courses,7-Hour Periodic Gas Piping Inspector Qualification,N,Self-Certified,C28
+3BX27,Plumbing Courses,16-Hour Limited Gas Work Qualification,N,Self-Certified,C26
+3BX27,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+3BX27,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+3BX27,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+3BX27,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+3BX27,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+3BX27,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+3BX27,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+3BX27,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+3BX27,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+3BX27,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+3BX27,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+3BX27,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+3BX27,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+3BX27,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+3BX27,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+3BX27,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+3BX27,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+3BX27,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+3BX27,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+3BX27,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+3BX27,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+3BX27,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+3BX27,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+3BX27,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+3BX27,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+3BX27,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+3BX27,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+3BX27,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+3BX27,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+3BX27,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+3BX27,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+3BX27,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+3BX27,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+3BX27,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+3BX27,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+3BX27,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+3BX27,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+3BX27,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+3BX27,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+3BX27,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+3BX27,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+3BX27,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+3M06,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Self-Certified,C30
+3M06,Prescribed Courses,8-Hour Fall Prevention,Y,Self-Certified,C35
+3M08,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+3M08,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+3M08,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+3M08,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+3M08,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+3M08,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+3M15,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+3M15,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+3M33,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+3M33,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+3Q52,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+3W24,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+3W24,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+3W24,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+3W24,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+3W24,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+3W24,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+4B03,Concrete Courses,30-Hour Concrete Safety Manager,N,Self-Certified,C01
+4B03,Concrete Courses,8-Hour Concrete Safety Manager Refresher,N,Self-Certified,C02
+4B03,Cranes & Derrick Courses,4-Hour Mast Climber User & Operator,N,Self-Certified,C09
+4B03,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+4B03,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+4B03,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+4B03,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+4B03,Cranes & Derrick Courses,30-Hour Special Rigger,N,Self-Certified,C07
+4B03,Cranes & Derrick Courses,8-Hour Special Rigger Renewal,N,Self-Certified,C14
+4B03,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+4B03,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+4B03,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+4B03,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+4B03,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+4B03,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+4B03,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+4B03,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+4B03,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+4B03,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+4B03,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+4B03,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+4B03,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+4B03,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+4B03,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+4B03,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+4B03,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+4B03,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+4B03,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+4B03,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+4B03,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+4B03,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+4B03,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+4B03,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+4B03,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+4B03,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+4B03,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+4B03,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+4B03,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+4B03,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+4B03,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+4B03,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+4B03,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+4B03,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+4B03,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+4B03,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+4B03,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+4B03,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+4B03,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+4B03,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+4B03,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+4B03,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+4B03,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+4B03,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+4B03,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+4B47,Concrete Courses,30-Hour Concrete Safety Manager,N,Self-Certified,C01
+4B47,Concrete Courses,8-Hour Concrete Safety Manager Refresher,N,Self-Certified,C02
+4B47,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+4B47,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+4B47,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+4B47,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+4B47,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+4B47,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+4B47,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+4B47,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+4B47,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+4B47,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+4B47,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+4B47,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+4B47,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+4B47,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+4B47,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+4B47,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+4B47,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+4B47,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+4B47,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+4B47,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+4B47,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+4B47,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+4B47,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+4B47,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+4B47,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+4B47,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+4B47,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+4B54,Concrete Courses,30-Hour Concrete Safety Manager,N,Self-Certified,C01
+4B54,Concrete Courses,8-Hour Concrete Safety Manager Refresher,N,Self-Certified,C02
+4B54,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+4B54,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+4B54,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+4B54,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+4B54,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+4B54,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+4B54,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+4B54,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+4B54,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+4B54,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+4B54,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+4B54,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+4B54,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+4B54,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+4B54,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+4B54,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+4B54,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+4B54,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+4B54,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+4B54,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+4B54,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+4B54,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+4B54,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+4B54,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+4B55,Concrete Courses,8-Hour Concrete Safety Manager Refresher,N,Self-Certified,C02
+4B55,Cranes & Derrick Courses,4-Hour Mast Climber User & Operator,N,Self-Certified,C09
+4B55,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+4B55,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+4B55,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+4B55,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+4B55,Cranes & Derrick Courses,8-Hour Climber/Tower Crane Rigger Renewal,N,Self-Certified,C10
+4B55,Cranes & Derrick Courses,30-Hour Special Rigger,N,Self-Certified,C07
+4B55,Cranes & Derrick Courses,8-Hour Special Rigger Renewal,N,Self-Certified,C14
+4B55,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+4B55,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+4B55,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+4B55,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+4B55,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+4B55,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+4B55,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+4B55,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+4B55,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+4B55,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+4B55,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+4B55,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+4B55,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+4B55,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+4B55,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+4B55,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+4B55,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+4B55,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+4B55,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+4B55,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+4B55,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+4B55,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+4B55,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+4B55,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+4B55,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+4B55,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+4B55,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+4B55,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+4B55,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+4B55,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+4B55,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+4B55,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+4B55,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+4B55,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+4B55,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+4B55,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+4B55,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+4B55,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+4B55,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+4B55,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+4B55,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+4B55,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+4B55,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+4B55,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+4B55,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+4B74,Concrete Courses,30-Hour Concrete Safety Manager,N,Self-Certified,C01
+4B74,Concrete Courses,8-Hour Concrete Safety Manager Refresher,N,Self-Certified,C02
+4B74,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+4B74,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+4B74,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+4B74,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+4B74,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Self-Certified,C30
+4B74,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+4B74,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+4B74,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+4B74,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+4B74,Prescribed Courses,8-Hour Fall Prevention,Y,Self-Certified,C35
+4B74,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+4B74,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+4B74,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+4B74,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+4B74,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+4B74,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+4B74,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+4B74,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+4B74,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+4B74,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+4B74,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+4B74,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+4B74,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+4B74,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+4B74,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+4B74,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+4B74,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+4B74,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+4B74,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+4B74,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+4B74,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+4B74,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+4B74,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+4B74,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+4B74,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+4B74,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+4B74,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+4B74,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+4L01,Concrete Courses,30-Hour Concrete Safety Manager,N,Self-Certified,C01
+4L01,Concrete Courses,8-Hour Concrete Safety Manager Refresher,N,Self-Certified,C02
+4L01,Cranes & Derrick Courses,4-Hour Mast Climber User & Operator,N,Self-Certified,C09
+4L01,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+4L01,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+4L01,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+4L01,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+4L01,Cranes & Derrick Courses,30-Hour Climber/Tower Crane Rigger,N,Self-Certified,C05
+4L01,Cranes & Derrick Courses,8-Hour Climber/Tower Crane Rigger Renewal,N,Self-Certified,C10
+4L01,Cranes & Derrick Courses,8-Hour Hoisting Machine Operator Class B Rating,N,Self-Certified,C11
+4L01,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+4L01,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+4L01,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+4L01,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+4L01,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+4L01,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+4L01,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+4L01,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+4L01,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+4L01,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+4L01,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+4L01,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+4L01,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+4L01,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+4L01,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+4L01,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+4L01,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+4L01,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+4L01,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+4L01,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+4L01,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+4L01,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+4L01,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+4L01,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+4L01,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+4L01,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+4L01,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+4L01,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+4L01,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+4L01,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+4L01,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+4L01,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+4L01,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+4L01,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+4L01,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+4L01,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+4L01,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+4L01,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+4L01,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+4M02,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+4M02,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+4M02,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+4M02,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+4M02,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+4M02,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+4M02,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+4M02,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+4M02,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+4M02,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+4M02,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Self-Certified,C30
+4M02,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+4M02,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+4M02,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+4M02,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+4M02,Prescribed Courses,8-Hour Fall Prevention,Y,Self-Certified,C35
+4M02,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+4M02,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+4M02,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+4M02,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+4M02,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+4M02,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+4M02,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+4M02,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+4M02,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+4M02,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+4M02,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+4M02,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+4M02,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+4M02,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+4M02,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+4M02,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+4M02,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+4M02,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+4M02,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+4M02,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+4M02,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+4M02,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+4M02,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+4M02,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+4M02,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+4M02,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+4M02,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+4M02,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+4M07,Concrete Courses,30-Hour Concrete Safety Manager,N,Self-Certified,C01
+4M07,Concrete Courses,8-Hour Concrete Safety Manager Refresher,N,Self-Certified,C02
+4M07,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+4M07,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+4M07,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+4M07,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+4M07,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+4M07,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Self-Certified,C30
+4M07,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+4M07,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+4M07,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+4M07,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+4M07,Prescribed Courses,8-Hour Fall Prevention,Y,Self-Certified,C35
+4M07,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+4M07,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+4M07,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+4M07,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+4M07,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+4M07,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+4M07,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+4M07,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+4M07,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+4M07,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+4M07,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+4M07,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+4M07,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+4M07,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+4M07,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+4M07,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+4M07,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+4M07,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+4M07,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+4M07,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+4M07,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+4M07,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+4M07,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+4M07,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+4M07,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+4M07,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+4M07,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+4M07,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+4M16,Concrete Courses,30-Hour Concrete Safety Manager,N,Self-Certified,C01
+4M16,Concrete Courses,8-Hour Concrete Safety Manager Refresher,N,Self-Certified,C02
+4M16,Cranes & Derrick Courses,4-Hour Mast Climber User & Operator,N,Self-Certified,C09
+4M16,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+4M16,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+4M16,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+4M16,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+4M16,Cranes & Derrick Courses,30-Hour Master Rigger,N,Self-Certified,C06
+4M16,Cranes & Derrick Courses,8-Hour Master Rigger Renewal,N,Self-Certified,C12
+4M16,Cranes & Derrick Courses,30-Hour Climber/Tower Crane Rigger,N,Self-Certified,C05
+4M16,Cranes & Derrick Courses,8-Hour Climber/Tower Crane Rigger Renewal,N,Self-Certified,C10
+4M16,Cranes & Derrick Courses,30-Hour Special Rigger,N,Self-Certified,C07
+4M16,Cranes & Derrick Courses,8-Hour Special Rigger Renewal,N,Self-Certified,C14
+4M16,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+4M16,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+4M16,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+4M16,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+4M16,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+4M16,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+4M16,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+4M16,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+4M16,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+4M16,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+4M60,Concrete Courses,30-Hour Concrete Safety Manager,N,Self-Certified,C01
+4M60,Concrete Courses,8-Hour Concrete Safety Manager Refresher,N,Self-Certified,C02
+4M60,Cranes & Derrick Courses,4-Hour Mast Climber User & Operator,N,Self-Certified,C09
+4M60,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+4M60,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+4M60,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+4M60,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+4M60,Cranes & Derrick Courses,30-Hour Master Rigger,N,Self-Certified,C06
+4M60,Cranes & Derrick Courses,8-Hour Master Rigger Renewal,N,Self-Certified,C12
+4M60,Cranes & Derrick Courses,30-Hour Climber/Tower Crane Rigger,N,Self-Certified,C05
+4M60,Cranes & Derrick Courses,8-Hour Climber/Tower Crane Rigger Renewal,N,Self-Certified,C10
+4M60,Cranes & Derrick Courses,30-Hour Special Rigger,N,Self-Certified,C07
+4M60,Cranes & Derrick Courses,8-Hour Special Rigger Renewal,N,Self-Certified,C14
+4M60,Electrical Courses,8-Hour Master & Special Electrician Renewal,N,Self-Certified,C15
+4M60,Plumbing Courses,7-Hour Master Plumber & Master Suppression Piping Contractor Renewal,N,Self-Certified,C27
+4M60,Plumbing Courses,7-Hour Periodic Gas Piping Inspector Qualification,N,Self-Certified,C28
+4M60,Plumbing Courses,16-Hour Limited Gas Work Qualification,N,Self-Certified,C26
+4M60,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+4M60,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+4M60,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+4M60,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+4M60,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+4M60,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+4M60,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+4M60,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+4M60,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+4M60,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+4M60,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+4M60,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+4M60,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+4M60,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+4M60,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+4M60,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+4M60,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+4M60,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+4M60,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+4M60,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+4M60,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+4M60,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+4M60,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+4M60,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+4M60,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+4M60,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+4M60,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+4M60,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+4M60,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+4M60,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+4M60,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+4M60,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+4M60,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+4M60,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+4M60,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+4M60,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+4M60,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+4M60,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+4M60,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+4M60,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+4M60,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+4M60,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+4M60,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+4M60,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+4M60,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+4M63,Concrete Courses,30-Hour Concrete Safety Manager,N,Self-Certified,C01
+4M63,Concrete Courses,8-Hour Concrete Safety Manager Refresher,N,Self-Certified,C02
+4M63,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+4M63,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+4M63,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+4M63,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+4M63,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+4M63,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+4M63,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+4M63,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+4M63,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+4M63,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+4M63,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+4M63,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+4M63,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+4M63,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Self-Certified,C30
+4M63,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+4M63,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+4M63,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+4M63,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+4M63,Prescribed Courses,8-Hour Fall Prevention,Y,Self-Certified,C35
+4M63,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+4M63,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+4M63,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+4M63,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+4M63,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+4M63,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+4M63,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+4M63,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+4M63,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+4M63,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+4M63,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+4M63,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+4M63,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+4M63,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+4M63,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+4M63,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+4M63,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+4M63,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+4M63,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+4M63,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+4M63,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+4M63,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+4M63,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+4M63,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+4M63,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+4M63,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+4M63,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+4M63,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+4M67,Concrete Courses,30-Hour Concrete Safety Manager,N,Self-Certified,C01
+4M67,Concrete Courses,8-Hour Concrete Safety Manager Refresher,N,Self-Certified,C02
+4M67,Cranes & Derrick Courses,4-Hour Mast Climber User & Operator,N,Self-Certified,C09
+4M67,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+4M67,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+4M67,Cranes & Derrick Courses,30-Hour Master Rigger,N,Self-Certified,C06
+4M67,Cranes & Derrick Courses,8-Hour Master Rigger Renewal,N,Self-Certified,C12
+4M67,Cranes & Derrick Courses,30-Hour Special Rigger,N,Self-Certified,C07
+4M67,Cranes & Derrick Courses,8-Hour Special Rigger Renewal,N,Self-Certified,C14
+4M67,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+4M67,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+4M67,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+4M67,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+4M67,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+4M67,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+4M67,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+4M67,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+4M67,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+4M67,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+4M67,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+4M67,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+4M67,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+4M67,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+4M67,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+4M67,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+4M67,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+4M67,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+4M67,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+4M67,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+4M67,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+4M67,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+4M67,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+4M67,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+4M67,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+4Q04,Cranes & Derrick Courses,4-Hour Mast Climber User & Operator,N,Self-Certified,C09
+4Q04,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+4Q04,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+4Q04,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+4Q04,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+4Q04,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+4Q04,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+4Q04,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+4Q04,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+4Q04,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+4Q04,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+4Q04,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+4Q04,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+4Q04,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+4Q04,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+4Q04,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+4Q04,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+4Q04,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+4Q04,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+4Q04,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+4Q04,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+4Q04,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+4Q04,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+4Q21,Concrete Courses,30-Hour Concrete Safety Manager,N,Self-Certified,C01
+4Q21,Concrete Courses,8-Hour Concrete Safety Manager Refresher,N,Self-Certified,C02
+4Q21,Cranes & Derrick Courses,4-Hour Mast Climber User & Operator,N,Self-Certified,C09
+4Q21,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+4Q21,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+4Q21,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+4Q21,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+4Q21,Cranes & Derrick Courses,30-Hour Special Rigger,N,Self-Certified,C07
+4Q21,Cranes & Derrick Courses,8-Hour Special Rigger Renewal,N,Self-Certified,C14
+4Q21,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+4Q21,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+4Q21,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+4Q21,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+4Q21,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+4Q21,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+4Q21,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+4Q21,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+4Q21,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+4Q21,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+4Q21,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+4Q21,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+4Q21,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+4Q21,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+4Q21,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+4Q21,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+4Q21,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+4Q21,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+4Q21,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+4Q21,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+4Q21,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+4Q53,Concrete Courses,30-Hour Concrete Safety Manager,N,Self-Certified,C01
+4Q53,Concrete Courses,8-Hour Concrete Safety Manager Refresher,N,Self-Certified,C02
+4Q53,Cranes & Derrick Courses,4-Hour Mast Climber User & Operator,N,Self-Certified,C09
+4Q53,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+4Q53,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+4Q53,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+4Q53,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+4Q53,Electrical Courses,8-Hour Master & Special Electrician Renewal,N,Self-Certified,C15
+4Q53,Plumbing Courses,7-Hour Master Plumber & Master Suppression Piping Contractor Renewal,N,Self-Certified,C27
+4Q53,Plumbing Courses,16-Hour Limited Gas Work Qualification,N,Self-Certified,C26
+4Q53,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+4Q53,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+4Q53,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+4Q53,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+4Q53,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+4Q53,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+4Q53,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+4Q53,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+4Q53,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+4Q53,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+4Q53,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+4Q53,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+4Q53,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+4Q53,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+4Q53,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+4Q53,Prescribed Courses,8-Hour Fall Prevention,Y,Self-Certified,C35
+4Q53,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+4Q53,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+4Q53,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+4Q53,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+4Q56,Concrete Courses,30-Hour Concrete Safety Manager,N,Self-Certified,C01
+4Q56,Concrete Courses,8-Hour Concrete Safety Manager Refresher,N,Self-Certified,C02
+4Q56,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+4Q56,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+4Q56,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+4Q56,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+4Q56,Cranes & Derrick Courses,30-Hour Special Rigger,N,Self-Certified,C07
+4Q56,Cranes & Derrick Courses,8-Hour Special Rigger Renewal,N,Self-Certified,C14
+4Q56,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+4Q56,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+4Q56,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+4Q56,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+4Q56,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+4Q56,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+4Q56,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+4Q56,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+4Q56,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+4Q56,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+4Q61,Cranes & Derrick Courses,30-Hour Special Rigger,N,Self-Certified,C07
+4Q61,Cranes & Derrick Courses,8-Hour Special Rigger Renewal,N,Self-Certified,C14
+4Q61,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+4Q61,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+4Q61,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+4Q61,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+4Q65,Cranes & Derrick Courses,4-Hour Mast Climber User & Operator,N,Self-Certified,C09
+4Q65,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+4Q65,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+4Q65,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+4Q65,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+4Q65,Cranes & Derrick Courses,30-Hour Special Rigger,N,Self-Certified,C07
+4Q65,Cranes & Derrick Courses,8-Hour Special Rigger Renewal,N,Self-Certified,C14
+4Q65,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+4Q65,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+4Q65,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+4Q65,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+4Q65,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+4Q65,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+4Q65,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+4Q65,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+4Q65,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+4Q65,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+4Q65,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+4Q65,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+4Q65,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+4Q65,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+4Q65,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+4Q65,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+4Q65,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+4Q65,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+4Q65,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+4Q65,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+4Q65,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+4Q65,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+4Q65,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+4Q65,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+4Q65,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+4Q65,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+4Q65,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+4Q65,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+4Q65,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+4Q65,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+4Q65,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+4Q65,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+4Q65,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+4Q65,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+4Q68,Concrete Courses,30-Hour Concrete Safety Manager,N,Self-Certified,C01
+4Q68,Concrete Courses,8-Hour Concrete Safety Manager Refresher,N,Self-Certified,C02
+4Q68,Cranes & Derrick Courses,4-Hour Mast Climber User & Operator,N,Self-Certified,C09
+4Q68,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+4Q68,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+4Q68,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+4Q68,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+4Q68,Cranes & Derrick Courses,30-Hour Master Rigger,N,Self-Certified,C06
+4Q68,Cranes & Derrick Courses,8-Hour Master Rigger Renewal,N,Self-Certified,C12
+4Q68,Cranes & Derrick Courses,30-Hour Climber/Tower Crane Rigger,N,Self-Certified,C05
+4Q68,Cranes & Derrick Courses,8-Hour Climber/Tower Crane Rigger Renewal,N,Self-Certified,C10
+4Q68,Cranes & Derrick Courses,30-Hour Special Rigger,N,Self-Certified,C07
+4Q68,Cranes & Derrick Courses,8-Hour Special Rigger Renewal,N,Self-Certified,C14
+4Q68,Plumbing Courses,16-Hour Limited Gas Work Qualification,N,Self-Certified,C26
+4Q68,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+4Q68,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+4Q68,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+4Q68,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+4Q68,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+4Q68,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+4Q68,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+4Q68,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+4Q68,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+4Q68,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+4Q68,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+4Q68,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Curriculum Approved,C30
+4Q68,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+4Q68,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Curriculum Approved,C29
+4Q68,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+4Q68,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+4Q68,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+4Q68,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Curriculum Approved,C36
+4Q68,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+4Q68,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+4Q68,General Elective Courses,1-Hour First Aid and CPR,Y,Curriculum Approved,C18
+4Q68,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+4Q68,General Elective Courses,1-Hour Hoisting and Rigging,Y,Curriculum Approved,C20
+4Q68,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Curriculum Approved,C21
+4Q68,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+4Q68,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+4Q68,General Elective Courses,1-Hour Stairways and Ladders,Y,Curriculum Approved,C24
+4Q68,General Elective Courses,1-Hour Tools-Hand and Power,Y,Curriculum Approved,C25
+4Q68,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Curriculum Approved,C48
+4Q68,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+4Q68,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+4Q68,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+4Q68,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+4Q68,Specialized Elective Courses,1-Hour Ergonomics,Y,Curriculum Approved,C53
+4Q68,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+4Q68,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+4Q68,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+4Q68,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+4Q68,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+4Q68,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+4Q68,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+4Q68,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+4Q68,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+4Q68,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+4Q68,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+4W14,Concrete Courses,30-Hour Concrete Safety Manager,N,Self-Certified,C01
+4W14,Concrete Courses,8-Hour Concrete Safety Manager Refresher,N,Self-Certified,C02
+4W14,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+4W14,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+4W14,Cranes & Derrick Courses,8-Hour Special Rigger Renewal,N,Self-Certified,C14
+4W14,Electrical Courses,8-Hour Master & Special Electrician Renewal,N,Self-Certified,C15
+4W14,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+4W14,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+4W14,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+4W14,Scaffold Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C44
+4W14,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+4W14,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+4W14,Scaffold Courses,16-Hour Suspended Scaffold User,N,Self-Certified,C41
+4W14,Scaffold Courses,8-Hour Suspended Scaffold User Refresher,N,Self-Certified,C47
+4W14,Scaffold Courses,32-Hour Suspended Scaffold Supervisor,N,Self-Certified,C43
+4W14,Scaffold Courses,8-Hour Suspended Scaffold Supervisor Refresher,N,Self-Certified,C46
+4W14,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+4W14,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+4W14,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+4W14,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+4W14,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+4W14,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+4W14,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+4W14,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+4W14,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+4W14,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+4W14,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+4W14,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+4W14,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+4W14,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+4W14,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+4W14,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+4W14,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+4W14,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+4W14,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+4W14,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+4W14,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+4W14,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+4W14,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+4W14,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+4W14,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+4W14,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+4W14,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+4W51,Concrete Courses,30-Hour Concrete Safety Manager,N,Self-Certified,C01
+4W51,Concrete Courses,8-Hour Concrete Safety Manager Refresher,N,Self-Certified,C02
+4W51,Cranes & Derrick Courses,16-Hour Rigging Worker,N,Self-Certified,C04
+4W51,Cranes & Derrick Courses,8-Hour Rigging Worker Refresher,N,Self-Certified,C13
+4W51,Cranes & Derrick Courses,32-Hour Rigging Supervisor,N,Self-Certified,C08
+4W51,Cranes & Derrick Courses,16-Hour Rigger Supervisor Refresher,N,Self-Certified,C03
+4W51,Safety Courses,40-Hour Site Safety Manager,N,Self-Certified,C37
+4W51,Safety Courses,8-Hour Site Safety Manager Refresher / Chapter 33,N,Self-Certified,C40
+4W51,Safety Courses,8-Hour Site Safety Coordinator,N,Self-Certified,C39
+4W51,Safety Courses,4-Hour Supported Scaffold User & Refresher,N,Self-Certified,C38
+4W51,Scaffold Courses,32-Hour Supported Scaffold Installer & Remover,N,Self-Certified,C42
+4W51,Scaffold Courses,8-Hour Supported Scaffold Installer & Remover Refresher,N,Self-Certified,C45
+4W51,Prescribed Courses,2-Hour Site Safety Plan (SSP),Y,Self-Certified,C32
+4W51,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,DOB Approved Curriculum,C30
+4W51,Prescribed Courses,2-Hour Pre-Task Meeting,Y,Self-Certified,C31
+4W51,Prescribed Courses,2-Hour ‘Tool Box’ Talks,Y,Self-Certified,C29
+4W51,Prescribed Courses,4-Hour Fall Prevention,Y,Self-Certified,C33
+4W51,Prescribed Courses,4-Hour Supported Scaffold User & Refresher,Y,Self-Certified,C34
+4W51,Prescribed Courses,8-Hour Fall Prevention,Y,DOB Approved Curriculum,C35
+4W51,Prescribed Courses,8-Hour Site Safety Manager Refresher / Chapter 33,Y,Self-Certified,C36
+4W51,General Elective Courses,1-Hour Electrocution Prevention,Y,Self-Certified,C16
+4W51,General Elective Courses,1-Hour Fire Protection and Prevention,Y,Self-Certified,C17
+4W51,General Elective Courses,1-Hour First Aid and CPR,Y,Self-Certified,C18
+4W51,General Elective Courses,1-Hour Handing Heavy Materials and Proper Lifting Techniques,Y,Self-Certified,C19
+4W51,General Elective Courses,1-Hour Hoisting and Rigging,Y,Self-Certified,C20
+4W51,General Elective Courses,"1-Hour Materials Handling, Storage, Use, and Disposal",Y,Self-Certified,C21
+4W51,General Elective Courses,1-Hour Protection from Sun Exposure,Y,Self-Certified,C22
+4W51,General Elective Courses,1-Hour Repetitive Motion Injuries,Y,Self-Certified,C23
+4W51,General Elective Courses,1-Hour Stairways and Ladders,Y,Self-Certified,C24
+4W51,General Elective Courses,1-Hour Tools-Hand and Power,Y,Self-Certified,C25
+4W51,Specialized Elective Courses,1-Hour Asbestos/Lead Awareness,Y,Self-Certified,C48
+4W51,Specialized Elective Courses,1-Hour Confined Space Entry,Y,Self-Certified,C50
+4W51,Specialized Elective Courses,1-Hour Concrete and Masonry Construction,Y,Self-Certified,C49
+4W51,Specialized Elective Courses,"1-Hour Cranes, Derricks, Hoists, and Conveyors",Y,Self-Certified,C51
+4W51,Specialized Elective Courses,1-Hour Demolition Safety,Y,Self-Certified,C52
+4W51,Specialized Elective Courses,1-Hour Ergonomics,Y,Self-Certified,C53
+4W51,Specialized Elective Courses,1-Hour Excavations,Y,Self-Certified,C54
+4W51,Specialized Elective Courses,1-Hour Flag Person,Y,Self-Certified,C55
+4W51,Specialized Elective Courses,1-Hour Job Hazard Analysis,Y,Self-Certified,C57
+4W51,Specialized Elective Courses,1-Hour Personnel Lifts/Aerial Lifts/Scissor Lifts Safety,Y,Self-Certified,C59
+4W51,Specialized Elective Courses,"1-Hour Motor Vehicles, Mechanized Equipment and Marine Operations; Rollover Protective Structures and Overhead Protection; and Signs, Signals and Barricades",Y,Self-Certified,C58
+4W51,Specialized Elective Courses,1-Hour Risk Assessment and Accident Investigation,Y,Self-Certified,C60
+4W51,Specialized Elective Courses,1-Hour Scaffolds-Suspended,Y,Self-Certified,C61
+4W51,Specialized Elective Courses,1-Hour Steel Erection,Y,Self-Certified,C62
+4W51,Specialized Elective Courses,1-Hour Welding and Cutting,Y,Self-Certified,C63
+4W51,Specialized Elective Courses,1-Hour Health and Safety Programs in Construction,Y,Self-Certified,C56
+4W51,Specialized Elective Courses,2.5-Hour Foundations of Safety Leadership,Y,Self-Certified,C64
+5M20,Prescribed Courses,2-Hour Drug and Alcohol Awareness,Y,Self-Certified,C30
+5M20,Prescribed Courses,8-Hour Fall Prevention,Y,Self-Certified,C35
