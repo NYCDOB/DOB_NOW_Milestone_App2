@@ -2,102 +2,134 @@
 <html>
 <head>
   <title>Job Filing</title>
+
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="icon" type="image/png"  href="data/dob_logo.png">  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="css/keen-dashboards.css" />
-  <!-- <link rel="stylesheet" type="text/css" href="./dist/css/style.css" /> -->
   <link href="css/styles.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 </head>
 <style>
-	#div_homePageBtn{
-		display: block;
-		padding-top: 7px;
+	.mynavlink:link,
+	.mynavlink:visited ,
+	.mynavlink:hover, 
+	.mynavlink:active {
+		text-decoration: none !important;
+		text-shadow:  0 0 1em blue, 0 0 0.2em blue;
 	}
-	#homePageBtn{
-		padding: 5px 5px 5px 5px;
-		background: #46A6DD;
-		color: white;
-		font-size: 14px;
-		font-weight: bold;
-		display: inline-block;
-		float: right;
-		margin-left: 20px;
-		position: absolute;
-	}
-	#homePageBtn:hover{
-		background: #002878;
-	}
-	.btn-dark{
-		color: white;
-		background-color: #46A6DD;
-		border-color: white;
-		font-weight: bold;
-	}
-	.btn-dark:hover, .btn-dark:focus, .btn-dark:active, .btn-dark.active, .open>.dropdown-toggle.btn-dark{
-		color: white;
-		background-color: #002878;
-		font-weight: bold;
-	}
-</style>
-<body class="application">
 
-	<!-- <div class="heading"> -->
-		<!-- DOB NOW JOB FILING: <span id="summary9"></span> -->
-		<!-- <ul class="links"> -->
-			<!-- <a class="overview" target="_parent" href="https://nycdob.github.io/D3_DOBNOW_Milestone/layouts/two-and-one/index_overview_all_filings">Job Filings Overview Map</a> -->
-			<!-- <a href="https://github.com/NYCDOB/D3_DOBNOW_Milestone/blob/gh-pages/README.md" target="_blank" type="button" class="btn btn-default btn-sm">About</a> -->
-			<!-- <a href="https://github.com/NYCDOB/D3_DOBNOW_Milestone/tree/gh-pages" target="_blank" type="button" class="btn btn-default btn-sm">Github</a> -->
-		<!-- </ul> -->
-	<!-- </div> -->
-	
-	<nav class="navbar navbar-default navbar-fixed-top">  <!-- 	 CATHY SIMON  ZZZ  -->
-		<a class="navbar-brand" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank" title="NYC Buildings Home"></a>	
-		<a class="navbar-brand2" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank" title="DOB NOW Build"></a>	
-		<div class="navbar-title">
-			DOB NOW Job Filings
-		</div>
-		<div style="margin-left: 60px">
-			<a href="https://nycdob.github.io/DOB_NOW_Milestone_App2/index_splash.html" id="homePageBtn" class="btn btn-dark navbar-btn " style="float:right" role="button">Back to Homepage</a>
+
+
+	@media screen and (min-width: 0px) {
+		body {
+			padding-top: 100px;
 			
-			<a href="https://github.com/NYCDOB/DOB_NOW_Milestone_App/blob/gh-pages/README.md"  target=”_blank” id="homePageBtn2" class="btn btn-dark navbar-btn " style="float:right" role="button">About</a>
+		}
+	}	
+	@media screen and (min-width: 1200px) {
+		body {
+			padding-top: 70px;
+		}
+
+	}
+
+
+
+
+</style>
+
+
+<body style="background-color:#ffffff; ">
+
+	<nav class="navbar navbar-default  navbar-fixed-top" style="min-height:50px" >
+		<div class="container-fluid">
+				<div class="navbar-header">
+
+					<a class=" navbar-brand navbar-link" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank">
+						<img alt="" src="" height="50px" >
+					</a>
+					<a class="navbar-link" style="text-decoration: none;" href="index_splash.html">
+							<!--  <div class="navbar-text" title="Job Filings Home" style="color:#44a8de; font-size:35px;font-weight:bold;margin:auto 1px;">  -->
+								<span style="color:#44a8de; font-size:35px;font-weight:bold;">
+									DOB NOW Job Filings
+								</span>
+							<!-- </div>  -->
+					</a>					
+					<button type="button"  class="navbar-toggle collapsed  zpull-right" data-toggle="collapse" 
+					data-target="#collapse-content" title="Menu" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse"  id="collapse-content">
+					<div class="znavbar-right znavbar-link">
+						<div>
+							<a class="znavbar-link navbar-right" href="https://a810-dobnow.nyc.gov/Publish/#!/" target="_blank">
+								<span class="toggleText navbar-text hidden-lg hidden-md hidden-sm mynavlink h4" style="color:navy;">DOB Build Now</span>
+								<img alt="DOB NOW Build logo" class="visible-lg-inline visible-md-inline visible-sm-inline" src="http://a810-dobnow.nyc.gov/Publish/images/dob_now_build.jpg" height="50px" >
+							</a>
+						</div>
+						<div>
+							<a class="znavbar-link navbar-right" href="https://github.com/NYCDOB/DOB_NOW_Milestone_App/blob/gh-pages/README.md" target="_blank">
+								<span class="toggleText navbar-text mynavlink h4" style="color:navy;padding-right:50px;">About</span>
+							</a>						
+						</div>
+						<div>
+							<a class="znavbar-link navbar-right" href="https://nycdob.github.io/DOB_NOW_Milestone_App/index_overview" target="_blank">
+								<span class="toggleText navbar-text mynavlink h4" style="color:navy;padding-right:50px;">Citywide Filings</span>
+							</a>						
+						</div>
+
+						<div>
+							<a class="znavbar-link navbar-right" href="index_splash.html" >
+								<span class="toggleText navbar-text mynavlink h4" style="color:navy;padding-right:50px;">Home</span>
+							</a>						
+						</div>
+				</div>
+				
+				</div>
 		</div>
 	</nav>
 
-    <div class="row" style="margin-top:55px;">
-      <div class="col-sm-6">
-        <div class="chart-wrapper">
-          <div class="chart-stage">
-			<iframe id="propmap" width="100%" height="445px" frameborder="0"></iframe>
-          </div>
-        </div>
-      </div>
 
-          <div class="col-sm-6">
-            <div class="chart-wrapper">
-              <div class="chart-stage" id="chart-01">
-                <div id="summary1txt" ><span id="summary1"></span></div>
-				<div id="summary2txt" ><span id="summary2"></span></div>
-				<div id="summary12txt" >COMMUNITY DISTRICT <span id="summary12"></span></div>
-				<hr>
-				<div id="summary3txt" title="The unique ID assigned when the applicant submits the filing to the Department of Buildings.">JOB NUMBER: <span id="summary3"></span><span id="summary14" title="NO GOOD CHECK FLAG: Please see footnote for explanation."></span></div>
-				<div id="summary4txt" title="The Building Identification Number assigned by the Department of City Planning.">BIN NUMBER: <span id="summary4"></span></div>
-				<div id="summary5txt" title="The type of work described in this filing. It could include plumbing, sprinkler, construction fence, or another type of work. ">WORK TYPE: <span id="summary5"></span></div>
-				<div id="summary11txt" title="This indicates the extent of the work being done. NB means a new building is being built. A1 means that extensive alterations will be done resulting in a change of building occupancy. A2 means that alterations will be done but will not result in a change of building occupancy. A3 indicates that minor alterations will be done.">JOB TYPE: <span id="summary11"></span></div>
-				<div id="summary6txt" title="Yes indicates that the applicant is certifying that the work being performed complies with all applicable laws and codes. This job will then skip review by a plan examiner.">PROFESSIONAL CERTIFICATION: <span id="summary6"></span></div>
-				<div id="summary7txt" title="The current status of the filing. Click the link for more information.">FILING STATUS: <a href="https://nycdob.github.io/D3_DOBNOW_Milestone/data/FilingStatusGlossary.pdf" target="_blank"><span id="summary7"></span></a> <span id="summary10"></span></div>
-				<div id="summary13txt" title="During review, the Department of Buildings may return a filing to the applicant multiple times because the information is incomplete, because it needs correction, or another reason. This indicates the total number of times the filing was resubmitted, and does not include the initial submission.">NUMBER OF RESUBMISSIONS: <span id="summary13"></span></div>
-				<div id="summary8txt" title="The general description of the work being applied for. This field is free text, and is filled out by the applicant.">JOB DESCRIPTION: <span id="summary8"></span></div>
-				<div id="summary15txt"><span id="summary15"></span></div>
-              </div>
-            </div>
-          </div>
+
+<div class="container-fluid" style="margin-top: 10px;">
+    <div class="row" >
+			<div class="col-lg-6">
+				<div class="chart-wrapper">
+				<div class="chart-stage">
+					<iframe id="propmap" width="100%" height="445px" frameborder="0"></iframe>
+				</div>
+				</div>
+			</div>
+
+			<div class="col-lg-6">
+					<div class="chart-wrapper">
+					<div class="chart-stage" id="chart-01">
+						<div id="summary1txt" ><span id="summary1"></span></div>
+						<div id="summary2txt" ><span id="summary2"></span></div>
+						<div id="summary12txt" >COMMUNITY DISTRICT <span id="summary12"></span></div>
+						<hr>
+						<div id="summary3txt" title="The unique ID assigned when the applicant submits the filing to the Department of Buildings.">JOB NUMBER: <span id="summary3"></span><span id="summary14" title="NO GOOD CHECK FLAG: Please see footnote for explanation."></span></div>
+						<div id="summary4txt" title="The Building Identification Number assigned by the Department of City Planning.">BIN NUMBER: <span id="summary4"></span></div>
+						<div id="summary5txt" title="The type of work described in this filing. It could include plumbing, sprinkler, construction fence, or another type of work. ">WORK TYPE: <span id="summary5"></span></div>
+						<div id="summary11txt" title="This indicates the extent of the work being done. NB means a new building is being built. A1 means that extensive alterations will be done resulting in a change of building occupancy. A2 means that alterations will be done but will not result in a change of building occupancy. A3 indicates that minor alterations will be done.">JOB TYPE: <span id="summary11"></span></div>
+						<div id="summary6txt" title="Yes indicates that the applicant is certifying that the work being performed complies with all applicable laws and codes. This job will then skip review by a plan examiner.">PROFESSIONAL CERTIFICATION: <span id="summary6"></span></div>
+						<div id="summary7txt" title="The current status of the filing. Click the link for more information.">FILING STATUS: <a href="https://nycdob.github.io/D3_DOBNOW_Milestone/data/FilingStatusGlossary.pdf" target="_blank"><span id="summary7"></span></a> <span id="summary10"></span></div>
+						<div id="summary13txt" title="During review, the Department of Buildings may return a filing to the applicant multiple times because the information is incomplete, because it needs correction, or another reason. This indicates the total number of times the filing was resubmitted, and does not include the initial submission.">NUMBER OF RESUBMISSIONS: <span id="summary13"></span></div>
+						<div id="summary8txt" title="The general description of the work being applied for. This field is free text, and is filled out by the applicant.">JOB DESCRIPTION: <span id="summary8"></span></div>
+						<div id="summary15txt"><span id="summary15"></span></div>
+					</div>
+					</div>
+				</div>
     </div>
 
 
-<div class="container-fluid">
+<!--   <div class="container-fluid">  -->
     <div class="row">
-		<div class="col-sm-6">
+		<div class="col-lg-6">
 			<div class="chart-wrapper">
 			  <div class="chart-stage">
 				<iframe id="cyclo" width="100%" height="445px" scrolling="no" style="overflow:hidden;" frameborder="0" ></iframe>
@@ -106,7 +138,7 @@
 			</div>
 		</div>
 
-      <div class="col-sm-6">
+      <div class="col-lg-6">
         <div class="chart-wrapper">
 		<div class="heading_milestones">MILESTONES</div>
 			<div class="chart-timeline" id="sPlan_noObj_Chart">
@@ -920,42 +952,32 @@
 			noGoodCheckDate : d.NoGoodCheckDate,
 			latestPermitExpDate : d["Latest Permit Expiration Date"],
 			X : +d.EPSG2263_x,
-			Y : +d.EPSG2263_y					
+			Y : +d.EPSG2263_y				
+
+
+
+
 		};
 	}, function (data){	
-				<!-- NO OBJECTIONS: PLAN EXAM -->
-				//var selectJob = "B00000346-I1_Antenna";
-				
-				<!-- NO FAILURES: PRO-CERT -->
-				//var selectJob = "B00000119-P2_Plumbing";
-				
-				<!-- OBJECTIONS: PLAN EXAM: OBJECTION FILING STATUS -->
-				//var selectJob = "B00000573-I1_Curb_Cut";
-				
-				<!-- OBJECTIONS: PLAN EXAM: OBJECTION FILING STATUS: ZERO RESUBMISSIONS -->
-				//var selectJob = "Q00026606-I1_Antenna";
-				
-				<!-- FAILURES: PRO-CERT: QA FAILED FILING STATUS -->
-				//var selectJob = "B00013223-I1_Side_Walk_Shed";
-				
-				<!-- FAILURES: PRO-CERT: QA FAILED FILING STATUS: ZERO RESUBMISSIONS -->
+
 				var selectJob = window.location.hash.substring(1)
-				
-				<!-- OBJECTIONS: PLAN EXAM: OTHER FILING STATUS -->
-				//var selectJob = "B00000043-I1_Sprinklers";
-				
-				<!-- FAILURES: PRO-CERT: OTHER FILING STATUS -->
-				//var selectJob = "B00000158-I1_Plumbing";
-				
-				<!-- NO GOOD CHECK FLAG -->
-				//var selectJob = "Q00000575-I1_Plumbing";
-				
-				//var selectJob = window.location.hash.substring(1)
+				let isWorkType = (selectJob.indexOf('_') >= 0  ) ? true  : false  ;
+
 				var dateFormat = d3.time.format("%m/%d/%Y");
 
 				var filteredData = data.filter(function(d){
-					return d.id == selectJob;				
+					
+					if ( isWorkType )  {  //means we are NOT providing worktype
+						return d.id == selectJob;  //use the id column to filter
+					}  else {
+						return d.jobnumber == selectJob;
+					}
+					//return d.id == selectJob;
+					//return d.id.substring(0, (d.id.indexOf('_'))   ) == selectJob;
 				});
+
+
+
 				var address_txt = filteredData[0].HouseNum + ' ' + filteredData[0].Street;
 				    bin_txt = filteredData[0].bin;
 					boro_txt = filteredData[0].borough;

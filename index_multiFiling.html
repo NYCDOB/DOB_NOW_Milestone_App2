@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>DOB NOW Job Filings</title>   
+  <link rel="icon" type="image/png"  href="data/dob_logo.png">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">  
   <link href="css/styles.css" rel="stylesheet"> 
@@ -14,16 +15,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 </head>
 <style>
-	html{
-		height: 100%;
-		overflow: hidden;
+	.separator {
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+		margin-top: 30px;
+		}
+
+		#formContainer > * {
+			
+			font-size: 18px;
+			
+		}
+
+
+
+
+
+	.mynavlink:link,
+	.mynavlink:visited ,
+	.mynavlink:hover, 
+	.mynavlink:active {
+		text-decoration: none !important;
+		text-shadow:  0 0 1em blue, 0 0 0.2em blue;
 	}
+
 	body{
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		overflow: auto;
+		zmargin: 0;
+		zpadding: 0;
+		zoverflow: auto;
+		zpadding-top: 100px;
 	}
+
 	#desc-text {		
 		margin-top: -12px;
 		font-size: 20px;
@@ -34,9 +57,6 @@
 		text-align: center;		
 	}
 	.desc-text-table-stats{
-		padding-left: 20px;
-		padding-bottom: 5px;
-		margin-top: -12px;
 		font-size: 20px;
 		font-style: italic;
 		color: #002878;
@@ -49,7 +69,7 @@
 		display: none;
 	}
 	#table-stats{
-	margin-top: 0px;
+		margin-top: 0px;
 	}
 	#desc-text-geo{
 		display: none;
@@ -57,36 +77,9 @@
 	#desc-text-Time{
 		display: none;
 	}
-	#qryDivWT{
-		border: 3px solid #002878;
-		width: 600px;
-		height: 500px;
-		display: block;
-		padding: 10px;
-	}
-	#qryDivGeo{
-		border: 3px solid #002878;
-		width: 600px;
-		height: 725px;
-		display: none;
-		padding: 30px;
-	}
-	#qryDivTime{
-		border: 3px solid #002878;
-		width: 600px;
-		height: 580px;
-		display: none;
-		padding: 30px;
-		display: none;
-	}
-	#qryDropdown{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 50%;
-		padding-top: 25px;
-		padding-left: 50px;
-	}
+
+
+
 	#dropdownWT{
 		font-size: 18px;
 	}
@@ -98,13 +91,16 @@
 	#geo-radio{
 		font-size: 15px;
 	}
-	.datepicker{
-		padding-left: 40px;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 50%;
-	}
+
+	/*
+			.datepicker{
+				zpadding-left: 40px;
+				zdisplay: block;
+				zmargin-left: auto;
+				zmargin-right: auto;
+				zwidth: 50%;
+			}
+	*/
 
 	div.tooltip {
 		color: #222;
@@ -126,104 +122,104 @@
 	}
 	#map-container{
 		position: relative;
-		display: none;
+		display: block;
 		border: 3px solid black;
-		width: 1400px;
+		zwidth: 1400px;
 		height: 786px;
 	}
 
 
-	#button-container{
-		width: 600px;
-		margin-left: 5px;
-		margin-top: 6px;
-	}
-	#nextBtnWT{
-		padding: 5px 5px 5px 5px;
-		background: #46A6DD;
-		color: white;
-		font-size: 18px;
-		font-weight: bold;
-		float: right;
-		width: 50px;
-	}
-	#nextBtnWT:hover{
-		background: #002878;
-	}
-	#nextBtnWT:disabled{
-		color: #a9a9a9;
-		background: #D8D8D8;
-	}
-	#prevBtnWT{
-		padding: 5px 5px 5px 5px;
-		background: #46A6DD;
-		color: white;
-		font-size: 18px;
-		font-weight: bold;
-		float: right;
-		width: 50px;
-	}
-	#prevBtnWT:hover{
-		background: #002878;
-	}
-	#prevBtnWT:disabled{
-		color: #a9a9a9;
-		background: #D8D8D8;
-	}
-	
-	#nextBtnGeo{
-		padding: 5px 5px 5px 5px;
-		background: #46A6DD;
-		color: white;
-		font-size: 18px;
-		font-weight: bold;
-		float: right;
-		width: 50px;
-		display: none;
-	}
-	#nextBtnGeo:hover{
-		background: #002878;
-	}
-	#nextBtnGeo:disabled{
-		color: #a9a9a9;
-		background: #D8D8D8;
-	}
-	#prevBtnGeo{
-		padding: 5px 5px 5px 5px;
-		background: #46A6DD;
-		color: white;
-		font-size: 18px;
-		font-weight: bold;
-		float: right;
-		width: 50px;
-		display: none;
-	}
-	#prevBtnGeo:hover{
-		background: #002878;
-	}
-	#prevBtnGeo:disabled{
-		color: #a9a9a9;
-		background: #D8D8D8;
-	}
-	
 
-	#prevBtnTime{
-		padding: 5px 5px 5px 5px;
-		background: #46A6DD;
-		color: white;
-		font-size: 18px;
-		font-weight: bold;
-		float: right;
-		width: 50px;
-		display: none;
-	}
-	#prevBtnTime:hover{
-		background: #002878;
-	}
-	#prevBtnTime:disabled{
-		color: #a9a9a9;
-		background: #D8D8D8;
-	}
+	/*
+										#nextBtnWT{
+											padding: 5px 5px 5px 5px;
+											background: #46A6DD;
+											color: white;
+											font-size: 18px;
+											font-weight: bold;
+											float: right;
+											width: 50px;
+										}
+										#nextBtnWT:hover{
+											background: #002878;
+										}
+										#nextBtnWT:disabled{
+											color: #a9a9a9;
+											background: #D8D8D8;
+										}
+										#prevBtnWT{
+											padding: 5px 5px 5px 5px;
+											background: #46A6DD;
+											color: white;
+											font-size: 18px;
+											font-weight: bold;
+											float: right;
+											width: 50px;
+										}
+										#prevBtnWT:hover{
+											background: #002878;
+										}
+										#prevBtnWT:disabled{
+											color: #a9a9a9;
+											background: #D8D8D8;
+										}
+										
+										#nextBtnGeo{
+											padding: 5px 5px 5px 5px;
+											background: #46A6DD;
+											color: white;
+											font-size: 18px;
+											font-weight: bold;
+											float: right;
+											width: 50px;
+											display: none;
+										}
+										#nextBtnGeo:hover{
+											background: #002878;
+										}
+										#nextBtnGeo:disabled{
+											color: #a9a9a9;
+											background: #D8D8D8;
+										}
+										#prevBtnGeo{
+											padding: 5px 5px 5px 5px;
+											background: #46A6DD;
+											color: white;
+											font-size: 18px;
+											font-weight: bold;
+											float: right;
+											width: 50px;
+											display: none;
+										}
+										#prevBtnGeo:hover{
+											background: #002878;
+										}
+										#prevBtnGeo:disabled{
+											color: #a9a9a9;
+											background: #D8D8D8;
+										}
+										
+
+										#prevBtnTime{
+											padding: 5px 5px 5px 5px;
+											background: #46A6DD;
+											color: white;
+											font-size: 18px;
+											font-weight: bold;
+											float: right;
+											width: 50px;
+											display: none;
+										}
+										#prevBtnTime:hover{
+											background: #002878;
+										}
+										#prevBtnTime:disabled{
+											color: #a9a9a9;
+											background: #D8D8D8;
+										}
+	*/
+
+
 	#div_homePageBtn{
 		display: block;
 		padding-top: 7px;
@@ -240,136 +236,23 @@
 		position: absolute;
 	}
 	
-	#ZZZhomePageBtn, #ZZZhomePageBtn2{  /*   ZZZ */
-		padding: 5px 5px 5px 5px;
-		background: #46A6DD;
-		color: white;
-		font-size: 14px;
-		font-weight: bold;
-		float: right;
-		margin-left: 10px;
-		border: 0px;
-	}
-	
-	#homePageBtn:hover, #homePageBtn2:hover {
-		background: #002878;
-	}	
-
 	#mapBtn{
 		padding: 5px 5px 5px 5px;
 		background: #46A6DD;
 		color: white;
 		font-size: 18px;
 		font-weight: bold;
-		display: none;
-		float: right;
+
 	}
 	#mapBtn:hover{
 		background: #002878;
 	}
-	#mapBtn:disabled{
-		color: #a9a9a9;
-		background: #D8D8D8;
-	}
 
-	#qryAgg-container{
-		position: relative;
-		display: block;
-		border: 3px solid black;
-		height: 250px;
-		width: 600px;
-		margin-top: 20px;
-	}
-	#qryAgg {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		background-color: #fffff;
-		display: block;
-	}
 
-	#qryAgg_txt{
-		text-align: center;
-		font-size: 22px;
-	}
-	#btnAggFilings{
-		padding: 10px 20px 10px 20px;
-		background: #46A6DD;
-		color: white;
-		font-size: 18px;
-		font-weight: bold;
-		display: block; 
-		margin: 0 auto;
-	}
-	#btnAggFilings:hover{
-		background: #002878;
-	}
-	#qryInd-container{
-		position: relative;
-		display: block;
-		border: 3px solid black;
-		height: 350px;
-		width: 600px;
-		margin-top: 20px;
-	}
-	#qryInd {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		background-color: #fffff;
-		display: block;
-		padding-left: 40px;
-	}
-	#qry_txtGroup{
-		padding-top: 20px;
-	}
 	#btnIndFilings_container{
 		padding-right: -50px;
 	}
-	#btnIndFilings{
-		padding: 8px 18px 8px 18px;
-		background: #46A6DD;
-		color: white;
-		font-size: 16px;
-		font-weight: bold;
-		display: block; 
-		margin: 0 auto;		
-	}
-	#btnIndFilings:hover{
-		background: #002878;
-	}
-	#btnIndFilingsName{
-		padding: 8px 18px 8px 18px;
-		background: #46A6DD;
-		color: white;
-		font-size: 16px;
-		font-weight: bold;
-		display: block; 
-		margin: 0 auto;		
-	}
-	#btnIndFilingsName:hover{
-		background: #002878;
-	}
-	#qry-banner{
-		position: relative;
-		display: block;
-		height: 35px;
-		width: 100%;
-		background-color: #002878;
-		font-size: 25px;
-		color: white;
-	}
-	#qryIndAppName_txt{
-		font-size: 20px;
-		padding-top: 40px;
-		padding-left: 200px;
-	}
-	#qryIndAppName-container{
-		padding-top: 35px;
-	}
-	#appNameTxtBox{
-		width: 270px;
-	}
+
 	.btn-dark{
 		color: white;
 		background-color: #46A6DD;
@@ -381,22 +264,6 @@
 		background-color: #002878;
 		font-weight: bold;
 	}
-	.hr-sect {
-		display: flex;
-		flex-basis: 100%;
-		align-items: center;
-		color: rgba(0, 0, 0, 0.35);
-	}
-	.hr-sect::before,
-	.hr-sect::after {
-		content: "";
-		flex-grow: 1;
-		background: rgba(0, 0, 0, 0.35);
-		height: 1px;
-		font-size: 0px;
-		line-height: 0px;
-		margin: 0px 8px;
-	}
 	.ui-autocomplete{
             max-height: 200px;
             overflow-y: auto;
@@ -405,10 +272,7 @@
             /* add padding to account for vertical scrollbar */
             padding-right: 20px;	
 	}
-	.nav{
-		padding-left: 240px;
-
-	}
+	
 	.pagination {
 	  display: inline-block;
 	  margin-top: 5px;
@@ -443,7 +307,14 @@
 		background: url('https://datatables.net/examples/resources/details_close.png') no-repeat center center;
 	}
 	
-	
+		.desc-text{
+		padding-left: 20px;
+		padding-bottom: 5px;
+		margin-top: -12px;
+		font-size: 18px;
+		font-style: italic;
+		color: #002878;
+	}
 	
 	#table-desc-text{
 		display: none;
@@ -549,229 +420,347 @@
 		  cursor: not-allowed;
 	}	
 
+	@media screen and (min-width: 0px) {
+		body {
+			padding-top: 100px;
+		}
+	}	
+	@media screen and (min-width: 1200px) {
+		body {
+			padding-top: 70px;
+		}
+
+	}
+
 </style>
 
-<body>
-<nav class="navbar navbar-default navbar-fixed-top">  <!-- 	 CATHY SIMON  ZZZ  -->
-	<a class="navbar-brand" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank" title="NYC Buildings Home"></a>	
-	<a class="navbar-brand2" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank" title="DOB NOW Build"></a>	
-	<div class="navbar-title">
-		DOB NOW Job Filings
-	</div>
-	<div style="margin-left: 60px">
-		<a href="https://nycdob.github.io/DOB_NOW_Milestone_App2/index_splash.html" id="homePageBtn" class="btn btn-dark navbar-btn " style="float:right" role="button">Back to Homepage</a>
+<body >
 
-		<a href="https://github.com/NYCDOB/DOB_NOW_Milestone_App/blob/gh-pages/README.md"  target=”_blank” id="homePageBtn2" class="btn btn-dark navbar-btn " style="float:right" role="button">About</a>
-	</div>
-</nav>
-<div class="container main">
-	<div class="row">
-		<div class="col-md-12 col-md-offset-6">	
-			<div class="row" id="desc-text">
-				<div id="desc-text-WT">
-					<i><b>SELECT A WORK TYPE...</b></i>
+	<nav class="navbar navbar-default  navbar-fixed-top" style="min-height:50px" >
+		<div class="container-fluid">
+				<div class="navbar-header">
+
+					<a class=" navbar-brand navbar-link" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank">
+						<img alt="" src="" height="50px" >
+					</a>
+					<a class="navbar-link" style="text-decoration: none;" href="index_splash.html">
+							<!--  <div class="navbar-text" title="Job Filings Home" style="color:#44a8de; font-size:35px;font-weight:bold;margin:auto 1px;">  -->
+								<span style="color:#44a8de; font-size:35px;font-weight:bold;">
+									DOB NOW Job Filings
+								</span>
+							<!-- </div>  -->
+					</a>					
+					<button type="button"  class="navbar-toggle collapsed  " data-toggle="collapse" 
+					data-target="#collapse-content" title="Menu" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 				</div>
-				<div id="desc-text-geo">
-					<i><b>SELECT A GEOGRAPHY...</b></i>
+				<div class="collapse navbar-collapse"  id="collapse-content">
+					<div class="znavbar-right znavbar-link">
+						<div>
+							<a class="znavbar-link navbar-right" href="https://a810-dobnow.nyc.gov/Publish/#!/" target="_blank">
+								<span class="toggleText navbar-text hidden-lg hidden-md hidden-sm mynavlink h4" style="color:navy;">DOB Build Now</span>
+								<img alt="DOB NOW Build logo" class="visible-lg-inline visible-md-inline visible-sm-inline" src="http://a810-dobnow.nyc.gov/Publish/images/dob_now_build.jpg" height="50px" >
+							</a>
+						</div>
+						<div>
+							<a class="znavbar-link navbar-right" href="https://github.com/NYCDOB/DOB_NOW_Milestone_App/blob/gh-pages/README.md" target="_blank">
+								<span class="toggleText navbar-text mynavlink h4" style="color:navy;padding-right:50px;">About</span>
+							</a>						
+						</div>
+						<div>
+							<a class="znavbar-link navbar-right" href="https://nycdob.github.io/DOB_NOW_Milestone_App/index_overview" target="_blank">
+								<span class="toggleText navbar-text mynavlink h4" style="color:navy;padding-right:50px;">Citywide Filings</span>
+							</a>						
+						</div>
+
+						<div>
+							<a class="znavbar-link navbar-right" href="index_splash.html" >
+								<span class="toggleText navbar-text mynavlink h4" style="color:navy;padding-right:50px;">Home</span>
+							</a>						
+						</div>
 				</div>
-				<div id="desc-text-Time">
-					<i><b>SELECT A TIME FRAME...</b></i>
-				</div>				
-			</div>
+				
+				</div>
 		</div>
-		<div class="row" id="tablestats">
-			<div class="desc-text-table-stats" id="table-desc-text">
-				Click on a table row to filter and zoom map...
-							<!-- CATHY SIMON show current map and data criteria
-								<button id="buttonSearchCriteria">Show Map Criteria</button>
-								<span id="searchCriteria"><span>  
-							-->
-							
+	</nav>
+
+
+
+
+<!--    FILTER SELECTION DIV -->
+<div class="zcontainer container-fluid" id="formContainer">
+			<form id="filterForm">
+
+
+
+
+<div class="row">
+
+			<div class="col-lg-8 col-lg-offset-2   " style="border: 3px solid navy;margin-top: 30px;padding-left:15px;padding:20px 15px;">
+								<div class="row text-center" style="font-size:20px;font-weight:700;color:#002878;font-style:italic;">
+									Search by Work Type, Geography, and Time Frame
+								</div>
+								<div class="row" style="margin-top: 30px;">   <!-- WORKTYPE -->
+											<div class="col-lg-2 col-md-1">
+												<label for="worktype"><span style="color:red">*</span>WORK TYPE:</label>
+											</div>
+											<div class="col-lg-6 col-md-1" >
+													<select id="dropdownWT"  style="overflow:auto" required>  
+														<option value="" selected="true" disabled seleted hidden>Select Work Type...</option>
+														<option value="Antenna">Antenna</option>
+														<option value="Boiler" disabled>Boiler Equipment</option>
+														<option value="Construction Fence">Construction Fence</option>
+														<option value="Cranes" disabled>Cranes & Derricks</option>
+														<option value="Curb Cut">Curb Cut</option>
+														<option value="Electrical" disabled>Electrical</option>
+														<option value="Elevator" disabled>Elevator</option>
+
+														<option value="genConst" disabled>General Construction</option>
+														<option value="MechSys" disabled>Mechanical Systems</option>
+														<option value="Place of Assembly" disabled>Place of Assembly</option>															
+														<option value="Plumbing">Plumbing</option>
+														<option value="Supported Scaffold">Supported Scaffold</option>
+														<option value="Sidewalk Shed" >Sidewalk Shed</option>
+														<option value="Sign">Sign</option>
+														<option value="Sprinklers">Sprinklers</option>
+														<option value="Standpipe">Standpipe</option>
+														<option value="Structural" disabled>Structural</option>
+														<option value="Temporary Places of Assembly" disabled>Temporary Place of Assembly</option>	
+													</select>		
+											</div>
+								</div>   <!-- END  WORKTYPE -->
+								
+
+								<div class="row">
+									<div class="col-lg-8 col-lg-offset-2 separator">
+									</div>
+								</div>
+
+
+<!-- 	<div class="row" style="zline-height: 10px;border: solid 1px red;margin-top: 30px;">
+		<div class="col-lg-8 col-lg-offset-2" style="font-size: 12px;">Borough, Zip Code, or Community Distict</div>
+	</div>
+	-->
+
+								<div class="row" style="margin-top: 30px;"> <!-- geography-->
+										<div class="col-lg-2 " >
+											<label for="geog" title="Borough, Zip, or CD"><span style="color:red;">*</span>WITHIN:</label>
+										</div>
+
+										
+										<div class="col-lg-3">
+												<select id="geochoice" title="Borough, Zip, or CD" >
+														<!--  <option value="null" disabled selected required></option>  -->
+														<option value="geogdivborough"selected >Borough</option>
+														<option value="geogdivcommunitydistrict">Community District</option>
+														<option value="geogdivzipcode">Zip Code</option>
+												</select>
+										</div>
+
+										<div class="col-lg-7 ">
+												<div id="geogdivborough" >
+													<div class="radio-inline">
+														<label><input type="radio" name="borough" value="BRONX" id="bronx" required>Bronx</label>
+													</div>
+													<div class="radio-inline">
+														<label><input type="radio" name="borough" value="BROOKLYN" id="brooklyn">Brooklyn</label>
+													</div>
+													<div class="radio-inline">
+														<label><input type="radio" name="borough" value="MANHATTAN" id="bronx">Manhattan</label>
+													</div>
+													<div class="radio-inline">
+														<label><input type="radio" name="borough" value="QUEENS" id="queens">Queens</label>
+													</div>
+													<div class="radio-inline">
+														<label><input type="radio" name="borough" value="STATEN ISLAND" id="statenIsland">Staten Island</label>
+													</div>
+													<div class="radio-inline">
+														<label><input type="radio" name="borough" value="Citywide" id="citywide" checked>Citywide</label>
+													</div>
+												</div>
+												<div id="geogdivzipcode" style="display:none" >
+													<input id="zipTxtBox" name="zipText" type="text" pattern="[0-9]{5}" size="5"  placeholder="5-digit Zip" required>
+												</div>
+												<div  id="geogdivcommunitydistrict" style="display:none" >
+													<select id="dropdownCD"  style="height: auto;max-height: 50px; overflow-x: hidden;">
+														<option value="" disabled selected hidden>Select Community District</option>
+														<option value="Manhattan" disabled>Manhattan</option>
+														<option value="101">101</option>
+														<option value="102">102</option>
+														<option value="103">103</option>
+														<option value="104">104</option>
+														<option value="105">105</option>
+														<option value="106">106</option>
+														<option value="107">107</option>
+														<option value="108">108</option>
+														<option value="109">109</option>
+														<option value="110">110</option>
+														<option value="111">111</option>
+														<option value="112">112</option>
+														<option value="164">164</option>
+														<option value="Bronx" disabled>Bronx</option>
+														<option value="201">201</option>
+														<option value="202">202</option>
+														<option value="203">203</option>
+														<option value="204">204</option>
+														<option value="205">205</option>
+														<option value="206">206</option>
+														<option value="207">207</option>
+														<option value="208">208</option>
+														<option value="209">209</option>
+														<option value="210">210</option>
+														<option value="211">211</option>
+														<option value="212">212</option>
+														<option value="226">226</option>
+														<option value="227">227</option>
+														<option value="228">228</option>
+														<option value="Brooklyn" disabled>Brooklyn</option>
+														<option value="301">301</option>
+														<option value="302">302</option>
+														<option value="303">303</option>
+														<option value="304">304</option>
+														<option value="305">305</option>
+														<option value="306">306</option>
+														<option value="307">307</option>
+														<option value="308">308</option>
+														<option value="309">309</option>
+														<option value="310">310</option>
+														<option value="311">311</option>
+														<option value="312">312</option>
+														<option value="313">313</option>
+														<option value="314">314</option>
+														<option value="315">315</option>
+														<option value="316">316</option>
+														<option value="317">317</option>
+														<option value="318">318</option>
+														<option value="355">355</option>
+														<option value="356">356</option>
+														<option value="Queens" disabled>Queens</option>
+														<option value="401">401</option>
+														<option value="402">402</option>
+														<option value="403">403</option>
+														<option value="404">404</option>
+														<option value="405">405</option>
+														<option value="406">406</option>
+														<option value="407">407</option>
+														<option value="408">408</option>
+														<option value="409">409</option>
+														<option value="410">410</option>
+														<option value="411">411</option>
+														<option value="412">412</option>
+														<option value="413">413</option>
+														<option value="414">414</option>
+														<option value="480">480</option>
+														<option value="481">481</option>
+														<option value="482">482</option>
+														<option value="483">483</option>
+														<option value="484">484</option>
+														<option value="Staten Island" disabled>Staten Island</option>
+														<option value="501">501</option>
+														<option value="502">502</option>
+														<option value="503">503</option>
+														<option value="595">595</option>
+													</select>
+												</div>
+										</div>
+								</div>
+											
+						
+	<div class="row" style="zline-height: 10px;zborder: solid 1px red;zmargin-top: 30px;">
+		<div class="col-lg-8 col-lg-offset-2 visible-lg-block " style="font-size: 12px;">Borough, Zip Code, or Community Distict</div>
+	</div>
+
+	
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2 separator">
+							</div>
+						</div>
+
+
+
+						<div class="row" style="margin-top: 20px;">   <!-- DATE RANGE -->
+							<div class="col-lg-2">
+								<label for="worktype"><span style="color:red;">*</span>DATE RANGE:</label>
+							</div>
+							<div class="col-lg-5 datepicker">
+								<div class="row">
+									<div class="col-lg-3"><label for="from">From:</label></div>
+									<div class="col-lg-9"><input type="text" id="from" class="datePicker" name="from" required></div>
+								</div>	
+							</div>
+							<div class="col-lg-5 datepicker">
+								<div class="row">
+									<div class="col-lg-3"><label for="to">To:</label></div>
+									<div class="col-lg-9"><input type="text" id="to" class="datePicker" name="to" required></div>
+								</div>	
+								<!--  <label for="to">To: </label><input type="text" id="to" name="to" class="datePicker" required>   -->
+							</div>						
+						</div>
+
+
+<!-- 
+						<div class="row">
+							<button class="center-block btn-dark" id="mapBtn" style="margin-top: 50px;"> Map Data </button>
+						</div>
+-->
+						<div class="row">
+								<div class="col-lg-12" style="margin-top: 40px;font-size:14px"><span style="color:red;">*</span>Required &nbsp;</div>
+						</div>
+
+			
 			</div>
-			<div class="desc-text-table-stats" id="stat-desc-text">
-				Summary statistics for the Job Filing selection...
-			</div>
+			
+</div>
+						<div class="row">
+							<button class="center-block btn-dark" id="mapBtn" style="margin-top: 50px;"> Map Data </button>
+						</div>
+						
+			</form>
+</div>  <!--   container-fluid  -->
+
+
+
+
+
+<!--   END FILTER SELECTION DIV -->
+
+
+<!--    MAP AND TABLE DIV  -->
+<div class="container-fluid divTableMap" style="display:none;">
+	<div class="row">
+		<div class="desc-text" id="table-desc-text">
+			Click on a table row to filter and zoom map...
+		</div>
+		<div class="desc-text" id="stat-desc-text">
+			Summary statistics for the Applicant's Job Filings...
 		</div>
 	</div>
-	<div class="row">
+
+
+	<div class="row" >  <!--   toggle TABLE & DATA -->
 		<div class="col-md-12">			
-			<div class="btn-group btn-group-toggle" data-toggle="buttons" id="btnTableStats" style="display:none">
-			  <label class="btn btn-dark active" id="btnText">
-				<input type="radio" name="options" id="table" value="table" checked> Table
-			  </label>
-			  <label class="btn btn-dark" id="btnText">
-				<input type="radio" name="options" id="stats" value="stats"> Statistics
-			  </label>
+			<div class="btn-group btn-group-toggle" data-toggle="buttons" id="btnTableStats" style="display:none;">
+					<label class="btn btn-dark active" id="btnText">
+					<input type="radio" name="options" id="table" value="table" checked=""> Table
+					</label>
+					<label class="btn btn-dark" id="btnText">
+					<input type="radio" name="options" id="stats" value="stats"> Statistics
+					</label>
 			</div>				
 		</div>
-    </div>
+	</div>
+
+
     <div class="row">  		
-		<div class="col-md-12 col-md-offset-6" id="qry-col">	
-			<div class="qry" id="qryDivWT">
-				<div id="qryDropdown">
-					<div class="dropdown">
-						<select id="dropdownWT" style="height: 25px; overflow-x: hidden;" autofocus>  <!-- added autofocus CATHY SIMON-->
-							<option value="0" selected="selected">Please select...</option>
-							<option value="Antenna">Antenna</option>
-							<option value="Boiler" disabled>Boiler</option>
-							<option value="Cranes" disabled>Cranes & Derricks</option>
-							<option value="Curb Cut">Curb Cut</option>
-							<option value="Electrical" disabled>Electrical</option>
-							<option value="Elevator" disabled>Elevator</option>
-							<option value="Construction Fence">Fence</option>
-							<option value="genConst" disabled>General Construction</option>
-							<option value="MechSys" disabled>Mechanical Systems</option>
-							<option value="Plumbing">Plumbing</option>
-							<option value="Supported Scaffold">Scaffold</option>
-							<option value="Sidewalk Shed" >Sidewalk Shed</option>
-							<option value="Sign">Sign</option>
-							<option value="Sprinklers">Sprinkler</option>
-							<option value="Standpipe">Standpipe</option>
-							<option value="Structural" disabled>Structural</option>
-							<option value="Temporary Places of Assembly" disabled>Temporary Places of Assembly</option>	
-						</select>
-					</div>
-				</div>
-			</div>
-			<div class="qry" id="qryDivGeo">
-				<div class="qry" id="geographyDiv">
-					<div id="geoHeading">Borough</div><br/>
-						<form id="geo-radio">
-							<div class="form-group row">
-							<div class="col-sm-6" id="boroCol1">
-							  <label><input type="radio" name="borough" value="BRONX" class="check" id="bronx">Bronx</label><br/>
-							  <label><input type="radio" name="borough" value="BROOKLYN" class="check" id="brooklyn">Brooklyn</label><br/>
-							  <label><input type="radio" name="borough" value="MANHATTAN" class="check" id="manhattan">Manhattan</label>
-							</div>
-							<div class="col-sm-6" id="boroCol2">
-							  <label><input type="radio" name="borough" value="QUEENS" class="check" id="queens">Queens</label><br/>
-							  <label><input type="radio" name="borough" value="STATEN ISLAND" class="check" id="statenIsland">Staten Island</label><br/>
-							  <label><input type="radio" name="borough" value="Citywide" class="check" id="citywide" autofocus>Citywide</label>  <!-- added autofocus CATHY SIMON-->
-							</div>
-							</div>							
-						</form>
-						
-					<br/><br/>	
-					<div class="hr-sect">OR</div><br/><br/>
-					<div id="geoHeading">Community District</div><br/>
-					<div class="dropdown">						
-						<select id="dropdownCD" style="height: auto;max-height: 50px; overflow-x: hidden;">
-							<option value="0">Please select...</option>
-							<option value="Manhattan" disabled>Manhattan</option>
-							<option value="101">101</option>
-							<option value="102">102</option>
-							<option value="103">103</option>
-							<option value="104">104</option>
-							<option value="105">105</option>
-							<option value="106">106</option>
-							<option value="107">107</option>
-							<option value="108">108</option>
-							<option value="109">109</option>
-							<option value="110">110</option>
-							<option value="111">111</option>
-							<option value="112">112</option>
-							<option value="164">164</option>
-							<option value="Bronx" disabled>Bronx</option>
-							<option value="201">201</option>
-							<option value="202">202</option>
-							<option value="203">203</option>
-							<option value="204">204</option>
-							<option value="205">205</option>
-							<option value="206">206</option>
-							<option value="207">207</option>
-							<option value="208">208</option>
-							<option value="209">209</option>
-							<option value="210">210</option>
-							<option value="211">211</option>
-							<option value="212">212</option>
-							<option value="226">226</option>
-							<option value="227">227</option>
-							<option value="228">228</option>
-							<option value="Brooklyn" disabled>Brooklyn</option>
-							<option value="301">301</option>
-							<option value="302">302</option>
-							<option value="303">303</option>
-							<option value="304">304</option>
-							<option value="305">305</option>
-							<option value="306">306</option>
-							<option value="307">307</option>
-							<option value="308">308</option>
-							<option value="309">309</option>
-							<option value="310">310</option>
-							<option value="311">311</option>
-							<option value="312">312</option>
-							<option value="313">313</option>
-							<option value="314">314</option>
-							<option value="315">315</option>
-							<option value="316">316</option>
-							<option value="317">317</option>
-							<option value="318">318</option>
-							<option value="355">355</option>
-							<option value="356">356</option>
-							<option value="Queens" disabled>Queens</option>
-							<option value="401">401</option>
-							<option value="402">402</option>
-							<option value="403">403</option>
-							<option value="404">404</option>
-							<option value="405">405</option>
-							<option value="406">406</option>
-							<option value="407">407</option>
-							<option value="408">408</option>
-							<option value="409">409</option>
-							<option value="410">410</option>
-							<option value="411">411</option>
-							<option value="412">412</option>
-							<option value="413">413</option>
-							<option value="414">414</option>
-							<option value="480">480</option>
-							<option value="481">481</option>
-							<option value="482">482</option>
-							<option value="483">483</option>
-							<option value="484">484</option>
-							<option value="Staten Island" disabled>Staten Island</option>
-							<option value="501">501</option>
-							<option value="502">502</option>
-							<option value="503">503</option>
-							<option value="595">595</option>
-						</select>
-					</div><br/><br/><br/><br/><br/>		
-					<div class="hr-sect">OR</div><br/><br/>					
-					<div id="geoHeading">Zip Code</div><br/>
-					<div id="zip">
-						<input id="zipTxtBox" name="zipText" type="text" maxlength="5"/>
-					</div>										
-				</div>
-			</div>
-			<div class="query" id="qryDivTime">
-					<div class="datepicker">
-						<label style="font-size:18px;" for="from">From</label><br/>
-						<input type="text" id="from" name="from" autofocus>  <!-- added autofocus CATHY SIMON-->
-						
-						<br/></br><br/></br><br/></br><br/></br><br/></br><br/><br/>
-						
-						<label style="font-size:18px;" for="to">To</label><br/>
-						<input type="text" id="to" name="to">
-						
-					</div>			
-			</div>
-			<div class="row" id="button-container">
-				<div class="nav">					
-					<div class="pagination">
-						
-						<button type="button" form="ui-radio" id="nextBtnWT">❯</button>
-						<button type="button" form="ui-radio" id="prevBtnWT">❮</button>
-
-						<button type="button" form="ui-radio" id="nextBtnGeo">❯</button>
-						<button type="button" form="ui-radio" id="prevBtnGeo">❮</button>
-
-						<button type="button" form="ui-radio" id="mapBtn">Map Data ❯</button>
-						<button type="button" form="ui-radio" id="prevBtnTime">❮</button>	
-					</div>					  
-				</div>
-			</div>
+<!--		<div class="col-md-12 col-md-offset-6" id="qry-col">	
 		</div>
 
-		<div class="col-md-5">
+	-->		
+		<div class="col-md-3">
 			<div id="ui-container" class="ui" style="height:786px">				
 									<h4>Work Type: <b><span id="workTypeValue_txt"></span></b></h4>
 									<h4>Geography: <b><span id="geo_txt"></span></b></h4>
@@ -784,7 +773,6 @@
 					<div id="loadpage" style="position:absolute; 
 						left:38px; top:4px; 
 						background-color:white; 
-						layer-background-color:white; 
 						height:80%; width:88%;"> 
 						  <p align="center" style="font-size: large;">       
 							<B>Loading...Please wait!</B><br/><br/>
@@ -797,16 +785,12 @@
 						<thead>
 							<tr>
 								<th></th>
-								<th class="">Address</th>  <!--   CATHY SIMON, col #9 -->
+								<th class="">Address</th>  
 								<th class="">Borough:</th>
 								<th class="none">Job Number</th>
 								<th class="none">BIN</th>
 								<th class="none">Work Type:</th>
 								<th class="none">Filing Date:</th>								
-								<!--    house number and street are now combined into "address" and shown in the parent row
-									<th class="none">House Number:</th>
-									<th class="none">Street:</th>
-								-->
 								<th class="none">Community District:</th>
 							</tr>						
 						</thead>
@@ -815,13 +799,6 @@
 				
 				<div class="qry" id="statsDiv">
 					<div id="statsDivFilter">
-							<!-- 
-									<h4>Work Type: <b><span id="workTypeValue_txt"></span></b></h4>
-									<h4>Geography: <b><span id="geo_txt"></span></b></h4>
-									<h4>Time Frame: <b><span id="fromDate_txt"></span></b> - <b><span id="toDate_txt"></span></b></h4>
-									<h4>Total Job Filings: <b><span id="filteredData_txt"></span></b></h4>
-									<hr>
-							-->
 					</div>
 					<h4>Filings per Status (Top 5)</h4>
 					<svg id="chart_FilingStatus"></svg>
@@ -834,46 +811,16 @@
 				</div>
 			</div>
 		</div>		
-		<div class="col-md-7">		
-			<div class="row" id="map-container">
+		<div class="col-md-9">		
+			<div  id="map-container">
 				<div id="map"></div>
 			</div>
 		</div>		
     </div>
 </div>
+<!--    END  MAP AND TABLE DIV  -->
 
-<div class="modal" id="helpModal" tabindex="-1" role="dialog" data-keyboard="false">  <!--  help modal   CATHY SIMON -->
-  <div class="modal-dialog modal-md" role="document">
-    <div class="modal-content">
-	
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			<div class="row">
-				<div class="col-md-3"><img src="https://www1.nyc.gov/assets/buildings/images/content/header/logo.png" style="margin: 0px 20px;"></div>
-				<div class="col-md-9"><h3><img style="vertical-align: bottom;" ng-src="images/DOB-NOW-logo.png" height="40" src="DOB-NOW-logo.png"> Job Filings</h3></div>
-			</div>
-		</div>	
-		<div class="modal-body modal-md">
-	    <ul class="helpList">
-			<li>Filtering</li>
-				<ol>
-					<li>Select any point on Map to filter and select the corresponding table row(s)</li>
-					<li>Select the X in the search box to clear filtered data</li>
-				</ol>
-			<li>Getting Details</li>
-				<ol>
-					<li>Select any point on Map to display an information popup</li>
-					<li>Select the <img src="https://datatables.net/examples/resources/details_open.png"></img> icon in the table to show more details</li>
-					<li>Select the <img src="https://datatables.net/examples/resources/details_close.png"></img> icon in the table to close details</li>
-					<li>Select the Job Number from table details view to open the Milestones page</li>
-				</ol>
-			<li><button disabled >Export</button> button downloads all data from original query results</li>
-			<li><button disabled >Reset</button> button restores table and map to original state</li>
-		</ul>
-		</div>
-    </div>
-  </div>
-</div>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.9/d3.min.js"></script>
@@ -892,12 +839,44 @@
 <script src="https://cdn.datatables.net/v/dt/dt-1.10.12/r-2.1.0/se-1.2.0/datatables.min.js"  type="text/javascript" charset="utf8" ></script>
 <script src="build/nv.d3.js"></script>
 
-<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script> <!-- required for button CATHY SIMON -->
-<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script> <!-- required specifically for Export button CATHY SIMON-->
-  
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script> 
+
 <script>
 
-$(document).ready(function(){
+(function(){
+
+	//document.querySelector('#from').valueAsDate = new Date();
+	//document.querySelector('#to').valueAsDate = new Date();
+
+	    
+    document.querySelector("#geochoice").addEventListener("change", switchGeography);
+
+    function switchGeography(){
+        document.querySelectorAll("[id*='geogdiv']").forEach(  (item)=>{
+            
+			//document.querySelector("#"+item.id).style.display= (document.querySelector("#geochoice").value == item.id) ? "block" : "none";
+			if (document.querySelector("#geochoice").value == item.id) {
+				document.querySelector("#"+item.id).style.display="block";
+				document.querySelector("#"+item.id).required=true;
+			} else {
+				document.querySelector("#"+item.id).style.display="none";
+				document.querySelector("#"+item.id).required=false;
+			}
+
+
+
+
+
+        });
+    }
+
+
+
+
+
+
+
 
 $.fn.dataTable.Buttons.defaults.dom.button.className = ''; //'btn btn-primary'	
 
@@ -960,21 +939,38 @@ var width = $("#map").width(),
 		format = d3.time.format("%-m/%-d/%Y").parse,
 		boros = '#bronx, #brooklyn, #manhattan, #queens, #statenIsland, #citywide';
 
-	
+
+		//selectionWT=document.querySelector("#dropdownWT").value;
+
+
+
+
+
+
+		// selectionWT = $('#dropdownWT').val();
+		selectionCD = $('#dropdownCD').val();
+		selectionText = $('#zipTxtBox').val();
+
+
+
+
+	/*
 	//WORK TYPE
 	$('#dropdownWT').change(function() {
 		selectionWT = $('#dropdownWT').val();
         if(selectionWT != 0)
-        {
+       {
 			workTypeSelected = 1;
-        }
-        else
-        {
-			workTypeSelected = 0;
+       }
+      else
+      {
+		workTypeSelected = 0;
         }
 		console.log(selectionWT);
-		navBtnsWT();
+		//navBtnsWT();
 	});
+
+
 	//BOROUGHS
 	$(boros).click(function(){
         if($(this).is(':checked'))
@@ -987,10 +983,10 @@ var width = $("#map").width(),
         {
 			boroughSelected = 0;
         }		
-		$('#dropdownCD').val(0);
-		$('#dropdownBoro').val(0);
-		$('#zipTxtBox').val('');
-		navBtnsGeo();
+		//$('#dropdownCD').val(0);
+		//$('#dropdownBoro').val(0);
+		//$('#zipTxtBox').val('');
+		//navBtnsGeo();
     });
 	//COMMUNITY DISTRICT
 	$('#dropdownCD').change(function() {
@@ -1032,7 +1028,9 @@ var width = $("#map").width(),
 		$('input:radio[name=borough]').prop('checked',false);
 		navBtnsGeo();
 	});
-	
+	*/
+
+
 	//TIME FRAME
 	$('.datepicker').change(function() {
 			fromDate = $('#from').val();
@@ -1045,7 +1043,7 @@ var width = $("#map").width(),
 		{
 			timeFrameSelected = 0;
 		}
-		mapDataBtn();
+		//mapDataBtn();
 	});
 
 	//DATE PICKER
@@ -1091,19 +1089,19 @@ var width = $("#map").width(),
 	$("#dropdownWT").change(function() {
 		workTypeValue = $("#dropdownWT").val();
 		$('#workTypeValue_txt').text(workTypeValue);
-		$('.workTypeValue_txt').text(workTypeValue);  //using a class (vs an 'id') allows us to display the same div at multiple locations of the page CATHY SIMON
+		$('.workTypeValue_txt').text(workTypeValue);  
 		console.log(workTypeValue);
 	});
 	$("input[name='borough']").click(function(){
 		boroValue = $("input[name='borough']:checked").val();
 		$('#geo_txt').text(boroValue);
-		$('.geo_txt').text(boroValue);  //using a class (vs an 'id') allows us to display the same div at multiple locations of the page CATHY SIMON
+		$('.geo_txt').text(boroValue);  
 		console.log(boroValue);
 	});
 	$('#dropdownCD').change(function() {
 		cdValue = $('#dropdownCD').val();
 		$('#geo_txt').text('Community District '+cdValue);
-		$('.geo_txt').text('Community District '+cdValue);  //using a class (vs an 'id') allows us to display the same div at multiple locations of the page CATHY SIMON
+		$('.geo_txt').text('Community District '+cdValue);  
 		console.log(cdValue);
 	});
 	$('#zipTxtBox').keyup(function() {
@@ -1112,10 +1110,14 @@ var width = $("#map").width(),
 		$('.geo_txt').text(zipValue);
 		console.log(zipValue);
 	});
+
+
+
+
 	$('#from').change(function() {
 		fromDate = $('#from').datepicker({ dateFormat: 'm-d-yy' }).val();
 		$('#fromDate_txt').text(fromDate);
-		$('.fromDate_txt').text(fromDate);  //using a class (vs an 'id') allows us to display the same div at multiple locations of the page CATHY SIMON
+		$('.fromDate_txt').text(fromDate);  
 		console.log(fromDate);
 		fromFormatDate = format(fromDate);	
 		console.log(fromFormatDate);
@@ -1123,92 +1125,12 @@ var width = $("#map").width(),
 	$('#to').change(function() {
 		toDate = $('#to').datepicker({ dateFormat: 'm-d-yy' }).val();
 		$('#toDate_txt').text(toDate);
-		$('.toDate_txt').text(toDate); //using a class (vs an 'id') allows us to display the same div at multiple locations of the page CATHY SIMON
+		$('.toDate_txt').text(toDate); 
 		console.log(toDate);
 		toFormatDate = format(toDate);
 		console.log(toFormatDate);
 	});
 	
-	function navBtnsWT(){
-		if (workTypeSelected > 0)
-		{
-			$('#nextBtnWT').attr('disabled', false);
-		}
-		else
-		{
-			$('#nextBtnWT').attr('disabled', true);
-		}	
-	}
-
-	function navBtnsGeo(){
-		if (boroughSelected || commDistSelected || zipSelected > 0)
-		{
-			$('#nextBtnGeo').attr('disabled', false);
-		}
-		else
-		{
-			$('#nextBtnGeo').attr('disabled', true);
-		}	
-	}
-	var nextBtnWTClick = document.getElementById('nextBtnWT');	
-	nextBtnWTClick.onclick = function(){
-		console.log("clicked");
-		$("#qryDivWT").hide();
-		$("#desc-text-WT").hide();
-		$('#nextBtnWT').hide();
-		$('#prevBtnWT').hide();
-		$("#qryDivGeo").show();
-		$("#desc-text-geo").show();
-		$('#nextBtnGeo').show().attr('disabled', true);
-		$('#prevBtnGeo').show().attr('disabled', false);
-		$('input:radio[name=borough]').prop('checked',false);
-		$('#dropdownCD').val(0);
-		$('#dropdownBoro').val(0);
-		$('#zipTxtBox').val('');
-	}
-	
-	var prevBtnGeoClick = document.getElementById('prevBtnGeo');
-	prevBtnGeoClick.onclick = function(){
-		$("#qryDivWT").show();
-		$("#desc-text-WT").show();
-		$("#nextBtnWT").show().attr('disabled', true);
-		$("#prevBtnWT").show().attr('disabled', true);
-		$("#qryDivGeo").hide();
-		$("#desc-text-geo").hide();
-		$("#nextBtnGeo").hide();
-		$("#prevBtnGeo").hide();	
-		$("#dropdownWT").val('0');
-	}
-	
-	var nextBtnGeoClick = document.getElementById('nextBtnGeo');
-	nextBtnGeoClick.onclick = function(){
-		$("#qryDivTime").show();
-		$("#desc-text-Time").show();
-		$("#prevBtnTime").show().attr("disabled", false);
-		$("#mapBtn").show().attr("disabled", true);
-		$("#qryDivGeo").hide();
-		$("#desc-text-geo").hide();	
-		$("#nextBtnGeo").hide();
-		$("#prevBtnGeo").hide();
-		$('#from').val('');
-		$('#to').val('');
-	}
-	
-	var prevBtnTimeClick = document.getElementById('prevBtnTime');
-	prevBtnTimeClick.onclick = function(){
-		$("#qryDivGeo").show();
-		$("#desc-text-Geo").show();
-		$("#nextBtnGeo").show().attr('disabled', true);
-		$("#prevBtnGeo").show().attr('disabled', false);
-		$("#qryDivTime").hide();
-		$("#desc-text-Time").hide();
-		$("#prevBtnTime").hide();	
-		$("#mapBtn").hide();
-		$('input:radio[name=borough]').prop('checked',false);
-		$('#dropdownCD').val(0);
-		$('#dropdownBoro').val(0);
-		$('#zipTxtBox').val('');
-	}
 
 	function tableStatsAppear(){
 		$('#btnTableStats').show().siblings('div').hide();
@@ -1359,7 +1281,7 @@ var width = $("#map").width(),
 		});
 	
 		
-		// add event listener for clicking circle, and searching the datatable on the right (Cathy Simon 6/4/2019)
+		
 		$('#filingsTable').on( 'click', function (e,LocationBin) {
 				if (LocationBin) {
 					table.search( LocationBin).draw();
@@ -1412,6 +1334,10 @@ var width = $("#map").width(),
 		}
 	}	
 	
+
+
+/*
+
 	var mapDataClick = document.getElementById('mapBtn');
 	mapDataClick.onclick = function(){
 		console.log("clicked");
@@ -1419,6 +1345,10 @@ var width = $("#map").width(),
 		tableStatsAppear();
 		$("#map-container").show().css("display", "block");
 		map.invalidateSize(); // Expands map after div is displayed.
+
+
+		document.querySelector("ui-form").style.dislay="none";
+		
 		$("#desc-text-Time").hide();
 		$("#qryDivTime").hide();
 		$("#prevBtnTime").hide();
@@ -1430,12 +1360,14 @@ var width = $("#map").width(),
 		
 		
 		$('#searchCriteria').hide();
-		$('#searchCriteria').text("Worktype: " +  workTypeValue + ", Boro: " + boroValue + ", Date Range: "+ fromDate + " - " + toDate );   //cathy simon
 		
-		
-		
+		$('#searchCriteria').text("Worktype: " +  workTypeValue + ", Boro: " + boroValue + ", Date Range: "+ fromDate + " - " + toDate ); 
 	}
 	
+*/
+
+
+
 	$('input:radio[name="options"]').change(function() {
 		if ($(this).val() === 'stats') {
 			$("#table-desc-text").hide();
@@ -1476,7 +1408,7 @@ var width = $("#map").width(),
 			})
 
 			.on('click', function(d){
-				$('#filingsTable').trigger( "click",d.bin   ); //user clicks point on map, triggers click handler for table added Cathy Simon
+				$('#filingsTable').trigger( "click",d.bin   ); 
 			
 				tooltip.style("visibility", "visible");
 				tooltip.html(
@@ -1533,14 +1465,24 @@ var width = $("#map").width(),
 						d.Zip = [d.zip];
 			})
 			filteredData = data.filter(function(d){
-						if(boroValue == "Citywide"){
+						if(boroValue == "Citywide"  && document.querySelector("#geochoice").value == "geogdivborough"   ){
 							return d["Work Type Name"] == selectionWT && (d.filingDate >= fromFormatDate && d.filingDate <= toFormatDate);
-						} else if ($("input[name='borough']:checked").length > 0){
+
+
+						//  } else if ($("input[name='borough']:checked").length > 0){
+						} else if (    document.querySelector("#geochoice").value == "geogdivborough"      ){
 							return d["Work Type Name"] == selectionWT && (d.filingDate >= fromFormatDate && d.filingDate <= toFormatDate) && [d.Borough] == boroValue;
-						} else if ($("#zipTxtBox").val() !=""){
+
+
+						// } else if ($("#zipTxtBox").val() !=""){
+						} else if (    document.querySelector("#geochoice").value == "geogdivzipcode"      ){
 							return d["Work Type Name"] == selectionWT && (d.filingDate >= fromFormatDate && d.filingDate <= toFormatDate) && [d.zip] == zipValue;
+
+
 						} else{
 							return d["Work Type Name"] == selectionWT && (d.filingDate >= fromFormatDate && d.filingDate <= toFormatDate) && d["Community Board"] == Number(cdValue);
+
+
 						}
 			})
 			points = filteredData.map(function(d){
@@ -1779,9 +1721,94 @@ var width = $("#map").width(),
 		
 	}
 
+	const form = document.querySelector('#filterForm');
+
+form.addEventListener('submit', (e) => 		{
+				e.preventDefault();
+				//document.querySelector("#filterForm").style.dislay="none";
+
+				let fieldName = document.querySelector("#dropdownWT");
+				selectionWT = fieldName.options[fieldName.selectedIndex].value;
 
 
-});
+				let theGeog = document.querySelector("#geochoice").value;
+
+
+				switch (theGeog) {
+						case "geogdivborough":  
+								document.querySelectorAll("[name='borough']").forEach( (item) => {
+											console.log('');
+										if (item.checked) {
+											boroValue=item.value
+											$('#geo_txt').text(boroValue);
+											$('.geo_txt').text(boroValue);  
+
+										}
+									}
+								)
+							break;
+
+						case "geogdivzipcode":  //#zipTxtBox
+							zipValue=document.querySelector("#zipTxtBox").value;
+							break;
+						default: //commdistrict #dropdownCD
+							fieldName = document.querySelector("#dropdownCD");
+							selectionWT = fieldName.options[fieldName.selectedIndex].value;
+							console.log("");
+
+				}
+            
+			
+
+
+				//})
+
+
+
+
+        //});
+
+
+
+		 
+		 		let theform = document.querySelector("#formContainer");
+				theform.style.display="none";
+				
+				
+				theform = document.querySelector("#filterForm");
+				theform.style.display="none";
+
+
+let divTableMap = document.querySelector(".divTableMap");
+divTableMap.style.display="block";
+
+				mapData();
+				tableStatsAppear();
+				$("#map-container").show().css("display", "block");
+				map.invalidateSize(); // Expands map after div is displayed.
+				$("#table-desc-text").show();
+				$("#ui-container").show();
+				//$("#div_homePageBtn_map").show();
+				$("#table-desc-text").show();
+				
+				
+				/*
+					$("#desc-text-Time").hide();
+					$("#qryDivTime").hide();
+					$("#prevBtnTime").hide();
+					$("#mapBtn").hide();
+					$("#qry-col").hide();
+					$('#searchCriteria').hide();
+				*/
+				$('#searchCriteria').text("Worktype: " +  workTypeValue + ", Boro: " + boroValue + ", Date Range: "+ fromDate + " - " + toDate ); 
+		}
+
+);
+
+
+
+})()
+
 
 </script>
 

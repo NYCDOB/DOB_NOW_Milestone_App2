@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">  
   <link href="css/styles.css" rel="stylesheet"> 
+  <link rel="icon" type="image/png"  href="data/dob_logo.png">  
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css' rel='stylesheet' type='text/css'/>
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
@@ -14,185 +15,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 </head>
 <style>
-	html{
-		height: 100%;
-		overflow: hidden;
+	.mynavlink:hover {
+		text-decoration: none;
+		text-shadow:  0 0 1em blue, 0 0 0.2em blue;
 	}
 	body{
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		overflow: auto;
+		padding-top:50px
 	}
-	#multiFiling-text {
-		<!-- padding-left: 200px; -->
-		<!-- padding-bottom: 5px; -->		
-		margin-top: -12px;
+	#multiFiling-text {	
+		margin-top: 20px ;
+		margin-bottom: 20px ;
 		font-size: 20px;
 		color: #002878;
-		width: 600px;
-		padding-left: 10px;
-		padding-top: 20px;
 		text-align: center;
-		<!-- font-style: italic; -->		
-		
 	}
 	#tableDiv{
 		border: 3px solid black;
-		width: 600px;
-		height: 400px;
-		display: block;
+		min-height: 400px;
 		padding: 10px;
 	}
 	#filingsTable{
 		font-size: 12px;
 		display: block;
 	}
-	#button-container{
-		width: 600px;
-		margin-left: 6px;
-		margin-top: 6px;
-	}
-	#div_homePageBtn{
-		display: block;
-		padding-top: 7px;
-	}
-	#homePageBtn{
-		padding: 5px 5px 5px 5px;
-		background: #46A6DD;
-		color: white;
-		font-size: 14px;
-		font-weight: bold;
-		display: inline-block;
-		float: right;
-		margin-left: 20px;
-		position: absolute;
-	}
-	#homePageBtn:hover{
-		background: #002878;
-	}
-	#mapBtn{
-		padding: 5px 5px 5px 5px;
-		background: #46A6DD;
-		color: white;
-		font-size: 18px;
-		font-weight: bold;
-		float: right;
-	}
-	#mapBtn:hover{
-		background: #002878;
-	}
-	#mapBtn:disabled{
-		color: #a9a9a9;
-		background: #D8D8D8;
-	}
-	#qryAgg-container{
-		position: relative;
-		display: block;
-		border: 3px solid black;
-		height: 250px;
-		width: 600px;
-		margin-top: 20px;
-	}
-	#qryAgg {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		background-color: #fffff;
-		display: block;
-	}
 
-	#qryAgg_txt{
-		text-align: center;
-		font-size: 22px;
-	}
-	#btnAggFilings{
-		padding: 10px 20px 10px 20px;
-		background: #46A6DD;
-		color: white;
-		font-size: 18px;
-		font-weight: bold;
-		display: block; 
-		margin: 0 auto;
-	}
-	#btnAggFilings:hover{
-		background: #002878;
-	}
-	#qryInd-container{
-		position: relative;
-		display: block;
-		border: 3px solid black;
-		height: 350px;
-		width: 600px;
-		margin-top: 20px;
-	}
-	#qryInd {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		background-color: #fffff;
-		display: block;
-		padding-left: 40px;
-	}
-	#qry_txtGroup{
-		padding-top: 20px;
-		<!-- padding-left: 50px; -->
-	}
-	#qryInd_txt{
-		display: inline-block;
-	}
-	#qryInd_txt label{
-		display: block;
-		font-size: 20px;
-	}
-	#btnIndFilings_container{
-		padding-right: -50px;
-	}
-	#btnIndFilings{
-		padding: 8px 18px 8px 18px;
-		background: #46A6DD;
-		color: white;
-		font-size: 16px;
-		font-weight: bold;
-		display: block; 
-		margin: 0 auto;		
-	}
-	#btnIndFilings:hover{
-		background: #002878;
-	}
-	#btnIndFilingsName{
-		padding: 8px 18px 8px 18px;
-		background: #46A6DD;
-		color: white;
-		font-size: 16px;
-		font-weight: bold;
-		display: block; 
-		margin: 0 auto;		
-	}
-	#btnIndFilingsName:hover{
-		background: #002878;
-	}
-	#qry-banner{
-		position: relative;
-		display: block;
-		height: 35px;
-		width: 100%;
-		background-color: #002878;
-		font-size: 25px;
-		color: white;
-	}
-	#qryIndAppName_txt{
-		font-size: 20px;
-		padding-top: 40px;
-		padding-left: 200px;
-	}
-	#qryIndAppName-container{
-		padding-top: 35px;
-		<!-- padding-left: 100px; -->
-	}
-	#appNameTxtBox{
-		width: 270px;
-	}
 	#mapBtn{
 		padding: 5px 5px 5px 5px;
 		background: #46A6DD;
@@ -207,94 +53,103 @@
 		color: #a9a9a9;
 		background: #D8D8D8;
 	}
-	#button-container{
-		padding: 5px 5px 5px 14px;	
+
+	#loadpage{		
+		background-color:white; 
+		margin-top: 25%;	
 	}
-	.btn-dark{
-		color: white;
-		background-color: #46A6DD;
-		border-color: white;
-		font-weight: bold;
-	}
-	.btn-dark:hover, .btn-dark:focus, .btn-dark:active, .btn-dark.active, .open>.dropdown-toggle.btn-dark{
-		color: white;
-		background-color: #002878;
-		font-weight: bold;
-	}
-	.hr-sect {
-		display: flex;
-		flex-basis: 100%;
-		align-items: center;
-		color: rgba(0, 0, 0, 0.35);
-		<!-- margin: 0px 0px; -->
+
+	@media screen and (min-width: 0px) {
+		body {
+			padding-top: 100px;
+			
+		}
+	}	
+	@media screen and (min-width: 1200px) {
+		body {
+			padding-top: 70px;
+		}
 
 	}
-	.hr-sect::before,
-	.hr-sect::after {
-		content: "";
-		flex-grow: 1;
-		background: rgba(0, 0, 0, 0.35);
-		height: 1px;
-		font-size: 0px;
-		line-height: 0px;
-		margin: 0px 8px;
-	}
-	.ui-autocomplete{
-            max-height: 200px;
-            overflow-y: auto;
-            /* prevent horizontal scrollbar */
-            overflow-x: hidden;
-            /* add padding to account for vertical scrollbar */
-            padding-right: 20px;	
-	}
-	#loadpage{
-		margin: auto;
-		padding-top: 150px;
-		padding-left: 15px;
-	}
+
 
 </style>
 
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">  <!-- 	 CATHY SIMON  ZZZ  -->
-	<a class="navbar-brand" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank" title="NYC Buildings Home"></a>	
-	<a class="navbar-brand2" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank" title="DOB NOW Build"></a>	
-	<div class="navbar-title">
-		DOB NOW Job Filings
-	</div>
-	<div style="margin-left: 60px">
-		<a href="https://nycdob.github.io/DOB_NOW_Milestone_App2/index_splash.html" id="homePageBtn" class="btn btn-dark navbar-btn " style="float:right" role="button">Back to Homepage</a>
+	<nav class="navbar navbar-default  navbar-fixed-top" style="min-height:50px" >
+		<div class="container-fluid">
+				<div class="navbar-header">
 
-		<a href="https://github.com/NYCDOB/DOB_NOW_Milestone_App/blob/gh-pages/README.md"  target=”_blank” id="homePageBtn2" class="btn btn-dark navbar-btn " style="float:right" role="button">About</a>
-	</div>
-</nav>
-<div class="container main">
-	<div class="row">
-		<div class="col-md-12 col-md-offset-6">	
-			<div class="row" id="multiFiling-text">
-				<i><b>MULTIPLE JOB FILINGS FOUND...</b></i><br/>Click on a job number to view the <i><b>Milestone Page</b></i><br/> or click on the <i><b>Map Data</b></i> button to view all filings on a map.
-			</div>
-		</div>
-	</div>
-	<br/><br/>
-    <div class="row">  		
-		<div class="col-md-12 col-md-offset-6">	
-			<div class="qry" id="tableDiv">
-				
-				<div id="loadpage" style="position:absolute; 
-					left:20px; top:4px; 
-					background-color:white; 
-					layer-background-color:white; 
-					height:80%; width:550px;"> 
-					  <p align="center" style="font-size: large;">       
-						<B>Loading...Please wait!</B><br/><br/>
-						<img id="loader" src="data/spinner.gif">
-					  </p>
+					<a class=" navbar-brand navbar-link" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank">
+						<img alt="" src="" height="50px" >
+					</a>
+					<a class="navbar-link" style="text-decoration: none;" href="index_splash.html">
+							<!--  <div class="navbar-text" title="Job Filings Home" style="color:#44a8de; font-size:35px;font-weight:bold;margin:auto 1px;">  -->
+								<span style="color:#44a8de; font-size:35px;font-weight:bold;">
+									DOB NOW Job Filings
+								</span>
+							<!-- </div>  -->
+					</a>					
+					<button type="button"  class="navbar-toggle collapsed  zpull-right" data-toggle="collapse" 
+					data-target="#collapse-content" title="Menu" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse"  id="collapse-content">
+					<div class="znavbar-right znavbar-link">
+						<div>
+							<a class="znavbar-link navbar-right" href="https://a810-dobnow.nyc.gov/Publish/#!/" target="_blank">
+								<span class="toggleText navbar-text hidden-lg hidden-md hidden-sm mynavlink h4" style="color:navy;">DOB Build Now</span>
+								<img alt="DOB NOW Build logo" class="visible-lg-inline visible-md-inline visible-sm-inline" src="http://a810-dobnow.nyc.gov/Publish/images/dob_now_build.jpg" height="50px" >
+							</a>
+						</div>
+						<div>
+							<a class="znavbar-link navbar-right" href="https://github.com/NYCDOB/DOB_NOW_Milestone_App/blob/gh-pages/README.md" target="_blank">
+								<span class="toggleText navbar-text mynavlink h4" style="color:navy;padding-right:50px;">About</span>
+							</a>						
+						</div>
+						<div>
+							<a class="znavbar-link navbar-right" href="https://nycdob.github.io/DOB_NOW_Milestone_App/index_overview" target="_blank">
+								<span class="toggleText navbar-text mynavlink h4" style="color:navy;padding-right:50px;">Citywide Filings</span>
+							</a>						
+						</div>
+
+						<div>
+							<a class="znavbar-link navbar-right" href="index_splash.html" >
+								<span class="toggleText navbar-text mynavlink h4" style="color:navy;padding-right:50px;">Home</span>
+							</a>						
+						</div>
 				</div>
 				
-				<table id="filingsTable" class="display" style="width:100%">
-					<thead>
-						<tr>
+				</div>
+		</div>
+	</nav>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-7 col-lg-offset-2" id="multiFiling-text">	
+				<div>	<i><b>MULTIPLE JOB FILINGS FOUND...</b></i>			</div>
+				<div>	Click on a job number to view the <i><b>Milestone Page</b>	</i>		</div>
+				<div>	or click on the <i><b>Map Data</b></i> button to view all filings on a map.			</div>
+			</div>
+	</div>
+
+	
+    <div class="row">  		
+		<div class="col-lg-7 col-lg-offset-2">	
+			<div id="tableDiv">				
+				<div class="text-center" id="loadpage"> 
+						Loading...Please wait!<br>
+						<img id="loader" src="data/spinner.gif">
+				</div>
+				
+				<table id="filingsTable" class="display szzzzz" style="zwidth:100%;">
+					<thead >
+						<tr class="tableRows" style="visibility:hidden">
 							<th></th>
 							<th>Job Number</th>
 							<th>Applicant Name</th>
@@ -309,12 +164,20 @@
 					</thead>
 				</table>
 			</div>
-			<div class="row" id="button-container">
-				<button type="button" form="ui-radio" id="mapBtn">Map Data</button>
-			</div>
 		</div>		
-    </div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-6 col-lg-offset-3 text-center" style="margin-top:15px;">
+				<button type="button" form="ui-radio" id="mapBtn">Map Data</button>
+		</div>
+	</div>
+
 </div>
+
+
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.9/d3.min.js"></script>
 <script src="Leaflet.D3SvgOverlay-master/L.D3SvgOverlay.min.js"></script>
@@ -331,8 +194,6 @@
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/v/dt/dt-1.10.12/r-2.1.0/se-1.2.0/datatables.min.js"></script>
 <script src="build/nv.d3.js"></script>
 
-
-  
 <script>
 
 $(document).ready(function(){
@@ -364,7 +225,8 @@ $(document).ready(function(){
 							 { 'data': null }, 
 							 { 'data': "key_id",
 							   'render': function(data,type,row,meta){ 
-									return '<a href= "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#' + data +'" target="_blank">' + data + '</a>';
+									//return '<a href= "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#' + data +'" target="_blank">' + data + '</a>';
+									return '<a href= "index_property.html#' + data +'" target="_blank">' + data + '</a>';
 							 }},
 							 { 'data': "Applicant Name" },
 							 { 'data': "Bin" },
@@ -386,6 +248,8 @@ $(document).ready(function(){
 							'order': [[1, "asc"]]
 					});
 					$('#loadpage').hide();
+					document.querySelector(".tableRows").style.visibility = "visible";
+
 		});
 	}
 
@@ -410,7 +274,8 @@ $(document).ready(function(){
 		loadTable();
 		
 		multiFilingMap.onclick = function(){
-				var multiFilingURL = "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_indivFilingMultiMap#" + multiFilingName;
+				// var multiFilingURL = "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_indivFilingMultiMap#" + multiFilingName;  
+				var multiFilingURL = "index_indivFilingMultiMap.html#" + multiFilingName;
 				location.href = multiFilingURL;
 			}
 	});

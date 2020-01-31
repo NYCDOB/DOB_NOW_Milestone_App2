@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>DOB NOW Job Filings</title>   
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png"  href="data/dob_logo.png">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">  
   <link href="css/styles.css" rel="stylesheet"> 
@@ -16,19 +16,25 @@
 </head>
 <style>
 	html{
-		height: 100%;
-		overflow: hidden;
+		zheight: 100%;
+		zoverflow: hidden;
+	}
+
+	.mynavlink:hover {
+		text-decoration: none;
+		text-shadow:  0 0 1em blue, 0 0 0.2em blue;
 	}
 	body{
-		height: 100%;
+		zheight: 100%;
 		margin: 0;
 		padding: 0;
-		overflow: auto;
+		padding-top: 50px;		
+		zoverflow: auto;
 	}
 	.desc-text{
 		padding-left: 20px;
 		padding-bottom: 5px;
-		margin-top: -12px;
+		margin-top: 12px;
 		font-size: 18px;
 		font-style: italic;
 		color: #002878;
@@ -60,7 +66,8 @@
 		visibility: hidden;
 	}
 	#map {
-		position: absolute;
+		zposition: absolute;
+		zposition: relative;
 		height: 100%;
 		width: 100%;
 		background-color: #333;
@@ -68,10 +75,11 @@
 	}
 	#map-container{
 		position: relative;
-		display: block;
+		zdisplay: block;
 		border: 3px solid black;
-		width: 1400px;
+		zwidth: 1400px;
 		height: 786px;
+		
 	}
 	.radio{
 		padding-bottom: 7px;
@@ -201,9 +209,7 @@
 	tr.shown td.details-control {
 		background: url('https://datatables.net/examples/resources/details_close.png') no-repeat center center;
 	}
-	<!-- #table-desc-text{ -->
-		<!-- display: none; -->
-	<!-- } -->
+
 	#stat-desc-text{
 		display: none;
 	}
@@ -248,40 +254,99 @@
 		-webkit-appearance: searchfield-cancel-button;
 	}
 
-	td.parentRow {  	 /*   CATHY SIMON  ZZZ */
+	td.parentRow {  	
 		cursor: pointer;
 	}
 	
-	table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child  {  	 /*   CATHY SIMON  ZZZ */
+	table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child  {  
 		cursor: default;
 	}	
 	
 	
 
-	.datatableHeading {   /*  make DataTable heading smaller to allow for additional buttons. Class datatableHeading is used in  "dom" definition of table  CATHY SIMON  ZZZ  */
+	.datatableHeading {   /*  make DataTable heading smaller to allow for additional buttons. Class datatableHeading is used in  "dom" definition of table   */
 		font-size: 14px;
 	}	
 
-	#filingsTable_filter input {   /* 	make the search field smaller, since we added additional buttons to the table heading  	CATHY SIMON  ZZZ  */
+	#filingsTable_filter input {   /* 	make the search field smaller, since we added additional buttons to the table heading  	  */
 		margin-left: 0.5em;
 		width: 140px;
 	}
+
+
+	@media screen and (min-width: 0px) {
+		body {
+			padding-top: 100px;
+			
+		}
+	}	
+	@media screen and (min-width: 1200px) {
+		body {
+			padding-top: 70px;
+		}
+
+	}
+
 </style>
 
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">  <!-- 	 CATHY SIMON  ZZZ  -->
-	<a class="navbar-brand" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank" title="NYC Buildings Home"></a>	
-	<a class="navbar-brand2" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank" title="DOB NOW Build"></a>	
-	<div class="navbar-title">
-		DOB NOW Job Filings
-	</div>
-	<div style="margin-left: 60px">
-		<a href="https://nycdob.github.io/DOB_NOW_Milestone_App2/index_splash.html" id="homePageBtn" class="btn btn-dark navbar-btn " style="float:right" role="button">Back to Homepage</a>
+	<nav class="navbar navbar-default  navbar-fixed-top" style="min-height:50px" >
+		<div class="container-fluid">
+				<div class="navbar-header">
 
-		<a href="https://github.com/NYCDOB/DOB_NOW_Milestone_App/blob/gh-pages/README.md"  target=”_blank” id="homePageBtn2" class="btn btn-dark navbar-btn " style="float:right" role="button">About</a>
-	</div>
-</nav>
-<div class="container main">
+					<a class=" navbar-brand navbar-link" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank">
+						<img alt="" src="" height="50px" >
+					</a>
+					<a class="navbar-link" style="text-decoration: none;" href="index_splash.html">
+							<!--  <div class="navbar-text" title="Job Filings Home" style="color:#44a8de; font-size:35px;font-weight:bold;margin:auto 1px;">  -->
+								<span style="color:#44a8de; font-size:35px;font-weight:bold;">
+									DOB NOW Job Filings
+								</span>
+							<!-- </div>  -->
+					</a>					
+					<button type="button"  class="navbar-toggle collapsed  zpull-right" data-toggle="collapse" 
+					data-target="#collapse-content" title="Menu" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse"  id="collapse-content">
+					<div class="znavbar-right znavbar-link">
+						<div>
+							<a class="znavbar-link navbar-right" href="https://a810-dobnow.nyc.gov/Publish/#!/" target="_blank">
+								<span class="toggleText navbar-text hidden-lg hidden-md hidden-sm mynavlink h4" style="color:navy;">DOB Build Now</span>
+								<img alt="DOB NOW Build logo" class="visible-lg-inline visible-md-inline visible-sm-inline" src="http://a810-dobnow.nyc.gov/Publish/images/dob_now_build.jpg" height="50px" >
+							</a>
+						</div>
+						<div>
+							<a class="znavbar-link navbar-right" href="https://github.com/NYCDOB/DOB_NOW_Milestone_App/blob/gh-pages/README.md" target="_blank">
+								<span class="toggleText navbar-text mynavlink h4" style="color:navy;padding-right:50px;">About</span>
+							</a>						
+						</div>
+						<div>
+							<a class="znavbar-link navbar-right" href="https://nycdob.github.io/DOB_NOW_Milestone_App/index_overview" target="_blank">
+								<span class="toggleText navbar-text mynavlink h4" style="color:navy;padding-right:50px;">Citywide Filings</span>
+							</a>						
+						</div>
+
+						<div>
+							<a class="znavbar-link navbar-right" href="index_splash.html" >
+								<span class="toggleText navbar-text mynavlink h4" style="color:navy;padding-right:50px;">Home</span>
+							</a>						
+						</div>
+				</div>
+				
+				</div>
+		</div>
+	</nav>
+
+
+
+
+
+<div class="container-fluid zmain">
 	<div class="row">
 		<div class="desc-text" id="table-desc-text">
 			Job Filings for selected location...
@@ -290,8 +355,14 @@
 			Summary statistics for the location's Job Filings...
 		</div>
 	</div>
+
+
+
+
+
+
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-lg-12">
 			<div class="btn-group btn-group-toggle" data-toggle="buttons" id="btnTableStats">
 			  <label class="btn btn-dark active" id="btnText">
 				<input type="radio" name="options" id="table" value="table" checked> Table
@@ -303,8 +374,12 @@
 		</div>
     </div>	
 
+
+
+
+
     <div class="row">  
-	  <div class="col-md-5">
+	  <div class="col-lg-5">
 			<div id="ui-container" class="ui" style="height:786px">
 				<!--  move summary info outside of div so that it displays on table and chart tabs -->
 				<h4>Address: <b><span id="appNameValue_txt"></span></b></h4>
@@ -315,7 +390,6 @@
 				<div id="loadpage" style="position:absolute; 
 					left:38px; top:4px; 
 					background-color:white; 
-					layer-background-color:white; 
 					height:80%; width:88%;"> 
 					  <p align="center" style="font-size: large;">       
 						<B>Loading...Please wait!</B><br/><br/>
@@ -329,18 +403,14 @@
 					<thead>
 						<tr>
 							<th></th>
-							<th>Address</th>  <!-- 	 CATHY SIMON  ZZZ  -->
-							<th>Borough</th>  <!-- 	 CATHY SIMON  ZZZ  -->
+							<th>Address</th>  
+							<th>Borough</th>  
 							<th class="none">Job Number</th>
 							<th class="none">Applicant Name</th>
 							<th class="none">BIN:</th>
 							<th class="none">Work Type:</th>
 							<th class="none">Filing Date:</th>
-<!-- 			CATHY SIMON ZZZ				
-							<th class="none">House Number:</th>  
-							<th class="none">Street:</th>
-							<th class="none">Borough:</th>
--->							
+
 							<th class="none">Community District:</th>							
 						</tr>						
 					</thead>
@@ -348,12 +418,6 @@
 				</div>
 				
 				<div class="qry" id="statsDiv">
-					<!--   CATHY SIMON  ZZZ  
-					<h4>Address: <b><span id="appNameValue_txt"></span></b></h4>
-					<h4>Total Job Filings: <b><span id="filteredData_txt"></span></b></h4>
-					<hr>
-					-->
-					
 					<br/>
 					<h4>Work Types (Top 5)</h4>
 					<svg id="chart_workType"></svg>
@@ -367,15 +431,15 @@
 			</div>
 		</div>
 		
-		<div class="col-md-7">		
-			<div class="row" id="map-container">
+		<div class="col-lg-7">		
+			<div class="zrow" id="map-container">
 				<div id="map"></div>
 			</div>
 		</div>
     </div>
 </div>
-	
-<div class="modal" id="helpModal" tabindex="-1" role="dialog" data-keyboard="false">  <!--  help modal   CATHY SIMON ZZZ   -->
+<!-- 
+<div class="modal" id="helpModal" tabindex="-1" role="dialog" data-keyboard="false"> 
   <div class="modal-dialog modal-md" role="document">
     <div class="modal-content">
 	
@@ -404,7 +468,7 @@
     </div>
   </div>
 </div>
-
+-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.9/d3.min.js"></script>
 <script src="Leaflet.D3SvgOverlay-master/L.D3SvgOverlay.min.js"></script>
@@ -417,8 +481,8 @@
 <script src="https://d3js.org/d3-time-format.v2.min.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/v/dt/dt-1.10.12/r-2.1.0/se-1.2.0/datatables.min.js"></script>
 <script src="build/nv.d3.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script> <!-- required for button CATHY SIMON ZZZ  -->
-<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script> <!-- required specifically for Export button CATHY SIMON  ZZZ -->
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script> <!-- required for button  -->
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script> <!-- required specifically for Export button -->
 
 
   
@@ -469,9 +533,7 @@ var width = $("#map").width(),
 	mapData();
 	tableStatsAppear();
 	
-	
-	
-	<!-- //CRITERIA SELECTOR (TABLE & STATISTICS) -->
+
 	$('input:radio[name="options"]').change(function(){
 		var inputValue = $(this).attr("value");
 		var inputValueDiv = "#"+inputValue+"Div";
@@ -491,7 +553,7 @@ var width = $("#map").width(),
 						data: filteredData,
 						  'responsive': {
 							'details': {
-							   //   'type': 'column',   CATHY SIMON   <!-- 	 CATHY SIMON  ZZZ  -->
+							   //   'type': 'column',  
 							   'target': 0
 							}
 						  },
@@ -503,7 +565,7 @@ var width = $("#map").width(),
 							'targets': 0
 
 							},
-							{   <!-- 	 CATHY SIMON  ZZZ  -->
+							{   
 								"targets": 1,
 								"data": null,   //   "address",
 								"render": function ( data, type, row ) {
@@ -513,25 +575,26 @@ var width = $("#map").width(),
 						],
 						  'columns': [ 
 								{ 'data': null }, 
-								{ 'data': "address", "className":"parentRow"  }, <!-- 	 CATHY SIMON  ZZZ  -->
+								{ 'data': "address", "className":"parentRow"  }, 
 								{ 'data': "Borough", "className":"parentRow" },  
 
 								{ 'data': "key_id",
 								'render': function(data,type,row,meta){ 
-								return '<a href= "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#' + data +'" target="_blank">' + data + '</a>';
+								//return '<a href= "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#' + data +'" target="_blank">' + data + '</a>';
+								return '<a href= "index_property.html#' + data +'" target="_blank">' + data + '</a>';
 								}},
 								{ 'data': "Applicant Name" },
 								{ 'data': "Bin" },
 								{ 'data': "Work Type Name" },
 								{ 'data': "Filing Date" },
-								// { 'data': "House Number" },  <!-- 	 CATHY SIMON  ZZZ  -->
+								// { 'data': "House Number" },  
 								// { 'data': "Street Name" },
 								// { 'data': "Borough.0" },
 								{ 'data': "Community Board" }					 
 						  ],
 						  
-	  					"dom": 'r<"datatableHeading"Bf>tip',  <!-- 	 CATHY SIMON  ZZZ  -->
-						"buttons": [ <!-- 	 CATHY SIMON  ZZZ  -->
+	  					"dom": 'r<"datatableHeading"Bf>tip', 
+						"buttons": [
 									// BASIC EXPORT (minified)
 									/*{extend: 'csvHtml5',text: 'Export Data',customize: function(csv){return csv;}},*/
 									
@@ -586,11 +649,11 @@ var width = $("#map").width(),
 							],	
 
 							
-						// 'select': {   <!-- 	 CATHY SIMON  ZZZ  -->
+						// 'select': {  
 						//	 'style': 'single',
 						//  },
 							'lengthChange': false,
-							'scrollY': '540px',			//CATHY SIMON
+							'scrollY': '540px',
 							'scrollCollapse': true,
 							'paging': false,
 							'order': [[1, "asc"]]
@@ -598,7 +661,7 @@ var width = $("#map").width(),
 				$('#loadpage').hide();
 				
 		
-		/*  <!-- 	 CATHY SIMON  ZZZ  -->
+		/*  
 		$('#filingsTable tbody').on( 'click', 'tr', function () {
 			if ( $(this).hasClass('selected') ) {
 			for (var i=0; i < table.rows('.selected').data().length; i++){
@@ -620,7 +683,7 @@ var width = $("#map").width(),
 		});
 		*/
 		
-		// enhanced zoom and hilight map   CATHY SIMON  ZZZ
+		// enhanced zoom and hilight map 
 		$('#filingsTable tbody ').on( 'click', "td.parentRow" ,function () {
 			tdParentRow=$(this).parent();
 			$(tdParentRow).toggleClass("selected");
@@ -644,7 +707,7 @@ var width = $("#map").width(),
 			}
 		});		
 
-		$('#filingsTable').on( 'search.dt', function () {   <!-- 	 CATHY SIMON  ZZZ  -->
+		$('#filingsTable').on( 'search.dt', function () {  
 			//  $(this).children().removeClass("selected");
 			$(".selected").removeClass("selected");
 			zoom(latLngs);
@@ -654,7 +717,7 @@ var width = $("#map").width(),
 			// $('#filterInfo').html( 'Currently applied global search: '+table.search() );
 		});			
 		
-		// event listener for clicking circle, and searching the datatable on the right CATHY SIMON ZZZ
+		// event listener for clicking circle, and searching the datatable on the right 
 		$('#filingsTable').on( 'click', function (e,LocationBin) {
 				if (LocationBin) {
 					table.search( LocationBin).draw();
@@ -723,10 +786,11 @@ var width = $("#map").width(),
 			})
 
 			.on('click', function(d){
-				$('#filingsTable').trigger( "click",d.bin   ); //user clicks point on map, triggers click handler for table added CATHY SIMON ZZZ
+				$('#filingsTable').trigger( "click",d.bin   ); //user clicks point on map, triggers click handler for table added 
 				tooltip.style("visibility", "visible");
 				tooltip.html(
-					'JOB NUMBER: ' + '<a href= "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#' + d.key_id +'" target="_blank">' + d.jobNum + "</a>" + '</br>' +
+					//'JOB NUMBER: ' + '<a href= "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#' + d.key_id +'" target="_blank">' + d.jobNum + "</a>" + '</br>' +
+					'JOB NUMBER: ' + '<a href= "index_property.html#' + d.key_id +'" target="_blank">' + d.jobNum + "</a>" + '</br>' +
 					'APPLICANT NAME: ' + d.name + '</br>' +
 					'BIN: ' + d.bin + '</br>' +								
 					'ADDRESS: '+ d.HouseNum + ' ' + d.Street + ', ' + d.Borough + '</br>' +

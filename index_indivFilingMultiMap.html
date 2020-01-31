@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>DOB NOW Job Filings</title>   
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png"  href="data/dob_logo.png">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">  
   <link href="css/styles.css" rel="stylesheet"> 
@@ -15,16 +15,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 </head>
 <style>
-	html{
-		height: 100%;
-		overflow: hidden;
+
+	.mynavlink:link,
+	.mynavlink:visited ,
+	.mynavlink:hover, 
+	.mynavlink:active {
+		text-decoration: none !important;
+		text-shadow:  0 0 1em blue, 0 0 0.2em blue;
 	}
-	body{
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		overflow: auto;
-	}
+
+
 	.desc-text{
 		padding-left: 20px;
 		padding-bottom: 5px;
@@ -70,7 +70,7 @@
 		position: relative;
 		display: block;
 		border: 3px solid black;
-		width: 1400px;
+		zwidth: 1400px;
 		height: 786px;
 	}
 	.radio{
@@ -265,22 +265,81 @@
 		margin-left: 0.5em;
 		width: 140px;
 	}
+
+
+
+
+	@media screen and (min-width: 0px) {
+		body {
+			padding-top: 100px;
+			
+		}
+	}	
+	@media screen and (min-width: 1200px) {
+		body {
+			padding-top: 70px;
+		}
+
+	}
+
 </style>
 
-<body>
-<nav class="navbar navbar-default navbar-fixed-top">  	<!--  added About link to nav  CATHY SIMON    -->
-	<a class="navbar-brand" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank" title="NYC Buildings Home"></a>	
-	<a class="navbar-brand2" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank" title="DOB NOW Build"></a>	
-	<div class="navbar-title">
-		DOB NOW Job Filings
-	</div>
-	<div style="margin-left: 60px">
-		<a href="https://nycdob.github.io/DOB_NOW_Milestone_App2/index_splash.html"                        id="homePageBtn" class="btn btn-dark navbar-btn " style="float:right" role="button">Back to Homepage</a>
+<body >
+	<nav class="navbar navbar-default  navbar-fixed-top" style="min-height:50px" >
+		<div class="container-fluid">
+				<div class="navbar-header">
 
-		<a href="https://github.com/NYCDOB/DOB_NOW_Milestone_App/blob/gh-pages/README.md"  target=”_blank” id="homePageBtn2" class="btn btn-dark navbar-btn " style="float:right" role="button">About</a>
-	</div>
-</nav>
-<div class="container main">
+					<a class=" navbar-brand navbar-link" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank">
+						<img alt="" src="" height="50px" >
+					</a>
+					<a class="navbar-link" style="text-decoration: none;" href="index_splash.html">
+							<!--  <div class="navbar-text" title="Job Filings Home" style="color:#44a8de; font-size:35px;font-weight:bold;margin:auto 1px;">  -->
+								<span style="color:#44a8de; font-size:35px;font-weight:bold;">
+									DOB NOW Job Filings
+								</span>
+							<!-- </div>  -->
+					</a>					
+					<button type="button"  class="navbar-toggle collapsed  zpull-right" data-toggle="collapse" 
+					data-target="#collapse-content" title="Menu" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse"  id="collapse-content">
+					<div class="znavbar-right znavbar-link">
+						<div>
+							<a class="znavbar-link navbar-right" href="https://a810-dobnow.nyc.gov/Publish/#!/" target="_blank">
+								<span class="toggleText navbar-text hidden-lg hidden-md hidden-sm mynavlink h4" style="color:navy;">DOB Build Now</span>
+								<img alt="DOB NOW Build logo" class="visible-lg-inline visible-md-inline visible-sm-inline" src="http://a810-dobnow.nyc.gov/Publish/images/dob_now_build.jpg" height="50px" >
+							</a>
+						</div>
+						<div>
+							<a class="znavbar-link navbar-right" href="https://github.com/NYCDOB/DOB_NOW_Milestone_App/blob/gh-pages/README.md" target="_blank">
+								<span class="toggleText navbar-text mynavlink h4" style="color:navy;padding-right:50px;">About</span>
+							</a>						
+						</div>
+						<div>
+							<a class="znavbar-link navbar-right" href="https://nycdob.github.io/DOB_NOW_Milestone_App/index_overview" target="_blank">
+								<span class="toggleText navbar-text mynavlink h4" style="color:navy;padding-right:50px;">Citywide Filings</span>
+							</a>						
+						</div>
+
+						<div>
+							<a class="znavbar-link navbar-right" href="index_splash.html" >
+								<span class="toggleText navbar-text mynavlink h4" style="color:navy;padding-right:50px;">Home</span>
+							</a>						
+						</div>
+				</div>
+				
+				</div>
+		</div>
+	</nav>
+
+
+<!--                                                                              -->	
+<div class="container-fluid">
 	<div class="row">
 		<div class="desc-text" id="table-desc-text">
 			Click on a table row to filter and zoom map...
@@ -315,7 +374,6 @@
 				<div id="loadpage" style="position:absolute; 
 					left:38px; top:4px; 
 					background-color:white; 
-					layer-background-color:white; 
 					height:80%; width:88%;"> 
 					  <p align="center" style="font-size: large;">       
 						<B>Loading...Please wait!</B><br/><br/>
@@ -327,10 +385,10 @@
 					<thead>
 						<tr>
 							<th></th>
-							<th>Address</th>  <!--  CATHY SIMON  -->
-							<th>Borough</th>  <!--  CATHY SIMON  -->
+							<th>Address</th>  
+							<th>Borough</th>  
 							
-							<th class="none">Job Number</th>   <!-- class="none" forces data into child (detail) rows -->
+							<th class="none">Job Number</th>  
 							<th class="none">Applicant Name</th>
 							<th class="none">BIN:</th>
 							<th class="none">Work Type:</th>
@@ -361,7 +419,7 @@
 		</div>
 		
 		<div class="col-md-7">		
-			<div class="row" id="map-container">
+			<div class="zrow" id="map-container">
 				<div id="map"></div>
 			</div>
 		</div>
