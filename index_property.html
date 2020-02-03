@@ -992,8 +992,8 @@
 					jobDesc_txt = filteredData[0].jobDesc;
 					cd_txt = filteredData[0].CD;
 					noGoodCheck_txt = filteredData[0].noGoodCheck;
-					numResubmissions_txt = filteredData[0].numResubmissions;
-					numObjectionsFails_txt = filteredData[0].numObjectionsFails;
+					numResubmissions_txt = (filteredData[0].numResubmissions) || 0;
+					numObjectionsFails_txt = (filteredData[0].numObjectionsFails)||0;
 				
 					
 					jobSignOffDate_txt = filteredData[0].jobSignOffDate;

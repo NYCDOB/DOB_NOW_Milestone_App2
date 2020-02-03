@@ -46,7 +46,7 @@
 
  
 
-                                #formContainer > * {
+                                #divCriteriaForm > * {
 
                                                
 
@@ -986,7 +986,7 @@
 
 <!--    FILTER SELECTION DIV -->
 
-<div class="zcontainer container-fluid" id="formContainer">
+<div class="zcontainer container-fluid" id="divCriteriaForm" >
 
                                                 <form id="filterForm">
 
@@ -1002,7 +1002,7 @@
 
  
 
-                                                <div class="col-lg-8 col-lg-offset-2   " style="border: 3px solid navy;margin-top: 30px;padding-left:15px;padding:20px 15px;">
+                                                <div class="col-lg-8 col-lg-offset-2"    style="background-color: #f9f9f9;border: 3px solid navy;margin-top: 30px;padding-left:15px;padding:20px 15px;">
 
                                                                                                                                 <div class="row text-center" style="font-size:20px;font-weight:700;color:#002878;font-style:italic;">
 
@@ -1346,7 +1346,7 @@
 
                 <div class="row" style="zline-height: 10px;zborder: solid 1px red;zmargin-top: 30px;">
 
-                                <div class="col-lg-8 col-lg-offset-2 visible-lg-block " style="font-size: 12px;">Borough, Zip Code, or Community Distict</div>
+                                <!--<div class="col-lg-8 col-lg-offset-2 visible-lg-block " style="font-size: 12px;">Borough, Zip Code, or Community Distict</div>-->
 
                 </div>
 
@@ -1488,7 +1488,7 @@
 
                 <div class="row" >  <!--   toggle TABLE & DATA -->
 
-                                <div class="col-md-12">                                              
+                                <div class="col-lg-4">                                              
 
                                                 <div class="btn-group btn-group-toggle" data-toggle="buttons" id="btnTableStats" style="display:none;">
 
@@ -1504,9 +1504,14 @@
 
                                                                                 </label>
 
-                                                </div>                                                  
+                                                </div>
 
                                 </div>
+
+
+
+
+
 
                 </div>
 
@@ -1730,7 +1735,8 @@
 
                                                                
 
-                                                                document.querySelectorAll("input[name='" + item.id + "'] ").forEach(  (el)  =>  {el.required=true;} )                                                      
+                                                                //document.querySelectorAll("input[name='" + item.id + "'] ").forEach(  (el)  =>  {el.required=true;} )                                                      
+                                                                document.querySelectorAll("*[name='" + item.id + "'] ").forEach(  (el)  =>  {el.required=true;} )                                                      
 
                                                                
 
@@ -3490,25 +3496,25 @@ form.addEventListener('submit', (e) =>                                 {
 
                                                                                                 case "geogdivborough": 
 
-                                                                                                                                document.querySelectorAll("[name='geogdivborough']").forEach( (item) => {
+                                                                          document.querySelectorAll("[name='geogdivborough']").forEach( (item) => {
 
-                                                                                                                                                                                console.log('');
+                                                                                                                          console.log('');
 
-                                                                                                                                                                if (item.checked) {
+                                                                                                          if (item.checked) {
 
-                                                                                                                                                                                boroValue=item.value
+                                                                                                                          boroValue=item.value
 
-                                                                                                                                                                                $('#geo_txt').text(boroValue);
+                                                                                                                          $('#geo_txt').text(boroValue);
 
-                                                                                                                                                                                $('.geo_txt').text(boroValue); 
+                                                                                                                          $('.geo_txt').text(boroValue); 
 
- 
 
-                                                                                                                                                                }
 
-                                                                                                                                                }
+                                                                                                          }
 
-                                                                                                                                )
+                                                                                          }
+
+                                                                          )
 
                                                                                                                 break;
 
@@ -3524,7 +3530,7 @@ form.addEventListener('submit', (e) =>                                 {
 
                                                                                                                 fieldName = document.querySelector("#dropdownCD");
 
-                                                                                                                selectionWT = fieldName.options[fieldName.selectedIndex].value;
+                                                                                                                selectionCD = fieldName.options[fieldName.selectedIndex].value;
 
                                                                                                                 console.log("");
 
@@ -3560,7 +3566,7 @@ form.addEventListener('submit', (e) =>                                 {
 
                                
 
-                                                                let theform = document.querySelector("#formContainer");
+                                                                let theform = document.querySelector("#divCriteriaForm");
 
                                                                 theform.style.display="none";
 
