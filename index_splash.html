@@ -356,16 +356,36 @@ $(document).ready(function(){
 			location.href = url;			
 	}
 	
+
+	let setName = new Set();
+	let setAddress = new Set();
+
+
+
 	d3.csv("https://raw.githubusercontent.com/NYCDOB/MA/gh-pages/milestone.csv", function(data){
 		data.forEach(function(d){
 			d.name = d["Applicant Name"];
 			d.keyID = [d.key_id];
 			d.address = [d.Address];
+
+			setName.add(d["Applicant Name"]);
+			setAddress.add(  d.Address )
+
+
+
+
 		})
 		
-		appName = data.map(function(d){return d.name});
+		//appName = data.map(function(d){return d.name});
+		appName = Array.from(setName);  //data.map(function(d){return d.name});
+		//appAddress = data.map(function(d){return d.Address});
+		appAddress = Array.from(setAddress) ; 
+		//console.log(appAddress);
+
+
 		$("#appNameTxtBox").autocomplete({
-			source: _.uniq(appName),
+			//source: _.uniq(appName),
+			source: appName,
 			minLength:2
 		});
 				
@@ -392,11 +412,10 @@ $(document).ready(function(){
 			}
 		}
 		
-		appAddress = data.map(function(d){return d.Address});
-		//console.log(appAddress);
 		
 		$("#appAddressTxtBox").autocomplete({
-			source: _.uniq(appAddress),
+			//source: _.uniq(appAddress),
+			source: appAddress ,  //_.uniq(appAddress),
 			minLength:2
 		});
 		
