@@ -15,24 +15,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 </head>
 <style>
-	html{
-		zheight: 100%;
-		zoverflow: hidden;
-	}
 
-	.mynavlink:hover {
-		text-decoration: none;
-		text-shadow:  0 0 1em blue, 0 0 0.2em blue;
-	}
 	body{
-		zheight: 100%;
 		margin: 0;
 		padding: 0;
 		padding-top: 50px;		
-		zoverflow: auto;
 	}
 	.desc-text{
-		padding-left: 20px;
+		zpadding-left: 20px;
 		padding-bottom: 5px;
 		margin-top: 12px;
 		font-size: 18px;
@@ -304,7 +294,7 @@
 								</span>
 							<!-- </div>  -->
 					</a>					
-					<button type="button"  class="navbar-toggle collapsed  zpull-right" data-toggle="collapse" 
+					<button type="button"  class="navbar-toggle collapsed " data-toggle="collapse" 
 					data-target="#collapse-content" title="Menu" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
@@ -316,24 +306,19 @@
 					<div class="znavbar-right znavbar-link">
 						<div>
 							<a class="znavbar-link navbar-right" href="https://a810-dobnow.nyc.gov/Publish/#!/" target="_blank">
-								<span class="toggleText navbar-text hidden-lg hidden-md hidden-sm mynavlink h4" style="color:navy;">DOB Build Now</span>
+								<span class="toggleText navbar-text hidden-lg hidden-md hidden-sm mynavlink h4" style="">DOB Build Now</span>
 								<img alt="DOB NOW Build logo" class="visible-lg-inline visible-md-inline visible-sm-inline" src="http://a810-dobnow.nyc.gov/Publish/images/dob_now_build.jpg" height="50px" >
 							</a>
 						</div>
 						<div>
 							<a class="znavbar-link navbar-right" href="https://github.com/NYCDOB/DOB_NOW_Milestone_App/blob/gh-pages/README.md" target="_blank">
-								<span class="toggleText navbar-text mynavlink h4" style="color:navy;padding-right:50px;">About</span>
-							</a>						
-						</div>
-						<div>
-							<a class="znavbar-link navbar-right" href="https://nycdob.github.io/DOB_NOW_Milestone_App/index_overview" target="_blank">
-								<span class="toggleText navbar-text mynavlink h4" style="color:navy;padding-right:50px;">Citywide Filings</span>
+								<span class="toggleText navbar-text mynavlink h4" style="padding-right:50px;">About</span>
 							</a>						
 						</div>
 
 						<div>
 							<a class="znavbar-link navbar-right" href="index_splash.html" >
-								<span class="toggleText navbar-text mynavlink h4" style="color:navy;padding-right:50px;">Home</span>
+								<span class="toggleText navbar-text mynavlink h4" style="padding-right:50px;">Home</span>
 							</a>						
 						</div>
 				</div>
@@ -348,21 +333,22 @@
 
 <div class="container-fluid zmain">
 	<div class="row">
-		<div class="desc-text" id="table-desc-text">
-			Job Filings for selected location...
-		</div>
-		<div class="desc-text" id="stat-desc-text">
-			Summary statistics for the location's Job Filings...
-		</div>
+	
+	
+					<div class="col-lg-3">
+									<div class="desc-text" id="table-desc-text">
+									Click on a table row to filter and zoom map...
+									</div>
+									<div class="desc-text" id="stat-desc-text">
+									Summary statistics for the Applicant's Job Filings...
+									</div>
+					</div>				
 	</div>
 
 
 
-
-
-
 	<div class="row">
-		<div class="col-lg-12">
+		<div class="col-lg-3">
 			<div class="btn-group btn-group-toggle" data-toggle="buttons" id="btnTableStats">
 			  <label class="btn btn-dark active" id="btnText">
 				<input type="radio" name="options" id="table" value="table" checked> Table
@@ -379,7 +365,7 @@
 
 
     <div class="row">  
-	  <div class="col-lg-5">
+	  <div class="col-lg-3">
 			<div id="ui-container" class="ui" style="height:786px">
 				<!--  move summary info outside of div so that it displays on table and chart tabs -->
 				<h4>Address: <b><span id="appNameValue_txt"></span></b></h4>
@@ -431,7 +417,7 @@
 			</div>
 		</div>
 		
-		<div class="col-lg-7">		
+		<div class="col-lg-9">		
 			<div class="zrow" id="map-container">
 				<div id="map"></div>
 			</div>
@@ -580,7 +566,7 @@ var width = $("#map").width(),
 
 								{ 'data': "key_id",
 								'render': function(data,type,row,meta){ 
-								//return '<a href= "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#' + data +'" target="_blank">' + data + '</a>';
+								//return '<a href= "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_property#' + data +'" target="_blank">' + data + '</a>';
 								return '<a href= "index_property.html#' + data +'" target="_blank">' + data + '</a>';
 								}},
 								{ 'data': "Applicant Name" },
@@ -789,7 +775,7 @@ var width = $("#map").width(),
 				$('#filingsTable').trigger( "click",d.bin   ); //user clicks point on map, triggers click handler for table added 
 				tooltip.style("visibility", "visible");
 				tooltip.html(
-					//'JOB NUMBER: ' + '<a href= "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#' + d.key_id +'" target="_blank">' + d.jobNum + "</a>" + '</br>' +
+					//'JOB NUMBER: ' + '<a href= "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_property#' + d.key_id +'" target="_blank">' + d.jobNum + "</a>" + '</br>' +
 					'JOB NUMBER: ' + '<a href= "index_property.html#' + d.key_id +'" target="_blank">' + d.jobNum + "</a>" + '</br>' +
 					'APPLICANT NAME: ' + d.name + '</br>' +
 					'BIN: ' + d.bin + '</br>' +								

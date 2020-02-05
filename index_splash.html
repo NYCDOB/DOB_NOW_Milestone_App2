@@ -16,13 +16,9 @@
 </head>
 <style>
 
-.mynavlink:link,
-.mynavlink:visited ,
-.mynavlink:hover, 
-.mynavlink:active {
-		text-decoration: none !important;
-		text-shadow:  0 0 1em blue, 0 0 0.2em blue;
-	}
+
+
+
 
 input  {
 	font-size: 14px;
@@ -42,7 +38,7 @@ input  {
 	color: white;
 }
 
-.apple::before {
+.textOR::before {
 	content: "OR";
 	font-size: 1.3em;
 	color: rgb(201, 198, 198);
@@ -122,7 +118,7 @@ input  {
 								</span>
 							<!-- </div>  -->
 					</a>					
-					<button type="button"  class="navbar-toggle collapsed  zpull-right" data-toggle="collapse" 
+					<button type="button"  class="navbar-toggle collapsed  " data-toggle="collapse" 
 					data-target="#collapse-content" title="Menu" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
@@ -133,14 +129,14 @@ input  {
 				<div class="collapse navbar-collapse"  id="collapse-content">
 					<div>
 					<a class="navbar-link navbar-right" href="https://a810-dobnow.nyc.gov/Publish/#!/" target="_blank">
-						<span class="toggleText navbar-text hidden-lg hidden-md hidden-sm mynavlink h4" style="color:navy;">DOB Build Now</span>
+						<span class="toggleText navbar-text hidden-lg hidden-md hidden-sm mynavlink h4" style="">DOB Build Now</span>
 						<img alt="DOB NOW Build logo" class="visible-lg-inline visible-md-inline visible-sm-inline" src="http://a810-dobnow.nyc.gov/Publish/images/dob_now_build.jpg" height="50px" >
 					</a>
 					</div>
 
   					<div>
 						<a class="navbar-link navbar-right" href="https://github.com/NYCDOB/DOB_NOW_Milestone_App/blob/gh-pages/README.md" target="_blank">
-							<span class="toggleText navbar-text mynavlink h4" style="color:navy;padding-right:50px;">About</span>
+							<span class="toggleText navbar-text mynavlink h4" style="padding-right:50px;">About</span>
 						</a>
 					</div>
 				</div>
@@ -189,19 +185,24 @@ input  {
 						<div style="font-weight:bold; font-size:20px;margin-left: 20px;">Job Number:</div>
 					</div>
 					<div class="row" >
-						<input type="text" class="zzui-autocomplete-input" style="margin-left: 20px;"  id="jobNumTxtBox" value="B00000043-I1" size="40">
+						<input type="text" class="" style="margin-left: 20px;"  id="jobNumTxtBox" value="B00000043-I1" size="40">
 					</div>
 				</div>
 				<div class="col-sm-1" style=" padding-top:10px; padding-bottom: 10px;">
 					<button class="zbtn zbtn-default qzz text-center"  id="btnIndFilings">SEARCH</button>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-sm-7" style="font-size: 18px; color: red;line-height:1px;visibility:hidden;margin-left: 20px;" id="notFoundJobNum">
+					No matching job number!
+				</div>
+			</div>
 
 
 			<div class="row" style="margin: 30px auto;" id="separator">
 				<div class="col-xs-2 col-sm-5 zvisible-lg-inline "  style="border-bottom: solid 1px rgba(0, 0, 0, 0.35);;height: 10px;"></div>
-				<div class="col-xs-2 col-sm-2 apple text-center" style="color: grey;"></div>
-				<div class="col-xs-2 col-sm-5  zvisible-lg-inline"  style="border-bottom: solid 1px rgba(0, 0, 0, 0.35);height: 10px;"></div>
+				<div class="col-xs-2 col-sm-2 textOR text-center" style="color: grey;"></div>
+				<div class="col-xs-2 col-sm-5  "  style="border-bottom: solid 1px rgba(0, 0, 0, 0.35);height: 10px;"></div>
 			</div>
 
 			<div class="row">
@@ -209,8 +210,9 @@ input  {
 					<div class="row" >
 						<div style="font-weight:bold; font-size:20px;margin-left: 20px;">Applicant Name:</div>
 					</div>
+					
 					<div class="row" >
-						<input type="text" id="appNameTxtBox" name="appNameText"  class="zui-autocomplete-input"  style="margin-left: 20px;"  placeholder="First or Last" size="40">
+						<input type="text" id="appNameTxtBox" name="appNameText"  class=""  style="margin-left: 20px;"  placeholder="First or Last" size="40">
 					</div>
 				</div>
 				<div class="col-sm-1" style=" padding-top:10px; padding-bottom: 10px;">
@@ -218,11 +220,18 @@ input  {
 				</div>
 
 			</div>
+			
+			<div class="row">
+				<div class="col-sm-7" style="font-size: 18px; color: red;line-height:1px;visibility:hidden;margin-left: 20px;" id="notFoundName">
+					No matching name!
+				</div>
+			</div>
+						
 
 			<div class="row" style="margin: 30px auto;" id="separator">
-				<div class="col-xs-2 col-sm-5 zvisible-lg-inline "  style="border-bottom: solid 1px rgba(0, 0, 0, 0.35);;height: 10px;"></div>
-				<div class="col-xs-2 col-sm-2 apple text-center" style="color: grey;"></div>
-				<div class="col-xs-2 col-sm-5  zvisible-lg-inline"  style="border-bottom: solid 1px rgba(0, 0, 0, 0.35);height: 10px;"></div>
+				<div class="col-xs-2 col-sm-5 "  style="border-bottom: solid 1px rgba(0, 0, 0, 0.35);;height: 10px;"></div>
+				<div class="col-xs-2 col-sm-2 textOR text-center" style="color: grey;"></div>
+				<div class="col-xs-2 col-sm-5  "  style="border-bottom: solid 1px rgba(0, 0, 0, 0.35);height: 10px;"></div>
 			</div>
 
 
@@ -232,7 +241,7 @@ input  {
 							<div style="font-weight:bold; font-size:20px;margin-left: 20px;">Address:</div>
 						</div>
 						<div class="row" >
-							<input type="text" id="appAddressTxtBox" name="appAddressText" class="zzui-autocomplete-input" style="margin-left: 20px;"  size="40">
+							<input type="text" id="appAddressTxtBox" name="appAddressText" class="" style="margin-left: 20px;"  size="40">
 						</div>
 					</div>
 
@@ -241,80 +250,15 @@ input  {
 					</div>
 
 			</div>
-		</div>
-	</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-<!--  
-<div class="container-fluid">
-	<div class="row" style="margin:30px auto">
-		<div class="col-md-3"></div>
-		<div class="col-md-6" style="border: 2px solid black;padding-bottom: 20px;">
-			<div style="background-color:navy;color:white;font-size:25px;font-weight:500;margin:auto -15px; padding-left:10px;">
-					INDIVIDUAL FILINGS
-			</div>
-			<div class="row" style="margin-top:40px">
-						<div class="col-lg-5" style="font-weight:bold; font-size:18px;">Job Number:</div>
-			</div>
-			<div class="row" style="margin:5px inherit;">
-					<div class="col-lg-4">
-							<input type="text" style="font-size:14px;"  id="jobNumTxtBox" value="B00000178-I1" size="50">
-					</div>
-					<div class="col-lg-1">
-							<button class="btn btn-default qzz"  id="btnIndFilings">SEARCH</button>
-					</div>						  
-			</div>
-
-
-			<div class="row" style="margin: 40px auto;" id="separator">
-				<div class="col-sm-5 visible-lg-inline "  style="border-bottom: solid 1px grey;;height: 10px;"></div>
-				<div class="col-sm-2 apple text-center" style="color: grey;"></div>
-				<div class="col-sm-5  visible-lg-inline"  style="border-bottom: solid 1px grey;height: 10px;"></div>
-			</div>
-
-			<div class="row" style="margin-top:40px">
-				<div class="col-lg-5" style="font-weight:bold; font-size:18px;">Applicant Name:</div>
-			</div>
-			<div class="row" style="margin-top:5px">
-				<div class="col-lg-4" style="font-size:14px;">
-					<input type="text" id="appNameTxtBox" name="appNameText"  class="ui-autocomplete-input" size="50">
+			<div class="row">
+				<div class="col-sm-7" style="font-size: 18px; color: red;line-height:1px;visibility:hidden;margin-left: 20px;" id="notFoundAddress">
+					No matching address!
 				</div>
-				<div class="col-lg-1"><button class="btn btn-default qzz"  id="btnIndFilingsName">SEARCH</button></div>						  
 			</div>
-
 			
-			<div class="row" style="margin: 40px auto;" id="separator">
-				<div class="col-lg-5  visible-lg-inline"  style="border-bottom: solid 1px grey;;height: 10px;"></div>
-				<div class="col-lg-2 apple text-center" style="color: grey;"></div>
-				<div class="col-lg-5 visible-lg-inline "  style="border-bottom: solid 1px grey;height: 10px;"></div>
-			</div>
-
-			<div class="row" style="margin-top:40px;">
-				<div class="col-lg-5" style="font-weight:bold; font-size:18px;">Address:</div>
-			</div>
-			<div class="row" style="margin-top:5px;">
-				<div class="col-lg-4" style="font-size:14px; ">
-					<input type="text" id="appAddressTxtBox" name="appAddressText" class="ui-autocomplete-input" size="50">
-				</div>
-				<div class="col-lg-1"><button class="btn btn-default qzz"  id="btnIndFilingsAddress">SEARCH</button></div>						  
-			</div>
 		</div>
 	</div>
 </div>
--->
-
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.9/d3.min.js"></script>
@@ -343,39 +287,35 @@ $(document).ready(function(){
 		appName,
 		appAddress;
 		
-	filingsSearch.onclick = function(){		
-		var	jobNumTxt = document.getElementById("jobNumTxtBox").value,
-		workTypeSelect = $('#dropdownWT').val() || null ,
-		jobNumWT = jobNumTxt + (workTypeSelect ? "_"+workTypeSelect : ''    )   ,
-
-
-			
-//			jobNumWT = jobNumTxt+'_'+workTypeSelect,
-//			url = "index_property.html#" + jobNumWT;
-			url = "index_property.html#" + jobNumWT;
-			location.href = url;			
-	}
-	
+		/*
+				filingsSearch.onclick = function(){		
+						var	jobNumTxt = document.getElementById("jobNumTxtBox").value,
+						workTypeSelect = $('#dropdownWT').val() || null ,
+						jobNumWT = jobNumTxt + (workTypeSelect ? "_"+workTypeSelect : ''    )   ,			
+						url = "index_property.html#" + jobNumWT;
+						location.href = url;			
+				}
+		*/
 
 	let setName = new Set();
 	let setAddress = new Set();
+	let setJob = new Set();
 
 
 
 	d3.csv("https://raw.githubusercontent.com/NYCDOB/MA/gh-pages/milestone.csv", function(data){
 		data.forEach(function(d){
 			d.name = d["Applicant Name"];
-			d.keyID = [d.key_id];
-			d.address = [d.Address];
-
+			d.keyID = d["Job Number"];   //[d.key_id];
+			//d.address = [d.Address];
+			
 			setName.add(d["Applicant Name"]);
-			setAddress.add(  d.Address )
-
-
-
-
+			setAddress.add(  d.Address );
+			setJob.add(  d.keyID );
 		})
 		
+		
+		appJob = Array.from(setJob); 
 		//appName = data.map(function(d){return d.name});
 		appName = Array.from(setName);  //data.map(function(d){return d.name});
 		//appAddress = data.map(function(d){return d.Address});
@@ -383,34 +323,69 @@ $(document).ready(function(){
 		//console.log(appAddress);
 
 
+
+		$("#jobNumTxtBox").autocomplete({
+			//source: _.uniq(appName),
+			source: appJob,
+			minLength:6
+		});
+		filingsSearch.onclick = function(){		
+			var	jobNumTxt = document.getElementById("jobNumTxtBox").value,
+			workTypeSelect = $('#dropdownWT').val() || null ;
+			
+			var filteredData = data.filter(function(d){
+				if(d.keyID == jobNumTxt){
+					return d.keyID
+				}
+			});
+			
+			//key_ID = filteredData.map(function(d){return d.keyID});
+			
+			if (filteredData.length == 1){
+				//var url = "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_property#" + key_ID;
+				//var url = "index_property.html#" + key_ID;
+				var url = "index_property.html#" + filteredData[0].keyID;
+				location.href = url;
+			} else {
+			 document.querySelector("#notFoundJobNum").style.visibility="visible";
+			}
+				//jobNumWT = jobNumTxt + (workTypeSelect ? "_"+workTypeSelect : ''    )   ,			
+				//url = "index_property.html#" + jobNumWT;
+				//location.href = url;			
+		}
+	
+
+
+
+
 		$("#appNameTxtBox").autocomplete({
 			//source: _.uniq(appName),
 			source: appName,
 			minLength:2
 		});
-				
 		appNameSearch.onclick = function(){
 			var appNameTxt = $('input[name=appNameText]').val().toUpperCase();
 			var filteredData = data.filter(function(d){
-				if(d.name == appNameTxt){
+				if(d.name.toUpperCase() == appNameTxt){
 					return d.keyID
 				}
 			});
 			key_ID = filteredData.map(function(d){return d.keyID});
 			
 			if (key_ID.length == 1){
-				//var url = "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#" + key_ID;
-				var url = "DOB_NOW_Milestone_App/index_property.html#" + key_ID;
+				//var url = "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_property#" + key_ID;
+				var url = "index_property.html#" + key_ID;
 				location.href = url;
-			} else {
-				console.log(appNameTxt);
-				console.log(key_ID);
-
+			} else  if ( key_ID.length > 1) {
 				//var multiFilingURL = "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_indivFilingMultiReturn#" + appNameTxt;
 				var multiFilingURL = "index_indivFilingMultiReturn.html#" + appNameTxt;
 				location.href = multiFilingURL;
+			} else {
+			 document.querySelector("#notFoundName").style.visibility="visible";
 			}
 		}
+		
+		
 		
 		
 		$("#appAddressTxtBox").autocomplete({
@@ -418,33 +393,29 @@ $(document).ready(function(){
 			source: appAddress ,  //_.uniq(appAddress),
 			minLength:2
 		});
-		
 		appAddressSearch.onclick = function(){
 			var appAddressTxt = $('input[name=appAddressText]').val().toUpperCase();
-
 			var filteredAddress = data.filter(function(d){
-				if(d.address == appAddressTxt){
+				if(d.Address.toUpperCase() == appAddressTxt){
 					return d.keyID
 				}
 			});
+			//key_ID = data.map(function(d){return d.keyID});
 			key_ID = filteredAddress.map(function(d){return d.keyID});
-			
 			if (key_ID.length == 1){
-				var url = "https://nycdob.github.io/DOB_NOW_Milestone_App/index_property#" + key_ID;
+				//var url = "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_property#" + key_ID;
+				var url = "index_property.html#" + key_ID;
 				location.href = url;
-			} else {
-				console.log(appAddressTxt);
-				console.log(key_ID);
-
+			} else if (key_ID.length > 1 ) {
 				// var multiFilingAddressURL = "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_indivFilingMultiReturnAddress#" + appAddressTxt;   
 				var multiFilingAddressURL = "index_indivFilingMultiReturnAddress.html#" + appAddressTxt;
 				location.href = multiFilingAddressURL;
+			} else {
+			 document.querySelector("#notFoundAddress").style.visibility="visible"; 
 			}
 		}
 		
 	});
-	
-
 });
 
 </script>
