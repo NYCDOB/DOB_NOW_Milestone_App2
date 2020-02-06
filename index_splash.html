@@ -286,29 +286,17 @@ $(document).ready(function(){
 		key_ID,
 		appName,
 		appAddress;
-		
-		/*
-				filingsSearch.onclick = function(){		
-						var	jobNumTxt = document.getElementById("jobNumTxtBox").value,
-						workTypeSelect = $('#dropdownWT').val() || null ,
-						jobNumWT = jobNumTxt + (workTypeSelect ? "_"+workTypeSelect : ''    )   ,			
-						url = "index_property.html#" + jobNumWT;
-						location.href = url;			
-				}
-		*/
-
-	let setName = new Set();
-	let setAddress = new Set();
-	let setJob = new Set();
+		let setName = new Set();
+		let setAddress = new Set();
+		let setJob = new Set();
 
 
 
 	d3.csv("https://raw.githubusercontent.com/NYCDOB/MA/gh-pages/milestone.csv", function(data){
+	//d3.csv("milestone.csv", function(data){
 		data.forEach(function(d){
 			d.name = d["Applicant Name"];
 			d.keyID = d["Job Number"];   //[d.key_id];
-			//d.address = [d.Address];
-			
 			setName.add(d["Applicant Name"]);
 			setAddress.add(  d.Address );
 			setJob.add(  d.keyID );
@@ -320,11 +308,10 @@ $(document).ready(function(){
 		appName = Array.from(setName);  //data.map(function(d){return d.name});
 		//appAddress = data.map(function(d){return d.Address});
 		appAddress = Array.from(setAddress) ; 
-		//console.log(appAddress);
 
 
 
-		$("#jobNumTxtBox").autocomplete({
+		$("#jobNumTxtBox").autocomplete({  //might be duplicate job numbers, so maybe filter on job number + worktype
 			//source: _.uniq(appName),
 			source: appJob,
 			minLength:6
@@ -341,7 +328,7 @@ $(document).ready(function(){
 			
 			//key_ID = filteredData.map(function(d){return d.keyID});
 			
-			if (filteredData.length == 1){
+			if (filteredData.length > 0) {
 				//var url = "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_property#" + key_ID;
 				//var url = "index_property.html#" + key_ID;
 				var url = "index_property.html#" + filteredData[0].keyID;
@@ -349,14 +336,7 @@ $(document).ready(function(){
 			} else {
 			 document.querySelector("#notFoundJobNum").style.visibility="visible";
 			}
-				//jobNumWT = jobNumTxt + (workTypeSelect ? "_"+workTypeSelect : ''    )   ,			
-				//url = "index_property.html#" + jobNumWT;
-				//location.href = url;			
 		}
-	
-
-
-
 
 		$("#appNameTxtBox").autocomplete({
 			//source: _.uniq(appName),

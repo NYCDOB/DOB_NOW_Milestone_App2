@@ -566,8 +566,8 @@ var width = $("#map").width(),
 
 								{ 'data': "key_id",
 								'render': function(data,type,row,meta){ 
-								//return '<a href= "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_property#' + data +'" target="_blank">' + data + '</a>';
-								return '<a href= "index_property.html#' + data +'" target="_blank">' + data + '</a>';
+								return '<a href= "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_property#' + data +'" target="_blank">' + data + '</a>';
+								//return '<a href= "index_property.html#' + data +'" target="_blank">' + data + '</a>';
 								}},
 								{ 'data': "Applicant Name" },
 								{ 'data': "Bin" },
@@ -775,8 +775,8 @@ var width = $("#map").width(),
 				$('#filingsTable').trigger( "click",d.bin   ); //user clicks point on map, triggers click handler for table added 
 				tooltip.style("visibility", "visible");
 				tooltip.html(
-					//'JOB NUMBER: ' + '<a href= "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_property#' + d.key_id +'" target="_blank">' + d.jobNum + "</a>" + '</br>' +
-					'JOB NUMBER: ' + '<a href= "index_property.html#' + d.key_id +'" target="_blank">' + d.jobNum + "</a>" + '</br>' +
+					'JOB NUMBER: ' + '<a href= "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_property#' + d.key_id +'" target="_blank">' + d.jobNum + "</a>" + '</br>' +
+					//'JOB NUMBER: ' + '<a href= "index_property.html#' + d.key_id +'" target="_blank">' + d.jobNum + "</a>" + '</br>' +
 					'APPLICANT NAME: ' + d.name + '</br>' +
 					'BIN: ' + d.bin + '</br>' +								
 					'ADDRESS: '+ d.HouseNum + ' ' + d.Street + ', ' + d.Borough + '</br>' +
