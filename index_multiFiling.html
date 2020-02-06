@@ -1303,7 +1303,17 @@ var selectionCD,
 												if ( filteredData.length==0 ) {
 													document.querySelector("#noDataFound").style.visibility="visible";
 													return;
+												} else if (filteredData.length > 2000 )	{
+													//only show first 2000
+													true;
+													
 												}
+												
+												
+												
+												
+												
+												
 												document.querySelector("#noDataFound").style.visibility="hidden";
 												let theform = document.querySelector("#divCriteriaForm");
 												theform.style.display="none";                                                               
@@ -1332,7 +1342,7 @@ var selectionCD,
 												
 												
 												map.invalidateSize(); // Expands map after div is displayed.
-												//*********************************
+
 												$("#table-desc-text").show();
 												$("#ui-container").show();
 												$("#table-desc-text").show();
@@ -1347,8 +1357,6 @@ var selectionCD,
                                                 $('#filteredData_txt').text(filteredData.length);
 												
 												
-                                                //$('.filteredData_txt').text(filteredData.length);  //using a class (vs an 'id') allows us to display the same div at multiple locations of the page
-                                                //console.log(filteredData);
                                                 loadTable();                                                                                              
                                                 pointsOverlay.addTo(map);
                                                 zoom(latLngs);

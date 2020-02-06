@@ -319,9 +319,10 @@ $(document).ready(function(){
 		filingsSearch.onclick = function(){		
 			var	jobNumTxt = document.getElementById("jobNumTxtBox").value,
 			workTypeSelect = $('#dropdownWT').val() || null ;
-			
+			//let vWorkTypes=[];
 			var filteredData = data.filter(function(d){
 				if(d.keyID == jobNumTxt){
+					//vWorkTypes.push( d["Work Type Name"])  ;// = vWorkTypes + (  (filteredData == null) ? d["Work Type Name"] : ", " + d["Work Type Name"]) ;
 					return d.keyID
 				}
 			});
@@ -338,11 +339,14 @@ $(document).ready(function(){
 			}
 		}
 
+
+
 		$("#appNameTxtBox").autocomplete({
 			//source: _.uniq(appName),
 			source: appName,
 			minLength:2
 		});
+
 		appNameSearch.onclick = function(){
 			var appNameTxt = $('input[name=appNameText]').val().toUpperCase();
 			var filteredData = data.filter(function(d){
@@ -358,8 +362,16 @@ $(document).ready(function(){
 				location.href = url;
 			} else  if ( key_ID.length > 1) {
 				//var multiFilingURL = "https://nycdob.github.io/DOB_NOW_Milestone_App2/index_indivFilingMultiReturn#" + appNameTxt;
+				
+				
+				
+				
+				
 				var multiFilingURL = "index_indivFilingMultiReturn.html#" + appNameTxt;
 				location.href = multiFilingURL;
+				
+				
+				
 			} else {
 			 document.querySelector("#notFoundName").style.visibility="visible";
 			}

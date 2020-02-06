@@ -947,26 +947,22 @@
 			X : +d.EPSG2263_x,
 			Y : +d.EPSG2263_y				
 
-
-
-
 		};
 	}, function (data){	
 
 				var selectJob = window.location.hash.substring(1)
+				
 				let isWorkType = (selectJob.indexOf('_') >= 0  ) ? true  : false  ;
-
+				let vWorkTypes = [];
 				var dateFormat = d3.time.format("%m/%d/%Y");
 
 				var filteredData = data.filter(function(d){
-					
-					if ( isWorkType )  {  //means we are NOT providing worktype
-						return d.id == selectJob;  //use the id column to filter
-					}  else {
-						return d.jobnumber == selectJob;
-					}
-					//return d.id == selectJob;
-					//return d.id.substring(0, (d.id.indexOf('_'))   ) == selectJob;
+						if (!isWorkType && selectJob == d.jobnumber) {
+								vWorkTypes.push(d.workType);
+							   return true;
+						}  else if ( isWorkType && selectJob == d.id   ) {
+									   return true;							
+						} 
 				});
 
 
@@ -978,8 +974,10 @@
 					lat_txt = filteredData[0].latitude;
 					x_txt = filteredData[0].X;
 					y_txt = filteredData[0].Y;
-					worktype_txt = filteredData[0].workType;
+					worktype_txt = vWorkTypes.join(', ') ||  filteredData[0].workType;
+					
 					jobType_txt = filteredData[0].jobType;
+					
 					profcert_txt = filteredData[0].profCert;
 					filingStatus_txt = filteredData[0].filingStatus;
 					jobDesc_txt = filteredData[0].jobDesc;
