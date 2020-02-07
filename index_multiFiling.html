@@ -15,6 +15,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 </head>
 <style>
+
+
+.datasetmsg{
+  font-size:14px;
+  color:red;
+  
+  display: none;
+  font-weight:bold;
+}
+
     .separator {
         border: 0;
         height: 1px;
@@ -35,7 +45,7 @@
         text-align: center;  
           padding-left: 20px;
           padding-bottom: 5px;
-          zmargin-top: -12px;
+
           font-size: 18px;
           font-style: italic;
           color: #002878;
@@ -51,8 +61,6 @@
         border: 3px solid black;
         padding: 10px 20px 10px 20px;
         font-size: 18px;
-		scroll: auto;
-
     }
     #table-stats{
         margin-top: 0px;
@@ -81,16 +89,18 @@
     }
     #map {
                     position: absolute;
-                    height: 100%;
+                    height:100%;
                     width: 100%;
                     background-color: #333;
-                    display: block;
     }
     #map-container{
                     position: relative;
                     display: block;
                     border: 3px solid black;
-                    min-height: 786px;
+                    zmin-height: 786px;
+                    height: 800px;
+                    
+
     }
 
     #mapBtn{
@@ -99,6 +109,7 @@
                     color: white;
                     font-size: 18px;
                     font-weight: bold;
+                   
 
     }
     #mapBtn:hover{
@@ -119,12 +130,12 @@
                     font-weight: bold;
     }
     .ui-autocomplete{
-max-height: 200px;
-overflow-y: auto;
-/* prevent horizontal scrollbar */
-overflow-x: hidden;
-/* add padding to account for vertical scrollbar */
-padding-right: 20px;          
+          max-height: 200px;
+          overflow-y: auto;
+          /* prevent horizontal scrollbar */
+          overflow-x: hidden;
+          /* add padding to account for vertical scrollbar */
+          padding-right: 20px;          
     }
     
     .pagination {
@@ -214,8 +225,8 @@ padding-right: 20px;
     
     
     #loadpage{
-                    zmargin: auto;
-                    zpadding-top: 150px;
+
+
     }
     
     
@@ -565,24 +576,19 @@ padding-right: 20px;
 <!--    MAP AND TABLE DIV  -->
 <div class="container-fluid divTableMap" style="display:none;">
 	<div class="row">
-	
-	
 					<div class="col-lg-3">
-					
 									<div class="desc-text" id="table-desc-text">
 													Click on a table row to filter and zoom map...
 									</div>
 									<div class="desc-text" id="stat-desc-text">
 													Summary statistics for the Applicant's Job Filings...
 									</div>
-					</div>				
-					
+					</div>									
 					<div class="col-lg-9 ">	
 						<div class="ztext-center pull-right" id="btnRefineSearch" style="font-size: 18px;font-weight:700;color:red;cursor:pointer;">			
 							<span class="glyphicon glyphicon-search" aria-hidden="true"></span> Refine Search
 						</div>
 					</div>
-
 	</div>
 	
 	
@@ -599,16 +605,17 @@ padding-right: 20px;
 							</div>
 			</div>
 	</div>
-    <div class="row" >                       
+    <div class="row" style="height:800px;overflow:auto;">                       
 				<div class="col-lg-3">
-								<div id="ui-container" class="ui" style="min-height:786px">                                                               
+								<div id="ui-container" class="ui" style="height:800px;overflow:auto;">
 												<h4>Work Type: <b><span id="workTypeValue_txt"></span></b></h4>
 												<h4>Geography: <b><span id="geo_txt"></span></b></h4>
 												<h4>Time Frame: <b><span id="fromDate_txt"></span></b> - <b><span id="toDate_txt"></span></b></h4>
-												<h4>Total Job Filings: <b><span id="filteredData_txt"></span></b></h4>
+                        <h4>Total Job Filings: <b><span id="filteredData_txt"></span><span class="datasetmsg" ><sup>*</sup></span></b></h4>
+                        <h5 class="datasetmsg"><sup>*</sup><span id="totalresults"></span> filings returned. Only the most recent 2000 are shown. Please narrow down your search criteria.</h5>                        
 												<hr>
 												<div class="qry" id="tableDiv"> 
-														<table id="filingsTable" class="display" style="width:100%">
+														<table id="filingsTable" class="display" style="width:100%;">
 																<thead>
 																				<tr>
 																								<th></th>
@@ -639,7 +646,7 @@ padding-right: 20px;
 								</div>
 				</div>                  
 				<div class="col-lg-9">                 
-								<div  id="map-container">
+								<div  id="map-container" >
 												<div id="map"></div>
 								</div>
 				</div>                  
@@ -1198,7 +1205,7 @@ var selectionCD,
                                                 $("#stat-desc-text").show();
                                                 $("#tableDiv").hide();
                                                 $("#statsDiv").show();
-						window.dispatchEvent(new Event("resize"));
+												window.dispatchEvent(new Event("resize"));
                                                
                                                 //workaround for "no data available" text being cut off on opening of stats tab vvvvv
                                                 var noDataTextElements = document.querySelectorAll(".nv-noData");
@@ -1341,6 +1348,10 @@ var selectionCD,
 													return;
 												} else if (filteredData.length > 2000 )	{
 													//only show first 2000
+                          document.querySelectorAll(".datasetmsg").forEach((el)=> {el.style.display="inline";});
+                          document.querySelector("#totalresults").textContent=filteredData.length;
+                          filteredData = filteredData.slice(0,2000);
+                          
 													true;
 													
 												}
