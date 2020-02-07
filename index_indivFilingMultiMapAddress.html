@@ -750,6 +750,7 @@ var width = $("#map").width(),
 		if ($(this).val() === 'stats') {
 			$("#table-desc-text").hide();
 			$("#stat-desc-text").show();
+			window.dispatchEvent(new Event("resize"));
 		} else if ($(this).val() === 'table') {
 			$("#stat-desc-text").hide();
 			$("#table-desc-text").show();
@@ -905,7 +906,8 @@ var width = $("#map").width(),
 					.x(function (d) { console.log(d); return d.key })
 					.y(function (d) { return d.values })
 					.margin({top: 10, right: -10, bottom: -50, left: 20})
-					.options({height:75, width:400,})
+					//.options({height:75, width:400,})
+					.options({height:75})
 					.color(['#E64C00']);
 					
 				chart.yAxis.tickFormat(d3.format('.0f'));
@@ -940,7 +942,8 @@ var width = $("#map").width(),
 					.x(function (d) { console.log(d); return d.key })
 					.y(function (d) { return d.values })
 					.margin({top: 10, right: -10, bottom: -50, left: 20})
-					.options({height:75, width:400,})
+					//.options({height:75, width:400,})
+					.options({height:75})
 					.color(['#E64C00']);
 					
 				chart.yAxis.tickFormat(d3.format('.0f'));
@@ -975,7 +978,8 @@ var width = $("#map").width(),
 					.x(function (d) { console.log(d); return d.key })
 					.y(function (d) { return d.values })
 					.margin({top: 10, right: -10, bottom: -50, left: 20})	
-					.options({height:75, width:400,})
+					//.options({height:75, width:400,})
+					.options({height:75})					
 					.color(['#E64C00']);
 
 				chart.yAxis.tickFormat(d3.format('.0f'));
@@ -1009,7 +1013,8 @@ var width = $("#map").width(),
 					.x(function (d) { console.log(d); return d.key })
 					.y(function (d) { return d.values })
 					.margin({top: 10, right: -10, bottom: -50, left: 20})	
-					.options({height:75, width:400,})
+					//.options({height:75, width:400,})
+					.options({height:75})
 					.color(['#E64C00']);
 
 				chart.yAxis.tickFormat(d3.format('.0f'));
