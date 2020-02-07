@@ -1198,12 +1198,15 @@ var selectionCD,
                                                 $("#stat-desc-text").show();
                                                 $("#tableDiv").hide();
                                                 $("#statsDiv").show();
+						window.dispatchEvent(new Event("resize"));
                                                
                                                 //workaround for "no data available" text being cut off on opening of stats tab vvvvv
                                                 var noDataTextElements = document.querySelectorAll(".nv-noData");
                                                 noDataTextElements.forEach(function(theNoDataTextElement) {
                                                                 theNoDataTextElement.setAttribute("x", "220.5");                                                                                                        
                                                 });
+												
+												
                                                 //workaround for "no data available" text being cut off on opening of stats tab ^^^^^
                                                
                                                
@@ -1458,7 +1461,8 @@ var selectionCD,
                                                                                 .x(function (d) {  return d.key })
                                                                                 .y(function (d) { return d.values })
                                                                                 .margin({top: 10, right: -10, bottom: -50, left: 20})
-                                                                                .options({height:75, width:400,})
+                                                                                //.options({height:75, width:400,})
+                                                                                .options({height:75})
                                                                                 .color(['#E64C00']);
                                                                                
                                                                 chart.yAxis.tickFormat(d3.format('.0f'));
@@ -1511,7 +1515,8 @@ var selectionCD,
                                                                                 .x(function (d) { return d.key })
                                                                                 .y(function (d) { return d.values })
                                                                                 .margin({top: 10, right: -10, bottom: -50, left: 20})
-                                                                                .options({height:75, width:400,})
+                                                                                //.options({height:75, width:400,})
+                                                                                .options({height:75 })
                                                                                 .color(['#E64C00']);
                                                                                
                                                                 chart.yAxis.tickFormat(d3.format('.0f'));
@@ -1547,7 +1552,8 @@ var selectionCD,
                                                                                 .x(function (d) { return d.key })
                                                                                 .y(function (d) { return d.values })
                                                                                 .margin({top: 10, right: -10, bottom: -50, left: 20})            
-                                                                                .options({height:75, width:400,})
+                                                                                //.options({height:75, width:400,})
+                                                                                .options({height:75})
                                                                                 .color(['#E64C00']);
  
                                                                 chart.yAxis.tickFormat(d3.format('.0f'));
@@ -1583,7 +1589,8 @@ var selectionCD,
                                                                                 .x(function (d) { console.log(d); return d.key })
                                                                                 .y(function (d) { return d.values })
                                                                                 .margin({top: 10, right: -10, bottom: -50, left: 20})            
-                                                                                .options({height:75, width:400,})
+                                                                                //.options({height:75, width:400,})
+                                                                                .options({height:75})
                                                                                 .color(['#E64C00']);
  
                                                                 chart.yAxis.tickFormat(d3.format('.0f'));
