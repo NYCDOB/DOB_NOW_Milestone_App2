@@ -1,11 +1,14 @@
-.mynavlink:link,
+.navbar-default .navbar-text {
+    color: rgb(0,35,121);
+}
+
 .mynavlink:visited ,
 .mynavlink:hover, 
 .mynavlink:active {
 		text-decoration: none !important;
-
-		color: navy;
+		color: #44a8de;
 }
+
 
 html {
   height: 100%;
